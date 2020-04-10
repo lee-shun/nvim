@@ -11,9 +11,9 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "****************************************初始设置区********************************************
-" ===
-" === Auto load for first time uses
-" ===
+"===
+"=== Auto load for first time uses
+"===
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
 	silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
 				\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -21,9 +21,9 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 
-" ===
-" === Create a _machine_specific.vim file to adjust machine specific stuff, like python interpreter location
-" ===
+"===
+"=== Create a _machine_specific.vim file to adjust machine specific stuff, like python interpreter location
+"===
 let has_machine_specific_file = 1
 if empty(glob('~/.config/nvim/_machine_specific.vim'))
 	let has_machine_specific_file = 0
@@ -99,7 +99,7 @@ map H 5h
 map L 5l
 
 "**************************************共享剪切板********************************************
-"
+
 "共享剪切板
 "vnoremap <Leader>y "+y
 "vnoremap <Leader>yy "+yy
@@ -152,49 +152,33 @@ call plug#begin('~/.config/nvim/plugged')
 "外观美化
 
 "Plug 'liuchengxu/eleline.vim'
-
 Plug 'vim-airline/vim-airline'
-
 Plug 'connorholyday/vim-snazzy'
-
 Plug 'vim-airline/vim-airline-themes'
-
 Plug 'morhetz/gruvbox'
-
 Plug 'joshdick/onedark.vim'
-
 Plug 'mhinz/vim-startify'
-
 Plug 'ryanoasis/vim-devicons'
-
 "Plug 'bling/vim-bufferline'
-
 Plug 'junegunn/goyo.vim'
 
 " 普通高亮
 Plug 'jaxbot/semantic-highlight.vim'
-
 "Plug 'norcalli/nvim-colorizer.lua'
 
 "文件目录
 Plug 'preservim/nerdtree'
-
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 "VIM C++相关
 "Plug 'octol/vim-cpp-enhanced-highlight'
-
 Plug 'jackguo380/vim-lsp-cxx-highlight'
-
 " Plug 'LucHermitte/VimFold4C'
 
 "git相关
 Plug 'rhysd/conflict-marker.vim'
-
 Plug 'tpope/vim-fugitive'
-
 Plug 'mhinz/vim-signify'
-
 Plug 'gisphm/vim-gitignore'
 
 "彩虹括号
@@ -205,17 +189,11 @@ Plug 'lervag/vimtex'
 
 "markdown 相关
 Plug 'godlygeek/tabular'
-
 Plug 'plasticboy/vim-markdown'
-
 Plug 'dkarter/bullets.vim'
-
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install_sync() }, 'for' :['markdown', 'vim-plug'] }
-
 Plug 'vimwiki/vimwiki'
-
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
-
 Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown'] }
 
 "自动补全插件平台coc
@@ -226,12 +204,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "代码片段
 Plug 'SirVer/ultisnips'
-
 Plug 'honza/vim-snippets'
 
 "文件寻找
 "Plug 'ctrlpvim/ctrlp.vim'
-
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
 "剪切板历史
@@ -245,7 +221,6 @@ Plug 'junegunn/vim-after-object' " da= to delete what's after =
 
 "自动注释
 Plug 'tpope/vim-commentary'
-
 Plug 'scrooloose/nerdcommenter' " in <space>cn to comment a line
 
 "bool型翻转
@@ -255,14 +230,11 @@ Plug 'AndrewRadev/switch.vim' " gs to switch
 Plug 'liuchengxu/vista.vim'
 
 "输入法自动切换
-
 "Plug 'lilydjwg/fcitx.vim'
-
 Plug 'rlue/vim-barbaric' " slowing down vim-multiple-cursors
 
 "英语书写加强
 Plug 'reedes/vim-wordy'
-
 Plug 'ron89/thesaurus_query.vim'
 
 "缩进显示
@@ -270,6 +242,12 @@ Plug 'nathanaelkane/vim-indent-guides'
 
 "光标所在单词下划线
 Plug 'itchyny/vim-cursorword'
+
+"强化书签
+Plug 'MattesGroeger/vim-bookmarks'
+
+"查找替换`
+Plug 'brooth/far.vim'
 
 call plug#end()
 
@@ -280,13 +258,15 @@ call plug#end()
 "===
 source ~/.config/nvim/coc_settings.vim
 
-" ==
-" ==主题美化，外观设置
-" ==
+"===
+"===主题美化，外观设置
+"===
 colorscheme gruvbox
 set background=dark
 
-let g:airline_theme='gruvbox'
+"let g:airline_theme='gruvbox'
+"let g:airline_theme='powerlineish'
+let g:airline_theme='onedark'
 let g:airline#extensions#tabline#enabled = 1
 
 "let g:SnazzyTransparent = 1
@@ -298,15 +278,15 @@ let g:goyo_width=120
 let g:goyo_height=120
 "g:goyo_linenr
 
-" ===
-" === NERDTree
-" ===
+"===
+"=== NERDTree
+"===
 map tt :NERDTreeToggle<CR>
 
 
-" ==
-" == NERDTree-git
-" ==
+"===
+"=== NERDTree-git
+"===
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
@@ -320,15 +300,15 @@ let g:NERDTreeIndicatorMapCustom = {
     \ }
 
 
-"==
-"==rainbow
-"==
+"===
+"===rainbow
+"===
 let g:rainbow_active = 1
 
 
-"==
-"==vim-cpp-enhanced-highlight
-"==
+"===
+"===vim-cpp-enhanced-highlight
+"===
 "let g:cpp_class_scope_highlight = 1
 "let g:cpp_member_variable_highlight = 1
 "let g:cpp_class_decl_highlight = 1
@@ -336,29 +316,29 @@ let g:rainbow_active = 1
 "let g:cpp_concepts_highlight = 1
 
 
-"==
-"==sinps
-"==
+"===
+"===sinps
+"===
 let g:UltiSnipsExpandTrigger="<c-e>"
 let g:UltiSnipsJumpForwardTrigger="<c-e>"
 let g:UltiSnipsJumpBackwardTrigger="<c-n>"
 
 
-"==
-"==ctrlp
-"==
+"===
+"===ctrlp
+"===
 " let g:ctrlp_map = '<c-p>'
 " let g:ctrlp_cmd = 'CtrlP'
 
 
-"==
-"==leaderf
-"==
+"===
+"===leaderf
+"===
 
 
-"==
-"==vimtex
-"==
+"===
+"===vimtex
+"===
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
@@ -369,15 +349,15 @@ silent! au BufEnter,BufRead,BufNewFile * silent! unmap <c-r>
 let g:vimtex_compiler_progname = 'nvr'
 
 
-"==
-"==vim-markdown
-"==
+"===
+"===vim-markdown
+"===
 let g:vim_markdown_math = 1
 
 
-"==
-"==markdown-preview
-"==
+"===
+"===markdown-preview
+"===
 let g:mkdp_auto_start = 0
 let g:mkdp_auto_close = 1
 let g:mkdp_refresh_slow = 0
@@ -402,29 +382,41 @@ let g:mkdp_port = ''
 let g:mkdp_page_title = '「${name}」'
 
 
-"==
-"==markdownWiKi
-"==
+"===
+"===markdownWiKi
+"===
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 
 
-"==
-"==thesaurus_query
-"==
+"===
+"===thesaurus_query
+"===
 let g:tq_map_keys=0
 nnoremap <leader>rw :ThesaurusQueryReplaceCurrentWord<CR>
 vnoremap <Leader>rw y:ThesaurusQueryReplace <C-r>"<CR>
 
-"==
-"==auto-indent
-"==
+"===
+"===auto-indent
+"===
 let g:indent_guides_enable_on_vim_startup = 1
 "let g:indent_guides_auto_colors = 0
 "autocmd VimEnter,Colorscheme * hi IndentGuidesOdd  ctermbg=black
 "autocmd VimEnter,Colorscheme * hi IndentGuidesEven ctermbg=darkgrey
 
-"==
-"==Vista
-"==
+"===
+"===Vista
+"===
 noremap <LEADER>t :Vista<CR>
+
+"===
+"===Bookmarks
+"===
+let g:bookmark_sign = '♥'
+"let g:bookmark_highlight_lines = 1
+
+
+" Open the _machine_specific.vim file if it has just been created
+if has_machine_specific_file == 0
+	exec "e ~/.config/nvim/_machine_specific.vim"
+endif
