@@ -173,7 +173,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 "VIM C++相关
 "Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
-" Plug 'LucHermitte/VimFold4C'
+"Plug 'LucHermitte/VimFold4C'
 
 "git相关
 Plug 'rhysd/conflict-marker.vim'
@@ -247,7 +247,7 @@ Plug 'itchyny/vim-cursorword'
 Plug 'MattesGroeger/vim-bookmarks'
 
 "查找替换`
-Plug 'brooth/far.vim'
+"Plug 'brooth/far.vim'
 
 call plug#end()
 
