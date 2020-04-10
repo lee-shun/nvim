@@ -1,0 +1,43 @@
+###
+###行间注释
+###
+snippet _com_ "inline comment" wA
+/* $1 */
+$0
+endsnippet
+
+
+###
+###函数注释
+###
+snippet _cofun_ "function comment" wA
+/**
+ * @Input: $1
+ * @Output: $2
+ * @Description: $3
+ */
+ $0
+endsnippet
+
+###
+###头文件
+###
+snippet _head_ "head file" wA
+#ifndef _$1_HPP_
+#define _$2_HPP_
+$0
+#endif
+endsnippet
+
+###
+###类定义
+###
+snippet _cla_ "class define" wA
+class $1
+{
+	public:
+	$2
+	private:
+	$3
+};
+endsnippet
