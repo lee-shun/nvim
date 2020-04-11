@@ -31,6 +31,10 @@ if empty(glob('~/.config/nvim/_machine_specific.vim'))
 endif
 source ~/.config/nvim/_machine_specific.vim
 
+"**************************************交换文件设置区******************************************
+
+
+
 "****************************************基本设置区********************************************
 
 let g:mapleader = ' '
@@ -43,20 +47,19 @@ set autochdir "自动切换工作目录
 set encoding=UTF-8
 
 "显示设置
-syntax on "设置高亮
-set scrolloff=5 "设置滚动余量
-set mouse=a "打开鼠标
-set number " 打开行号
-set relativenumber "相对行号
-set cursorline "打开光标提示线
-set cursorcolumn "打开光标提示线
-set noshowmode "不要显示模式
-"set noshowcmd "不显示命令
-set wrap "显示行折叠
-set linebreak "不在单词内部折行
-set wildmenu "vim命令自动补全
-set foldmethod=syntax
-set nofoldenable
+syntax on             " 设置高亮
+set scrolloff=5       " 设置滚动余量
+set mouse=a           " 打开鼠标
+set number            " 打开行号
+set relativenumber    " 相对行号
+set cursorline        " 打开光标提示线
+set cursorcolumn      " 打开光标提示线
+set noshowmode        " 不要显示模式
+set wrap              " 显示行折叠
+set linebreak         " 不在单词内部折行
+set wildmenu          " vim命令自动补全
+set foldmethod=syntax " 语法折叠
+set nofoldenable      " 开始关闭语法折叠
 
 "搜索设置
 set hlsearch
@@ -91,7 +94,7 @@ noremap <LEADER>sc :set spell!<CR>
 
 "**************************************键盘映射区********************************************
 
-noremap S :w<CR> 
+noremap S :w<CR>
 noremap Q :q<CR>
 noremap J 5j
 noremap K 5k
@@ -107,18 +110,18 @@ noremap L 5l
 
 "**************************************分屏设置区********************************************
 
-noremap sv :set splitright<CR>:vsplit<CR>
-noremap sl :split<CR>
+noremap <LEADER>sv :set splitright<CR>:vsplit<CR>
+noremap <LEADER>sl :split<CR>
 noremap <LEADER>l <C-w>l
 noremap <LEADER>h <C-w>h
 noremap <LEADER>j <C-w>j
 noremap <LEADER>k <C-w>k
 noremap <LEADER>w <C-w>w
 
-nnoremap w, :resize+3<CR>
-nnoremap w. :resize-3<CR>
-nnoremap w- :vertical resize-3<CR>
-nnoremap w= :vertical resize+3<CR>
+noremap <up> :res +5<CR>
+noremap <down> :res -5<CR>
+noremap <left> :vertical resize-5<CR>
+noremap <right> :vertical resize+5<CR>
 
 "**************************************标签设置区********************************************
 
@@ -128,9 +131,9 @@ noremap tl :+tabnext<CR>
 
 "**************************************Buffer设置区********************************************
 
-noremap bn :bn<CR>
-noremap bp :bp<CR>
-noremap bd :bd<CR>
+noremap <LEADER>bn :bn<CR>
+noremap <LEADER>bp :bp<CR>
+noremap <LEADER>bd :bd<CR>
 
 "**************************************文件关闭光标记忆******************************************
 
@@ -141,9 +144,19 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " Open up lazygit
 noremap <c-g>  :term lazygit<CR>
 
-"****************************************双击查找下一个占位符*********************************************
+"************************************双击查找下一个占位符******************************************
 
 noremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
+
+"****************************************快速移动行*********************************************
+
+nnoremap [e  :<c-u>execute 'move -1-'. v:count1<cr>
+nnoremap ]e  :<c-u>execute 'move +'. v:count1<cr>
+
+"****************************************快速添加空行*********************************************
+
+nnoremap [<space> :<c-u>put! =repeat(nr2char(10), v:count1)<cr>'[
+nnoremap ]<space> :<c-u>put =repeat(nr2char(10), v:count1)<cr>
 
 "*****************************************插件安装区*********************************************
 
@@ -248,6 +261,9 @@ Plug 'MattesGroeger/vim-bookmarks'
 
 "查找替换`
 "Plug 'brooth/far.vim'
+
+"对齐，排版
+Plug 'godlygeek/tabular'
 
 call plug#end()
 
@@ -358,16 +374,16 @@ let g:vim_markdown_math = 1
 "===
 "===markdown-preview
 "===
-let g:mkdp_auto_start = 0
-let g:mkdp_auto_close = 1
-let g:mkdp_refresh_slow = 0
+let g:mkdp_auto_start         = 0
+let g:mkdp_auto_close         = 1
+let g:mkdp_refresh_slow       = 0
 let g:mkdp_command_for_global = 0
-let g:mkdp_open_to_the_world = 0
-let g:mkdp_open_ip = ''
-let g:mkdp_browser = 'firefox'
-let g:mkdp_echo_preview_url = 0
-let g:mkdp_browserfunc = ''
-let g:mkdp_preview_options = {
+let g:mkdp_open_to_the_world  = 0
+let g:mkdp_open_ip            = ''
+let g:mkdp_browser            = 'firefox'
+let g:mkdp_echo_preview_url   = 0
+let g:mkdp_browserfunc        = ''
+let g:mkdp_preview_options    = {
     \ 'mkit': {},
     \ 'katex': {},
     \ 'uml': {},
