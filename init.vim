@@ -33,7 +33,7 @@ source ~/.config/nvim/_machine_specific.vim
 
 "****************************************基本设置区********************************************
 
-let mapleader = ' '
+let g:mapleader = ' '
 filetype on
 filetype plugin on
 set autochdir "自动切换工作目录
@@ -64,7 +64,7 @@ exec "nohlsearch"
 set incsearch
 set ignorecase
 set smartcase
-map <C-f> :set nohlsearch<CR>
+noremap <C-f> :set nohlsearch<CR>
 
 "缩进设置
 filetype indent on
@@ -82,7 +82,7 @@ set listchars=tab:\|\ ,trail:▫
 set clipboard=unnamedplus
 
 "设置拼写检查
-map <LEADER>sc :set spell!<CR>
+noremap <LEADER>sc :set spell!<CR>
 
 "************************************自动刷新vimrc********************************************
 
@@ -91,12 +91,12 @@ map <LEADER>sc :set spell!<CR>
 
 "**************************************键盘映射区********************************************
 
-map S :w<CR> 
-map Q :q<CR>
-map J 5j
-map K 5k
-map H 5h
-map L 5l
+noremap S :w<CR> 
+noremap Q :q<CR>
+noremap J 5j
+noremap K 5k
+noremap H 5h
+noremap L 5l
 
 "**************************************共享剪切板********************************************
 
@@ -107,30 +107,30 @@ map L 5l
 
 "**************************************分屏设置区********************************************
 
-map sv :set splitright<CR>:vsplit<CR>
-map sl :split<CR>
-map <LEADER>l <C-w>l
-map <LEADER>h <C-w>h
-map <LEADER>j <C-w>j
-map <LEADER>k <C-w>k
-map <LEADER>w <C-w>w
+noremap sv :set splitright<CR>:vsplit<CR>
+noremap sl :split<CR>
+noremap <LEADER>l <C-w>l
+noremap <LEADER>h <C-w>h
+noremap <LEADER>j <C-w>j
+noremap <LEADER>k <C-w>k
+noremap <LEADER>w <C-w>w
 
-nmap w, :resize+3<CR>
-nmap w. :resize-3<CR>
-nmap w- :vertical resize-3<CR>
-nmap w= :vertical resize+3<CR>
+nnoremap w, :resize+3<CR>
+nnoremap w. :resize-3<CR>
+nnoremap w- :vertical resize-3<CR>
+nnoremap w= :vertical resize+3<CR>
 
 "**************************************标签设置区********************************************
 
-map te :tabe<CR>
-map th :-tabnext<CR>
-map tl :+tabnext<CR>
+noremap te :tabe<CR>
+noremap th :-tabnext<CR>
+noremap tl :+tabnext<CR>
 
 "**************************************Buffer设置区********************************************
 
-map bn :bn<CR>
-map bp :bp<CR>
-map bd :bd<CR>
+noremap bn :bn<CR>
+noremap bp :bp<CR>
+noremap bd :bd<CR>
 
 "**************************************文件关闭光标记忆******************************************
 
@@ -281,7 +281,7 @@ let g:goyo_height=120
 "===
 "=== NERDTree
 "===
-map tt :NERDTreeToggle<CR>
+noremap tt :NERDTreeToggle<CR>
 
 
 "===
