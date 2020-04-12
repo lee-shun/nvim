@@ -94,6 +94,7 @@ noremap <LEADER>sc :set spell!<CR>
 
 "**************************************键盘映射区********************************************
 
+noremap M J "合并行
 noremap S :w<CR>
 noremap Q :q<CR>
 noremap J 5j
