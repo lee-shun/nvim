@@ -181,8 +181,8 @@ Plug 'jaxbot/semantic-highlight.vim'
 "Plug 'norcalli/nvim-colorizer.lua'
 
 "文件目录
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+"Plug 'preservim/nerdtree'
+"Plug 'Xuyuanp/nerdtree-git-plugin'
 
 "VIM C++相关
 "Plug 'octol/vim-cpp-enhanced-highlight'
@@ -295,26 +295,26 @@ let g:goyo_width=120
 let g:goyo_height=120
 "g:goyo_linenr
 
-"===
-"=== NERDTree
-"===
-noremap tt :NERDTreeToggle<CR>
+""===
+""=== NERDTree
+""===
+"noremap tt :NERDTreeToggle<CR>
 
 
-"===
-"=== NERDTree-git
-"===
-let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ "Unknown"   : "?"
-    \ }
+""===
+""=== NERDTree-git
+""===
+"let g:NERDTreeIndicatorMapCustom = {
+"    \ "Modified"  : "✹",
+"    \ "Staged"    : "✚",
+"    \ "Untracked" : "✭",
+"    \ "Renamed"   : "➜",
+"    \ "Unmerged"  : "═",
+"    \ "Deleted"   : "✖",
+"    \ "Dirty"     : "✗",
+"    \ "Clean"     : "✔︎",
+"    \ "Unknown"   : "?"
+"    \ }
 
 
 "===

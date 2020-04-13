@@ -16,7 +16,7 @@
 "==coc.vim
 "==
 "coc-normal
-let g:coc_global_extensions = ['coc-yank','coc-cmake','coc-clangd','coc-marketplace']
+let g:coc_global_extensions = ['coc-yank','coc-cmake','coc-clangd','coc-marketplace',"coc-explorer"]
 "optional:,'coc-git'
 
 "==
@@ -166,6 +166,14 @@ nnoremap <silent> <space>ya  :<C-u>CocList -A --normal yank<cr>
 "==
 "coc-highlight
 autocmd CursorHold * silent call CocActionAsync('highlight')
+
+
+"==
+"==coc.vim
+"==
+"coc-explorer
+nmap tt :CocCommand explorer<CR>
+
 
 "==
 "==coc.vim

@@ -1,3 +1,16 @@
 {
-    "clangd.semanticHighlighting": "true"
+	"explorer.sources": [
+		{
+			"name": "buffer",
+			"expand": false
+		},
+		{
+			"name": "file",
+			"expand": true
+		}
+	],
+    "explorer.file.showHiddenFiles": true,
+	"explorer.icon.enableNerdfont": true,
+	"explorer.file.column.git.showIgnored": true,
+	"explorer.buffer.showHiddenBuffers": false,
 }

@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/ls/catkin_ws/src/fixed_wing_formation_control/src/fixed_wing_lib'
+let g:netrw_dirhist_4='/home/ls/catkin_ws/src/fixed_wing_formation_control/src'
+let g:netrw_dirhist_3='/home/ls/catkin_ws/src/fixed_wing_formation_control'
+let g:netrw_dirhist_2='/home/ls/catkin_ws/src/fixed_wing_formation_control/src/formation_controller'
+let g:netrw_dirhist_1='/home/ls/catkin_ws/src/fixed_wing_formation_control/src'
+let g:netrw_dirhist_0='/home/ls/catkin_ws/src/fixed_wing_formation_control'
+let g:netrw_dirhist_9='/home/ls/catkin_ws/src/fixed_wing_formation_control/src'
+let g:netrw_dirhist_8='/home/ls/catkin_ws/src/fixed_wing_formation_control/src/example'
+let g:netrw_dirhist_7='/home/ls/catkin_ws/src/fixed_wing_formation_control/src/example/formation_control_old'
+let g:netrw_dirhist_6='/home/ls/catkin_ws/src/fixed_wing_formation_control/src/example'
