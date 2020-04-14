@@ -1,4 +1,5 @@
 {
+    "clangd.semanticHighlighting": true,
 	"explorer.sources": [
 		{
 			"name": "buffer",

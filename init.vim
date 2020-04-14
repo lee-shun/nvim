@@ -60,6 +60,8 @@ set linebreak         " 不在单词内部折行
 set wildmenu          " vim命令自动补全
 set foldmethod=syntax " 语法折叠
 set nofoldenable      " 开始关闭语法折叠
+set t_Co=256          " 256颜色
+set termguicolors     " 使用gui，不和终端混合
 
 "搜索设置
 set hlsearch
@@ -169,6 +171,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'connorholyday/vim-snazzy'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ajmwagar/vim-deus'
 Plug 'morhetz/gruvbox'
 Plug 'joshdick/onedark.vim'
 Plug 'mhinz/vim-startify'
@@ -278,9 +281,12 @@ source ~/.config/nvim/coc_settings.vim
 "===
 "===主题美化，外观设置
 "===
-colorscheme gruvbox
 set background=dark
 
+colorscheme deus
+let g:deus_termcolors=256
+
+" colorscheme gruvbox
 "let g:airline_theme='gruvbox'
 "let g:airline_theme='powerlineish'
 let g:airline_theme='onedark'
