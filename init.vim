@@ -253,7 +253,7 @@ Plug 'liuchengxu/vista.vim'
 
 "输入法自动切换
 "Plug 'lilydjwg/fcitx.vim'
-Plug 'rlue/vim-barbaric' " slowing down vim-multiple-cursors
+"Plug 'rlue/vim-barbaric' " slowing down vim-multiple-cursors
 
 "英语书写加强
 Plug 'reedes/vim-wordy'
@@ -272,7 +272,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'MattesGroeger/vim-bookmarks'
 
 "查找替换`
-"Plug 'brooth/far.vim'
+Plug 'brooth/far.vim'
 
 "对齐，排版
 Plug 'godlygeek/tabular'
@@ -476,3 +476,8 @@ noremap <LEADER>t :Vista<CR>
 let g:bookmark_sign = '♥'
 "let g:bookmark_highlight_lines = 1
 
+
+"===
+"===Far
+"===
+let g:far#enable_undo = 1
