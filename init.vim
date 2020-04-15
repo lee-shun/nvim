@@ -167,10 +167,12 @@ call plug#begin('~/.config/nvim/plugged')
 
 "外观美化
 
-"Plug 'liuchengxu/eleline.vim'
+" Plug 'liuchengxu/eleline.vim'
+" Plug 'mg979/vim-xtabline'
+" Plug 'bling/vim-bufferline'
 Plug 'vim-airline/vim-airline'
-Plug 'connorholyday/vim-snazzy'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'connorholyday/vim-snazzy'
 Plug 'ajmwagar/vim-deus'
 Plug 'morhetz/gruvbox'
 Plug 'joshdick/onedark.vim'
@@ -186,6 +188,9 @@ Plug 'jaxbot/semantic-highlight.vim'
 "文件目录
 "Plug 'preservim/nerdtree'
 "Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
 "VIM C++相关
 "Plug 'octol/vim-cpp-enhanced-highlight'
@@ -225,7 +230,7 @@ Plug 'honza/vim-snippets'
 
 "文件寻找
 "Plug 'ctrlpvim/ctrlp.vim'
-Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
+"Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
 "剪切板历史
 Plug 'junegunn/vim-peekaboo'
@@ -260,6 +265,9 @@ Plug 'nathanaelkane/vim-indent-guides'
 "光标所在单词下划线
 Plug 'itchyny/vim-cursorword'
 
+"多重光标
+Plug 'terryma/vim-multiple-cursors'
+
 "强化书签
 Plug 'MattesGroeger/vim-bookmarks'
 
@@ -279,24 +287,53 @@ call plug#end()
 source ~/.config/nvim/coc_settings.vim
 
 "===
-"===主题美化，外观设置
+"===themes
 "===
-set background=dark
 
+set background=dark
 colorscheme deus
 let g:deus_termcolors=256
 
 " colorscheme gruvbox
-"let g:airline_theme='gruvbox'
-"let g:airline_theme='powerlineish'
-let g:airline_theme='onedark'
+" colorscheme onedark
+" let g:SnazzyTransparent = 1
+
+" ===
+" === eleline.vim
+" ===
+" let g:airline_powerline_fonts = 0
+
+
+" " ===
+" " === xtabline
+" " ===
+" let g:xtabline_settings = {}
+" let g:xtabline_settings.enable_mappings = 0
+" let g:xtabline_settings.tabline_modes = ['tabs', 'buffers']
+" let g:xtabline_settings.enable_persistance = 0
+" let g:xtabline_settings.last_open_first = 1
+" noremap to :XTabCycleMode<CR>
+" noremap \p :XTabInfo<CR>
+
+
+"===
+"=== airline
+"===
+" let g:airline_theme='gruvbox'
+" let g:airline_theme='powerlineish'
+let g:airline_theme='deus'
 let g:airline#extensions#tabline#enabled = 1
 
-"let g:SnazzyTransparent = 1
 
+
+"===
+"=== bufferline
+"===
 "let g:bufferline_echo = 0
 
-"专注模式
+"===
+"=== goyo
+"===
 let g:goyo_width=120
 let g:goyo_height=120
 "g:goyo_linenr
@@ -432,14 +469,10 @@ let g:indent_guides_enable_on_vim_startup = 1
 "===
 noremap <LEADER>t :Vista<CR>
 
+
 "===
 "===Bookmarks
 "===
 let g:bookmark_sign = '♥'
 "let g:bookmark_highlight_lines = 1
 
-
-" Open the _machine_specific.vim file if it has just been created
-if has_machine_specific_file == 0
-	exec "e ~/.config/nvim/_machine_specific.vim"
-endif
