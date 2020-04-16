@@ -58,7 +58,7 @@ set noshowmode        " 不要显示模式
 set wrap              " 显示行折叠
 set linebreak         " 不在单词内部折行
 set wildmenu          " vim命令自动补全
-set foldmethod=syntax " 语法折叠
+set foldmethod=manual " 语法折叠
 set nofoldenable      " 开始关闭语法折叠
 set t_Co=256          " 256颜色
 set termguicolors     " 使用gui，不和终端混合
@@ -89,10 +89,12 @@ set clipboard=unnamedplus
 "设置拼写检查
 noremap <LEADER>sc :set spell!<CR>
 
+"设置插入模式下自动提示
+inoremap <C-x> <C-x>s
+
 "************************************自动刷新vimrc********************************************
 
 "autocmd BufWritePost $MYVIMRC source $MYVIMRC
-
 
 "**************************************键盘映射区********************************************
 
