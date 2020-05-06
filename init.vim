@@ -55,7 +55,7 @@ set relativenumber    " 相对行号
 set cursorline        " 打开光标提示线
 set cursorcolumn      " 打开光标提示线
 set noshowmode        " 不要显示模式
-set wrap              " 显示行折叠
+set nowrap              " 显示行折叠
 set linebreak         " 不在单词内部折行
 set wildmenu          " vim命令自动补全
 set foldmethod=manual " 语法折叠
