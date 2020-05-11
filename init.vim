@@ -123,10 +123,21 @@ noremap <LEADER>j <C-w>j
 noremap <LEADER>k <C-w>k
 noremap <LEADER>w <C-w>w
 
-noremap <up> :res +5<CR>
-noremap <down> :res -5<CR>
-noremap <left> :vertical resize-5<CR>
-noremap <right> :vertical resize+5<CR>
+nnoremap <up> :res +5<CR>
+nnoremap <down> :res -5<CR>
+nnoremap <left> :vertical resize-5<CR>
+nnoremap <right> :vertical resize+5<CR>
+
+"**************************************ctrl-alt工作区冲突********************************************
+
+nnoremap <C-A-up> <nop>
+nnoremap <C-A-down> <nop>
+nnoremap <C-A-left> <nop>
+nnoremap <C-A-right> <nop>
+inoremap <C-A-up> <nop>
+inoremap <C-A-down> <nop>
+inoremap <C-A-left> <nop>
+inoremap <C-A-right> <nop>
 
 "**************************************标签设置区********************************************
 
