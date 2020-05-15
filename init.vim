@@ -295,6 +295,9 @@ Plug 'brooth/far.vim'
 "对齐，排版
 Plug 'godlygeek/tabular'
 
+"浮动窗体
+Plug 'voldikss/vim-floaterm'
+
 call plug#end()
 
 "****************************************插件配置区********************************************
@@ -319,7 +322,6 @@ let g:deus_termcolors=256
 "===
 "=== eleline.vim
 "===
-"let g:airline_powerline_fonts = 0
 
 
 "" ===
@@ -337,6 +339,7 @@ let g:deus_termcolors=256
 "===
 "=== airline
 "===
+let g:airline_powerline_fonts = 1
 "let g:airline_theme='gruvbox'
 "let g:airline_theme='powerlineish'
 "let g:airline_theme='deus'
