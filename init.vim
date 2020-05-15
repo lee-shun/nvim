@@ -96,6 +96,10 @@ inoremap <C-x> <C-x>s
 
 "autocmd BufWritePost $MYVIMRC source $MYVIMRC
 
+"***********************************宏快捷键*********************************************
+
+noremap <LEADER>= @a
+
 "**************************************键盘映射区********************************************
 
 noremap M J "合并行
@@ -189,6 +193,7 @@ Plug 'connorholyday/vim-snazzy'
 Plug 'ajmwagar/vim-deus'
 Plug 'morhetz/gruvbox'
 Plug 'joshdick/onedark.vim'
+Plug 'mhartington/oceanic-next'
 Plug 'mhinz/vim-startify'
 Plug 'ryanoasis/vim-devicons'
 "Plug 'bling/vim-bufferline'
@@ -266,7 +271,7 @@ Plug 'liuchengxu/vista.vim'
 
 "输入法自动切换
 "Plug 'lilydjwg/fcitx.vim'
-"Plug 'rlue/vim-barbaric' " slowing down vim-multiple-cursors
+Plug 'rlue/vim-barbaric' " slowing down vim-multiple-cursors
 
 "英语书写加强
 Plug 'reedes/vim-wordy'
@@ -279,7 +284,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'itchyny/vim-cursorword'
 
 "多重光标
-Plug 'terryma/vim-multiple-cursors'
+" Plug 'terryma/vim-multiple-cursors'
 
 "强化书签
 Plug 'MattesGroeger/vim-bookmarks'
@@ -307,34 +312,35 @@ set background=dark
 colorscheme deus
 let g:deus_termcolors=256
 
-" colorscheme gruvbox
-" colorscheme onedark
-" let g:SnazzyTransparent = 1
+"colorscheme gruvbox
+"colorscheme onedark
+"let g:SnazzyTransparent = 1
 
-" ===
-" === eleline.vim
-" ===
-" let g:airline_powerline_fonts = 0
+"===
+"=== eleline.vim
+"===
+"let g:airline_powerline_fonts = 0
 
 
-" " ===
-" " === xtabline
-" " ===
-" let g:xtabline_settings = {}
-" let g:xtabline_settings.enable_mappings = 0
-" let g:xtabline_settings.tabline_modes = ['tabs', 'buffers']
-" let g:xtabline_settings.enable_persistance = 0
-" let g:xtabline_settings.last_open_first = 1
-" noremap to :XTabCycleMode<CR>
-" noremap \p :XTabInfo<CR>
+"" ===
+"" === xtabline
+"" ===
+"let g:xtabline_settings = {}
+"let g:xtabline_settings.enable_mappings = 0
+"let g:xtabline_settings.tabline_modes = ['tabs', 'buffers']
+"let g:xtabline_settings.enable_persistance = 0
+"let g:xtabline_settings.last_open_first = 1
+"noremap to :XTabCycleMode<CR>
+"noremap \p :XTabInfo<CR>
 
 
 "===
 "=== airline
 "===
-" let g:airline_theme='gruvbox'
-" let g:airline_theme='powerlineish'
-let g:airline_theme='deus'
+"let g:airline_theme='gruvbox'
+"let g:airline_theme='powerlineish'
+"let g:airline_theme='deus'
+let g:airline_theme='oceanicnext'
 let g:airline#extensions#tabline#enabled = 1
 
 
