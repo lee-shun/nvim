@@ -184,9 +184,9 @@ call plug#begin('~/.config/nvim/plugged')
 
 "外观美化
 
-" Plug 'liuchengxu/eleline.vim'
-" Plug 'mg979/vim-xtabline'
-" Plug 'bling/vim-bufferline'
+"Plug 'liuchengxu/eleline.vim'
+"Plug 'mg979/vim-xtabline'
+"Plug 'bling/vim-bufferline'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'connorholyday/vim-snazzy'

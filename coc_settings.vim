@@ -15,8 +15,9 @@
 "==
 "==coc.vim
 "==
-"coc-normal
-let g:coc_global_extensions = ['coc-yank','coc-cmake','coc-clangd','coc-marketplace',"coc-explorer"]
+"coc-plugins
+
+let g:coc_global_extensions = ['coc-yank','coc-cmake','coc-clangd','coc-marketplace','coc-explorer','coc-translator']
 "optional:,'coc-git'
 
 "==
@@ -174,6 +175,20 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 "coc-explorer
 nmap tt :CocCommand explorer<CR>
 
+
+"==
+"==coc.vim
+"==
+"coc-translator
+" popup
+nmap ts <Plug>(coc-translator-p)
+vmap ts <Plug>(coc-translator-pv)
+" echo
+nmap <Leader>e <Plug>(coc-translator-e)
+vmap <Leader>e <Plug>(coc-translator-ev)
+" replace
+nmap <Leader>rp <Plug>(coc-translator-r)
+vmap <Leader>rp <Plug>(coc-translator-rv)
 
 "==
 "==coc.vim

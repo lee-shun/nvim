@@ -1,5 +1,6 @@
 {
     "clangd.semanticHighlighting": true,
+
 	"explorer.sources": [
 		{
 			"name": "buffer",
@@ -14,4 +15,5 @@
 	"explorer.icon.enableNerdfont": true,
 	"explorer.file.column.git.showIgnored": true,
 	"explorer.buffer.showHiddenBuffers": false,
+
 }
