@@ -66,7 +66,6 @@ Plug 'luochen1990/rainbow'
 Plug 'lervag/vimtex'
 
 "markdown 相关
-Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'dkarter/bullets.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install_sync() }, 'for' :['markdown', 'vim-plug'] }
