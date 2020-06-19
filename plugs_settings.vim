@@ -139,12 +139,23 @@ let g:UltiSnipsJumpBackwardTrigger="<c-n>"
 "===
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
-let g:vimtex_quickfix_mode=0
+"let g:vimtex_compiler_method='latexmk' "default setting
+let g:vimtex_quickfix_mode=1
 set conceallevel=1
 let g:tex_conceal='abdmg'
 let g:UltiSnipsSnippetDirectories = [$HOME.'/.config/nvim/Ultisnips/', 'UltiSnips']
 silent! au BufEnter,BufRead,BufNewFile * silent! unmap <c-r>
 let g:vimtex_compiler_progname = 'nvr'
+let g:vimtex_compiler_latexmk_engines = {
+            \ '_'                : '-xelatex',
+            \ 'pdflatex'         : '-pdf',
+            \ 'dvipdfex'         : '-pdfdvi',
+            \ 'lualatex'         : '-lualatex',
+            \ 'xelatex'          : '-xelatex',
+            \ 'context (pdftex)' : '-pdf -pdflatex=texexec',
+            \ 'context (luatex)' : '-pdf -pdflatex=context',
+            \ 'context (xetex)'  : '-pdf -pdflatex=''texexec --xtx''',
+            \}
 
 
 "===
