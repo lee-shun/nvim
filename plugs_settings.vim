@@ -40,14 +40,14 @@ let g:deus_termcolors=256
 "===
 
 
-"" ===
-"" === xtabline
-"" ===
-"let g:xtabline_settings = {}
-"let g:xtabline_settings.enable_mappings = 0
-"let g:xtabline_settings.tabline_modes = ['tabs', 'buffers']
-"let g:xtabline_settings.enable_persistance = 0
-"let g:xtabline_settings.last_open_first = 1
+" ===
+" === xtabline
+" ===
+let g:xtabline_settings = {}
+let g:xtabline_settings.enable_mappings = 0
+let g:xtabline_settings.tabline_modes = ['tabs', 'buffers']
+let g:xtabline_settings.enable_persistance = 0
+let g:xtabline_settings.last_open_first = 1
 "noremap to :XTabCycleMode<CR>
 "noremap \p :XTabInfo<CR>
 
@@ -60,7 +60,7 @@ let g:airline_powerline_fonts = 1
 "let g:airline_theme='powerlineish'
 "let g:airline_theme='deus'
 let g:airline_theme='oceanicnext'
-let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#enabled = 1
 
 
 
