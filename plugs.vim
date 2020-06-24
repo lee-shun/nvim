@@ -135,4 +135,12 @@ Plug 'godlygeek/tabular'
 "浮动窗体
 Plug 'voldikss/vim-floaterm'
 
+" Python
+"Plug 'tmhedberg/SimpylFold', { 'for' :['python', 'vim-plug'] }
+"Plug 'Vimjas/vim-python-pep8-indent', { 'for' :['python', 'vim-plug'] }
+"Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins', 'for' :['python', 'vim-plug'] }
+"Plug 'vim-scripts/indentpython.vim', { 'for' :['python', 'vim-plug'] }
+"Plug 'plytophogy/vim-virtualenv', { 'for' :['python', 'vim-plug'] }
+"Plug 'tweekmonster/braceless.vim', { 'for' :['python', 'vim-plug'] }
+
 call plug#end()

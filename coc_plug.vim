@@ -21,8 +21,16 @@
 "==
 "coc-plugins
 
-let g:coc_global_extensions = ['coc-yank','coc-cmake','coc-clangd','coc-marketplace','coc-explorer','coc-translator']
-"optional:,'coc-git'
+let g:coc_global_extensions = [
+            \ 'coc-git',
+            \ 'coc-yank',
+            \ 'coc-cmake',
+            \ 'coc-clangd',
+            \ 'coc-pyright',
+            \ 'coc-python',
+            \ 'coc-marketplace',
+            \ 'coc-explorer',
+            \ 'coc-translator']
 
 "==
 "==coc.vim
