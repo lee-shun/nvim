@@ -16,14 +16,14 @@
 "**********************************************************************************************************
 
 
-"===
-"=== Auto load for first time uses
-"===
-if empty(glob('~/.config/nvim/autoload/plug.vim'))
-	silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
-				\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
+""===
+""=== Auto load for first time uses
+""===
+"if empty(glob('~/.config/nvim/autoload/plug.vim'))
+"	silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+"				\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+"endif
 
 
 "===
@@ -39,20 +39,24 @@ endif
 "===
 "=== machine_specific.vim
 "===
-source ~/.config/nvim/_machine_specific.vim
+"source ~/.config/nvim/_machine_specific.vim
 
+"===
+"=== pure_vim.vim
+"===
+source ~/.config/nvim/pure_vim.vim
 
 "===
 "=== basic.vim
 "===
-source ~/.config/nvim/basic.vim
+"source ~/.config/nvim/basic.vim
 
 "===
 "=== plugs.vim
 "===
-source ~/.config/nvim/plugs.vim
+"source ~/.config/nvim/plugs.vim
 
 "===
 "=== plugs_settings.vim
 "===
-source ~/.config/nvim/plugs_settings.vim
+"source ~/.config/nvim/plugs_settings.vim
