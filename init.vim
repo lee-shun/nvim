@@ -39,7 +39,7 @@ endif
 "===
 "=== machine_specific.vim
 "===
-"source ~/.config/nvim/_machine_specific.vim
+source ~/.config/nvim/_machine_specific.vim
 
 "===
 "=== pure_vim.vim
