@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/ls/.config/nvim'
 let g:netrw_dirhist_4='/home/ls/catkin_ws/src/fixed_wing_formation_control/graduation_thesis/chapters'
 let g:netrw_dirhist_3='/home/ls/catkin_ws/src/fixed_wing_formation_control/graduation_thesis'
 let g:netrw_dirhist_2='/home/ls/catkin_ws/src/fixed_wing_formation_control/graduation_thesis/chapters'
