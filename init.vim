@@ -45,6 +45,7 @@ source ~/.config/nvim/_machine_specific.vim
 "=== pure_vim.vim
 "===
 source ~/.config/nvim/pure_vim.vim
+source ~/.config/nvim/pure_plugs.vim
 
 "===
 "=== basic.vim

@@ -98,7 +98,7 @@ Plug 'junegunn/vim-after-object' " da= to delete what's after =
 
 "自动注释
 Plug 'tpope/vim-commentary'
-Plug 'scrooloose/nerdcommenter' " in <space>cn to comment a line
+"Plug 'scrooloose/nerdcommenter' " in <space>cn to comment a line
 
 "bool型翻转
 Plug 'AndrewRadev/switch.vim' " gs to switch

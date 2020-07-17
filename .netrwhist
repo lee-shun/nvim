@@ -1,5 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/webull/apolloauto/modules/control/controller'
+let g:netrw_dirhist_8='/home/webull/apolloauto/modules/control'
+let g:netrw_dirhist_7='/home/webull/apolloauto/modules'
+let g:netrw_dirhist_6='/home/webull/apolloauto'
 let g:netrw_dirhist_5='/home/ls/.config/nvim'
 let g:netrw_dirhist_4='/home/ls/catkin_ws/src/fixed_wing_formation_control/graduation_thesis/chapters'
 let g:netrw_dirhist_3='/home/ls/catkin_ws/src/fixed_wing_formation_control/graduation_thesis'
