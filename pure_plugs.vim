@@ -34,6 +34,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 "彩虹括号
 Plug 'luochen1990/rainbow'
 
+"python
+Plug 'vim-scripts/indentpython.vim'
+Plug 'vim-python/python-syntax', { 'for' :['python', 'vim-plug'] }
 call plug#end()
 
 "===
@@ -78,3 +81,9 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Clean"     : "✔︎",
     \ "Unknown"   : "?"
     \ }
+
+" ===
+" === Python-syntax
+" ===
+let g:python_highlight_all = 1
+" let g:python_slow_sync = 0
