@@ -34,6 +34,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 "彩虹括号
 Plug 'luochen1990/rainbow'
 
+"包围改变
+Plug 'tpope/vim-surround' " type yskw' to wrap the word with '' or type cs'` to change 'word' to `word`
+
 "python
 Plug 'vim-scripts/indentpython.vim'
 Plug 'vim-python/python-syntax', { 'for' :['python', 'vim-plug'] }
@@ -56,6 +59,11 @@ let g:xtabline_settings.enable_persistance = 0
 let g:xtabline_settings.last_open_first = 1
 "noremap to :XTabCycleMode<CR>
 "noremap \p :XTabInfo<CR>
+
+"===
+"=== eleline
+"===
+let g:eleline_powerline_fonts = 1
 
 "===
 "=== Rainbow
