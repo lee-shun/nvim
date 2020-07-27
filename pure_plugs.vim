@@ -37,9 +37,14 @@ Plug 'luochen1990/rainbow'
 "包围改变
 Plug 'tpope/vim-surround' " type yskw' to wrap the word with '' or type cs'` to change 'word' to `word`
 
+"缩进显示
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'Yggdroot/indentLine'
+
 "python
 Plug 'vim-scripts/indentpython.vim'
 Plug 'vim-python/python-syntax', { 'for' :['python', 'vim-plug'] }
+Plug 'davidhalter/jedi-vim' "autocomplete
 call plug#end()
 
 "===
@@ -94,4 +99,28 @@ let g:NERDTreeIndicatorMapCustom = {
 " === Python-syntax
 " ===
 let g:python_highlight_all = 1
-" let g:python_slow_sync = 0
+"let g:python_slow_sync = 0
+
+
+" ===
+" === Jedi-vim
+" ===
+let g:jedi#goto_command = "gd"
+let g:jedi#goto_assignments_command = "<leader>g"
+let g:jedi#goto_stubs_command = "<leader>s"
+let g:jedi#goto_definitions_command = "<leader>d"
+let g:jedi#documentation_command = "K"
+let g:jedi#usages_command = "<leader>n"
+let g:jedi#completions_command = "<Tab>"
+let g:jedi#rename_command = "<leader>r"
+
+
+" ===
+" === indentLine
+" ===
+let g:indentLine_setColors = 0
+
+"===
+"===indent_guides
+"===
+let g:indent_guides_enable_on_vim_startup = 0
