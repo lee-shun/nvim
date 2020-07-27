@@ -44,9 +44,10 @@ Plug 'Yggdroot/indentLine'
 "python
 Plug 'vim-scripts/indentpython.vim'
 Plug 'vim-python/python-syntax', { 'for' :['python', 'vim-plug'] }
-Plug 'davidhalter/jedi-vim' "autocomplete
-Plug 'tell-k/vim-autopep8' "auto format
-Plug 'nvie/vim-flake8' "static check
+Plug 'davidhalter/jedi-vim'     "autocomplete
+Plug 'tell-k/vim-autopep8'      "auto format
+Plug 'nvie/vim-flake8'          "static check
+
 call plug#end()
 
 "===
