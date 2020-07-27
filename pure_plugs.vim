@@ -19,7 +19,8 @@
 call plug#begin('~/.config/nvim/plugged')
 
 "外观美化
-Plug 'liuchengxu/eleline.vim'
+"Plug 'liuchengxu/eleline.vim'
+Plug 'theniceboy/eleline.vim'
 Plug 'mg979/vim-xtabline'
 Plug 'ajmwagar/vim-deus'
 Plug 'morhetz/gruvbox'
