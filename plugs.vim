@@ -98,7 +98,7 @@ Plug 'junegunn/vim-after-object' " da= to delete what's after =
 
 "自动注释
 Plug 'tpope/vim-commentary'
-Plug 'scrooloose/nerdcommenter' " in <space>cn to comment a line
+"Plug 'scrooloose/nerdcommenter' " in <space>cn to comment a line
 
 "bool型翻转
 Plug 'AndrewRadev/switch.vim' " gs to switch
@@ -116,6 +116,7 @@ Plug 'ron89/thesaurus_query.vim'
 
 "缩进显示
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'Yggdroot/indentLine'
 
 "光标所在单词下划线
 Plug 'itchyny/vim-cursorword'

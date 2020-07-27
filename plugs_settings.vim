@@ -205,10 +205,15 @@ let g:tq_map_keys=0
 nnoremap <leader>rw :ThesaurusQueryReplaceCurrentWord<CR>
 vnoremap <Leader>rw y:ThesaurusQueryReplace <C-r>"<CR>
 
+" ===
+" === indentLine
+" ===
+let g:indentLine_setColors = 0
+
 "===
-"===auto-indent
+"===indent_guides
 "===
-let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_enable_on_vim_startup = 0
 "let g:indent_guides_auto_colors = 0
 "autocmd VimEnter,Colorscheme * hi IndentGuidesOdd  ctermbg=black
 "autocmd VimEnter,Colorscheme * hi IndentGuidesEven ctermbg=darkgrey
