@@ -101,6 +101,10 @@ noremap L 5l
 "vnoremap <Leader>yy "+yy
 "nmap <Leader>p "+p
 
+"**************************************行号设置**************************************************
+
+nnoremap <F2> :set relativenumber! number!<CR>
+
 "**************************************分屏设置区**************************************************
 
 noremap <LEADER>sv :set splitright<CR>:vsplit<CR>
