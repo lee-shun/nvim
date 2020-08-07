@@ -40,12 +40,15 @@ set cursorcolumn      " 打开光标提示线
 set noshowmode        " 不要显示模式
 set nowrap            " 显示行折叠
 set linebreak         " 不在单词内部折行
-set ttimeoutlen=0     "单字符命令等待时间
+set ttimeoutlen=0     " 单字符命令等待时间
 set wildmenu          " vim命令自动补全
 set foldmethod=manual " 语法折叠
 set nofoldenable      " 开始关闭语法折叠
 set t_Co=256          " 256颜色
 set termguicolors     " 使用gui，不和终端混合
+set ttyfast           " should make scrolling faster
+set lazyredraw        " same as above
+set visualbell
 
 "搜索设置
 set hlsearch
@@ -211,3 +214,10 @@ func! CompileRunGcc()
         :term go run .
     endif
 endfunc
+
+"****************************************存储历史记录**************************************************
+silent !mkdir -p ~/.config/nvim/tmp/backup
+silent !mkdir -p ~/.config/nvim/tmp/undo
+silent !mkdir -p ~/.config/nvim/tmp/sessions
+set backupdir=~/.config/nvim/tmp/backup,.
+set directory=~/.config/nvim/tmp/backup,.
