@@ -20,9 +20,12 @@ call plug#begin('~/.config/nvim/plugged')
 
 "外观美化
 "Plug 'liuchengxu/eleline.vim'
-Plug 'theniceboy/eleline.vim'
-Plug 'mg979/vim-xtabline'
+"Plug 'theniceboy/eleline.vim'
+"Plug 'mg979/vim-xtabline'
+Plug 'hardcoreplayers/spaceline.vim'
+Plug 'ryanoasis/vim-devicons'
 Plug 'ajmwagar/vim-deus'
+Plug 'hardcoreplayers/dashboard-nvim'
 Plug 'morhetz/gruvbox'
 
 " 普通高亮
@@ -31,6 +34,8 @@ Plug 'jaxbot/semantic-highlight.vim'
 " 文件目录
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 "彩虹括号
 Plug 'luochen1990/rainbow'
@@ -75,7 +80,20 @@ let g:xtabline_settings.last_open_first = 1
 let g:eleline_powerline_fonts = 1
 
 "===
-"=== Rainbow
+"=== spaceline
+"===
+
+let g:spaceline_colorscheme = 'space'
+let g:spaceline_seperate_style= 'slant-cons'
+
+"===
+"=== DashBoard
+"===
+" Default value is clap
+let g:dashboard_default_executive ='fzf'
+
+"===
+"=== rainbow
 "===
 let g:rainbow_active = 1
 
