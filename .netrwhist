@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =9
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/ls/learn_apollo/code'
 let g:netrw_dirhist_9='/home/webull/apolloauto/modules/control/controller'
 let g:netrw_dirhist_8='/home/webull/apolloauto/modules/control'
 let g:netrw_dirhist_7='/home/webull/apolloauto/modules'
