@@ -18,7 +18,7 @@
 "===
 "=== NERDTree
 "===
-noremap tt :NERDTreeToggle<CR>
+"noremap tt :NERDTreeToggle<CR>
 
 
 "===
@@ -74,7 +74,7 @@ vnoremap <Leader>rw y:ThesaurusQueryReplace <C-r>"<CR>
 " === indentLine
 " ===
 let g:indentLine_setColors = 0
-
+let g:indentLine_enabled = 0
 "===
 "===indent_guides
 "===
