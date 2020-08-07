@@ -35,17 +35,10 @@ if empty(glob('~/.config/nvim/_machine_specific.vim'))
 	silent! exec "!touch ~/.config/nvim/_machine_specific.vim"
 endif
 
-
 "===
 "=== machine_specific.vim
 "===
 source ~/.config/nvim/_machine_specific.vim
-
-"===
-"=== pure_vim.vim
-"===
-"source ~/.config/nvim/pure_vim.vim
-"source ~/.config/nvim/pure_plugs.vim
 
 "===
 "=== basic.vim
@@ -55,9 +48,9 @@ source ~/.config/nvim/basic.vim
 "===
 "=== plugs.vim
 "===
-source ~/.config/nvim/plugs.vim
+source ~/.config/nvim/plug/plugs.vim
 
 "===
 "=== plugs_settings.vim
 "===
-source ~/.config/nvim/plugs_settings.vim
+source ~/.config/nvim/plug_config/plugs_settings.vim
