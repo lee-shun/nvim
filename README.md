@@ -4,8 +4,8 @@
 #### About this Config
 I began to use neovim about 1 year ago(2019), and now it's my favourate editor! I keep
 learning and tuning neovim in the past one year; </br>
-Take whatever you want, but please **DO NOT** just clone it without skimming!
-![screenshot](screenshot.png)
+Take whatever you want, but please **DO NOT** just clone it without skimming!</br>
+![screenshot](https://github.com/lee-shun/nvim/blob/master/screenshot.png)
 
 ####  Files Tree
     .
