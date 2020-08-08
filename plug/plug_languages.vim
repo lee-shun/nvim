@@ -22,7 +22,7 @@ Plug 'jackguo380/vim-lsp-cxx-highlight'
 
 
 "LATEX
-Plug 'lervag/vimtex'
+" Plug 'lervag/vimtex'
 
 "markdown
 Plug 'plasticboy/vim-markdown'
