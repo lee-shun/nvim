@@ -1,8 +1,8 @@
 ###
 ###行间注释
 ###
-snippet _com_ "inline comment" wA
-/* $1 */$0
+snippet _co_ "inline comment" wA
+/** $1 */$0
 endsnippet
 
 
@@ -11,11 +11,28 @@ endsnippet
 ###
 snippet _cofun_ "function comment" wA
 /**
- * @Input: $1
- * @Output: $2
- * @Description: $3
- */
- $0
+  *@param[in]  $1
+  *@param[out]  $2
+  *@return $3
+  *@ref
+  *@see
+  *@note
+  */
+  $0
+endsnippet
+
+###
+###类注释
+###
+snippet _coca_ "class comment" wA
+/**
+  *
+  *@author $1
+  *
+  *@brief  $2
+  *
+  */
+  $0
 endsnippet
 
 ###
@@ -24,17 +41,22 @@ endsnippet
 snippet _head_ "head file" wA
 #ifndef _$1_HPP_
 #define _$2_HPP_
-/*************************************************************************************
-*
-*Author:
-*
-*Date:
-*
-*Description:
-*
-*
-*
-*************************************************************************************/
+
+/**
+  *
+  *@file $3
+  *
+  *@author $4
+  *
+  *@data $5
+  *
+  *@version $6
+  *
+  *@brief $7
+  *
+  *@copyright $8
+  *
+  */
 $0
 #endif
 endsnippet
