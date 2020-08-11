@@ -162,7 +162,7 @@ noremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
 
 "************************************C++单行注释方式改变******************************************
 
-noremap <LEADER>cn <Esc>/\/\/<CR>d2lv$hdi/**/<Esc>hP:set nohlsearch<CR>
+noremap <LEADER>c <Esc>^/\/\/<CR>d2lv$hdA/**/<Esc>hP$:set nohlsearch<CR>
 
 "****************************************快速移动行************************************************
 
