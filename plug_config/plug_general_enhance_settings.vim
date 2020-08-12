@@ -18,7 +18,7 @@
 "===
 "=== NERDTree
 "===
-"noremap tt :NERDTreeToggle<CR>
+noremap tt :NERDTreeToggle<CR>
 
 
 "===
@@ -87,7 +87,7 @@ let g:indent_guides_enable_on_vim_startup = 0
 "===Vista
 "===
 noremap <LEADER>t :Vista<CR>
-let g:vista_default_executive = 'coc'
+let g:vista_default_executive = 'ctags'
 let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
 
 

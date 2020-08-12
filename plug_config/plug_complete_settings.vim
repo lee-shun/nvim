@@ -18,8 +18,12 @@
 "===
 "=== coc.nvim
 "===
-source ~/.config/nvim/plug_config/plug_coc_settings.vim
+" source ~/.config/nvim/plug_config/plug_coc_settings.vim
 
+"===
+"=== ncm2
+"===
+source ~/.config/nvim/plug_config/plug_ncm2_settings.vim
 
 "===
 "===sinps

@@ -79,8 +79,8 @@ Plug 'brooth/far.vim'
 "Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
 "文件目录
-"Plug 'preservim/nerdtree'
-"Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
 "git
