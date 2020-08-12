@@ -16,11 +16,14 @@
 "**********************************************************************************************************
 
 " 普通高亮
-"Plug 'jaxbot/semantic-highlight.vim'
+Plug 'jaxbot/semantic-highlight.vim'
 "Plug 'norcalli/nvim-colorizer.lua'
 
 "彩虹括号
 Plug 'luochen1990/rainbow'
+
+"自动括号
+Plug 'jiangmiao/auto-pairs'
 
 "剪切板历史
 Plug 'junegunn/vim-peekaboo'
