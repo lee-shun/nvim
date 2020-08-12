@@ -62,6 +62,9 @@ Plug 'itchyny/vim-cursorword'
 "对齐，排版
 Plug 'godlygeek/tabular'
 
+"对齐，排版
+Plug 'junegunn/vim-easy-align'
+
 "浮动窗体
 Plug 'voldikss/vim-floaterm'
 
