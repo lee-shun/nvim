@@ -18,7 +18,7 @@
 "===
 "=== NERDTree
 "===
-noremap tt :NERDTreeToggle<CR>
+"noremap tt :NERDTreeToggle<CR>
 
 
 "===

@@ -16,7 +16,7 @@
 "**********************************************************************************************************
 
 " 普通高亮
-Plug 'jaxbot/semantic-highlight.vim'
+"Plug 'jaxbot/semantic-highlight.vim'
 "Plug 'norcalli/nvim-colorizer.lua'
 
 "彩虹括号
@@ -79,8 +79,8 @@ Plug 'brooth/far.vim'
 "Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
 "文件目录
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'preservim/nerdtree'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
 "git

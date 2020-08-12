@@ -28,6 +28,8 @@ let g:coc_global_extensions = [
             \ 'coc-clangd',
             \ 'coc-pyright',
             \ 'coc-python',
+            \ 'coc-lists',
+            \ 'coc-prettier',
             \ 'coc-marketplace',
             \ 'coc-explorer',
             \ 'coc-translator']

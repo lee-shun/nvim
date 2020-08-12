@@ -16,5 +16,5 @@
 	"explorer.file.column.git.showIgnored": true,
 	"explorer.buffer.showHiddenBuffers": false,
     "git.showCommitInFloating": true,
-    "git.addGBlameToVirtualText":true
+    "git.addGBlameToVirtualText":true,
 }
