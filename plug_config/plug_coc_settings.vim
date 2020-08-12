@@ -32,6 +32,7 @@ let g:coc_global_extensions = [
             \ 'coc-prettier',
             \ 'coc-marketplace',
             \ 'coc-explorer',
+            \ 'coc-highlight',
             \ 'coc-translator']
 
 "==
