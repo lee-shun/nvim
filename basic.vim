@@ -147,6 +147,15 @@ noremap <LEADER>bn :bn<CR>
 noremap <LEADER>bp :bp<CR>
 noremap <LEADER>bd :bd<CR>
 
+noremap <LEADER>b1 :buffer 1<CR>
+noremap <LEADER>b2 :buffer 2<CR>
+noremap <LEADER>b3 :buffer 3<CR>
+noremap <LEADER>b4 :buffer 4<CR>
+noremap <LEADER>b5 :buffer 5<CR>
+noremap <LEADER>b6 :buffer 6<CR>
+noremap <LEADER>b7 :buffer 7<CR>
+noremap <LEADER>b8 :buffer 8<CR>
+noremap <LEADER>b9 :buffer 9<CR>
 "**************************************文件关闭光标记忆********************************************
 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
