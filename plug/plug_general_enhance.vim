@@ -90,4 +90,4 @@ Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'rhysd/conflict-marker.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
-Plug 'gisphm/vim-gitignore'
+" Plug 'gisphm/vim-gitignore'

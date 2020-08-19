@@ -23,6 +23,7 @@
 
 let g:coc_global_extensions = [
             \ 'coc-git',
+            \ 'coc-gitignore',
             \ 'coc-yank',
             \ 'coc-cmake',
             \ 'coc-clangd',
