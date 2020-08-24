@@ -19,7 +19,7 @@
 "===themes
 "===
 set background=dark
-colorscheme deus
+colorscheme oceanic_material
 let g:deus_termcolors=256
 "colorscheme gruvbox
 "colorscheme onedark

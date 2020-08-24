@@ -35,6 +35,12 @@ let g:coc_global_extensions = [
             \ 'coc-translator',
             \ 'coc-python',
             \ 'coc-pyright',
+            \ 'coc-pairs',
+            \ 'coc-spell-checker',
+            \ 'coc-json',
+            \ 'coc-xml',
+            \ 'coc-yaml',
+            \ 'coc-calc',
             \]
 
 "==

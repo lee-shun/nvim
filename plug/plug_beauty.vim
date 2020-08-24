@@ -45,6 +45,8 @@ Plug 'connorholyday/vim-snazzy'
 
 Plug 'ajmwagar/vim-deus'
 
+Plug 'hardcoreplayers/oceanic-material'
+
 Plug 'morhetz/gruvbox'
 
 Plug 'joshdick/onedark.vim'

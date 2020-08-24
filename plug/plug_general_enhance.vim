@@ -23,7 +23,7 @@ Plug 'jaxbot/semantic-highlight.vim'
 Plug 'luochen1990/rainbow'
 
 "自动括号
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 
 "剪切板历史
 Plug 'junegunn/vim-peekaboo'
