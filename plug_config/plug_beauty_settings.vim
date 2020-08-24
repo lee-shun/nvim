@@ -43,7 +43,7 @@ let g:spaceline_seperate_style= 'slant-cons'
 "===
 " Default value is clap
 let g:dashboard_default_executive ='fzf'
-
+let g:dashboard_default_header = 'commicgirl5'
 
 " ===
 " === xtabline
