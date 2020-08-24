@@ -7,7 +7,8 @@ learning and tuning neovim in the past one year; </br>
 
 * Take whatever you want, but please **DO NOT** just clone it without skimming!</br>
 </br>
-![screenshot](screenshot.png)
+
+![screenshot](./screenshot.png)
 
 ####  Files Tree
     .
