@@ -82,6 +82,13 @@ Plug 'brooth/far.vim'
 "Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
 "文件目录
+" if has('nvim')
+"   Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+" else
+"   Plug 'Shougo/defx.nvim'
+"   Plug 'roxma/nvim-yarp'
+"   Plug 'roxma/vim-hug-neovim-rpc'
+" endif
 " Plug 'preservim/nerdtree'
 " Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}

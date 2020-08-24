@@ -18,24 +18,41 @@
 
 
 "Plug 'liuchengxu/eleline.vim'
+
 "Plug 'theniceboy/eleline.vim'
+
 Plug 'mg979/vim-xtabline'
+
 "Plug 'ap/vim-buftabline'
+
 "Plug 'jeetsukumaran/vim-buffergator'
+
 "Plug 'bling/vim-bufferline'
+
 "Plug 'zefei/vim-wintabs'
+
 "Plug 'zefei/vim-wintabs-powerline'
+
 Plug 'hardcoreplayers/spaceline.vim'
+
 Plug 'ryanoasis/vim-devicons'
+
 "Plug 'vim-airline/vim-airline'
+
 "Plug 'vim-airline/vim-airline-themes'
+
 Plug 'connorholyday/vim-snazzy'
+
 Plug 'ajmwagar/vim-deus'
+
 Plug 'morhetz/gruvbox'
+
 Plug 'joshdick/onedark.vim'
+
 Plug 'mhartington/oceanic-next'
+
 "Plug 'mhinz/vim-startify'
+
 Plug 'hardcoreplayers/dashboard-nvim'
+
 Plug 'junegunn/goyo.vim'
-
-

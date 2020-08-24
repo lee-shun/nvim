@@ -27,14 +27,15 @@ let g:coc_global_extensions = [
             \ 'coc-yank',
             \ 'coc-cmake',
             \ 'coc-clangd',
-            \ 'coc-pyright',
-            \ 'coc-python',
             \ 'coc-lists',
             \ 'coc-prettier',
             \ 'coc-marketplace',
             \ 'coc-explorer',
             \ 'coc-highlight',
-            \ 'coc-translator']
+            \ 'coc-translator',
+            \ 'coc-python',
+            \ 'coc-pyright',
+            \]
 
 "==
 "==coc.vim
