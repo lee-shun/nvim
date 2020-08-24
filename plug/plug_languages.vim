@@ -21,6 +21,10 @@
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 
 
+"Cmake
+Plug 'pboettch/vim-cmake-syntax'
+Plug 'vhdirk/vim-cmake'
+
 "LATEX
 " Plug 'lervag/vimtex'
 
