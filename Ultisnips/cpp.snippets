@@ -3,8 +3,9 @@
 ###
 snippet _co_ "inline comment" wA
 /**
-  *$1
-  */$0
+  * $1
+  */
+$0
 endsnippet
 
 
@@ -13,12 +14,12 @@ endsnippet
 ###
 snippet _cofun_ "function comment" wA
 /**
-  *@param[in]  $1
-  *@param[out]  $2
-  *@return $3
-  *@ref
-  *@see
-  *@note
+  * @param[in]  $1
+  * @param[out]  $2
+  * @return $3
+  * @ref
+  * @see
+  * @note
   */
   $0
 endsnippet
@@ -29,11 +30,11 @@ endsnippet
 snippet _coca_ "class comment" wA
 /**
   *
-  *@author $1
+  * @author $1
   *
-  *@brief  $2
+  * @brief  $2
   *
-  */
+  * /
   $0
 endsnippet
 
@@ -46,17 +47,17 @@ snippet _head_ "head file" wA
 
 /**
   *
-  *@file $3
+  * @file $3
   *
-  *@author $4
+  * @author $4
   *
-  *@data $5
+  * @data $5
   *
-  *@version $6
+  * @version $6
   *
-  *@brief $7
+  * @brief $7
   *
-  *@copyright $8
+  * @copyright $8
   *
   */
 $0
