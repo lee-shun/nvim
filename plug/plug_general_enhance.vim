@@ -16,8 +16,10 @@
 "**********************************************************************************************************
 
 " 普通高亮
-Plug 'jaxbot/semantic-highlight.vim'
-"Plug 'norcalli/nvim-colorizer.lua'
+" Plug 'jaxbot/semantic-highlight.vim'
+" Plug 'norcalli/nvim-colorizer.lua'
+Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'RRethy/vim-illuminate'
 
 "彩虹括号
 Plug 'luochen1990/rainbow'
