@@ -100,3 +100,6 @@ Plug 'rhysd/conflict-marker.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 " Plug 'gisphm/vim-gitignore'
+
+"undotree
+Plug 'mbbill/undotree'

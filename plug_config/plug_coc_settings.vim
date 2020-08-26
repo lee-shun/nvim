@@ -44,6 +44,7 @@ let g:coc_global_extensions = [
             \ 'coc-syntax',
             \ 'coc-tasks',
             \ 'coc-todolist',
+            \ 'coc-diagnostic',
             \]
 
 "==
