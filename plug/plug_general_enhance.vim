@@ -18,7 +18,7 @@
 " 普通高亮
 " Plug 'jaxbot/semantic-highlight.vim'
 " Plug 'norcalli/nvim-colorizer.lua'
-Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
+" Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'RRethy/vim-illuminate'
 
 "彩虹括号
@@ -59,7 +59,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'Yggdroot/indentLine'
 
 "光标所在单词下划线
-Plug 'itchyny/vim-cursorword'
+" Plug 'itchyny/vim-cursorword'
 
 "多重光标
 "Plug 'terryma/vim-multiple-cursors'
