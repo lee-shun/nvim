@@ -2,13 +2,25 @@
 #### <center>🙏🙏Thanks for theniceboy's [neovim video](https://space.bilibili.com/13081489?from=search&seid=9375318644841322836) and [config files](https://github.com/theniceboy/nvim)!!
 
 #### About This Config
-* I began to use neovim about 1 year ago(2019), and now it's my *favourate* editor! I keep
+* I began to use neovim about 1 year ago(2019), and now it's my **favourate** editor! I keep
 learning and tuning neovim in the past one year; </br>
+
+* Due to my study and work in Robotics, I usually code in C/C++ as well as Python. So if you 
+  are using (neo)vim as a lightweight IDE for C++, This config is **JUST FOR YOU!**
 
 * Take whatever you want, but please **DO NOT** just clone it without skimming!</br>
 </br>
 
+![screenshot1](./screenshot1.png)
+
 ![screenshot](./screenshot.png)
+
+
+####  Main Features
+1. As **LESS remaps** as I can do to keep the original vim keybings;
+2. Different moduls are well arranged;
+3. Use [coc.nvim](https://github.com/neoclide/coc.nvim) as the main platform;
+4. .....
 
 ####  Files Tree
     .
