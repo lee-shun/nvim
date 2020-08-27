@@ -83,7 +83,8 @@ function! s:defx_my_settings() abort
     nnoremap <silent><buffer><expr> cd
                 \ defx#do_action('change_vim_cwd')
 endfunction
-
+" nnoremap tt :Defx -split=vertical -winwidth=30 -toggle -new
+"             \ -direction=topleft -columns=git:mark:icons:indent:filename:type<CR> 
 
 "===
 "=== NERDTree
