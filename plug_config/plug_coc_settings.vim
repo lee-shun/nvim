@@ -46,6 +46,7 @@ let g:coc_global_extensions = [
             \ 'coc-diagnostic',
             \ 'coc-vimlsp',
             \ 'coc-actions',
+            \ 'coc-snippets',
             \]
 
 "==
@@ -193,7 +194,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Mappings using CoCList:
 " Show all diagnostics.
-nnoremap <silent> <space>la  :<C-u>CocList diagnostics<cr>
+nnoremap <silent> <space>ld  :<C-u>CocList diagnostics<cr>
 " Manage extensions.
 nnoremap <silent> <space>le  :<C-u>CocList extensions<cr>
 " Show commands.

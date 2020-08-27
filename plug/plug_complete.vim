@@ -16,7 +16,7 @@
 "**********************************************************************************************************
 
 "代码片段
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 " Plug 'theniceboy/vim-snippets'
 
