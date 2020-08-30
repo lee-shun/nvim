@@ -56,7 +56,7 @@ exec "nohlsearch"
 set incsearch
 set ignorecase
 set smartcase
-noremap <C-f> :set nohlsearch<CR>
+noremap <C-f> :set nohlsearch!<CR>
 
 "缩进设置
 filetype indent on
