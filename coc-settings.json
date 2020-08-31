@@ -81,5 +81,17 @@
     "explorer.file.column.git.showIgnored": true,
     "explorer.buffer.showHiddenBuffers": false,
     "git.showCommitInFloating": true,
-    "git.addGBlameToVirtualText": true
+    "git.addGBlameToVirtualText": true,
+    "coc-actions.hideCursor": false,
+    "coc-actions.showActionKind": true,
+    "python.autoComplete.addBrackets": true,
+    "python.jediEnabled": false,
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfArgs": [
+        "--style",
+        "{SPACES_AROUND_POWER_OPERATOR: True, SPACES_BEFORE_COMMENT: 1}"
+    ],
+    "cSpell.userWords": [
+        "moveit"
+    ]
 }
