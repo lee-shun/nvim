@@ -17,7 +17,7 @@
 
 
 "==
-"==coc.vim
+"==coc.nvim
 "==
 "coc-plugins
 
@@ -47,10 +47,15 @@ let g:coc_global_extensions = [
             \ 'coc-vimlsp',
             \ 'coc-actions',
             \ 'coc-snippets',
+            \ 'coc-html',
+            \ 'coc-calc',
+            \ 'coc-floatinput',
+            \ 'coc-split-term',
+            \ 'coc-word',
             \]
 
 "==
-"==coc.vim
+"==coc.nvim
 "==
 "coc-basic-settings
 
@@ -129,7 +134,8 @@ endfunction
 " autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
-nmap <leader>rn <Plug>(coc-rename)
+" nmap <leader>rn <Plug>(coc-rename)
+nmap <leader>rn <Plug>(coc-floatinput-rename)
 
 " Formatting selected code.
 xmap <leader>fo  <Plug>(coc-format-selected)
@@ -212,28 +218,28 @@ nnoremap <silent> <space>lp  :<C-u>CocListResume<CR>
 
 
 "==
-"==coc.vim
+"==coc.nvim
 "==
 "coc-yank
 nnoremap <silent> <space>ya  :<C-u>CocList -A --normal yank<cr>
 
 
 "==
-"==coc.vim
+"==coc.nvim
 "==
 "coc-highlight
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 
 "==
-"==coc.vim
+"==coc.nvim
 "==
 "coc-explorer
 nmap tt :CocCommand explorer<CR>
 
 
 "==
-"==coc.vim
+"==coc.nvim
 "==
 "coc-translator
 " popup
@@ -247,7 +253,7 @@ nmap <Leader>rp <Plug>(coc-translator-r)
 vmap <Leader>rp <Plug>(coc-translator-rv)
 
 "==
-"==coc.vim
+"==coc.nvim
 "==
 " coc-git
 " lightline
@@ -272,3 +278,19 @@ vmap <Leader>rp <Plug>(coc-translator-rv)
 "   " return blame
 "   return winwidth(0) > 120 ? blame : ''
 " endfunction
+
+"==
+"==coc.nvim
+"==
+"coc-floatinput
+autocmd ColorScheme *
+      \ hi CocHelperNormalFloatBorder guifg=#dddddd guibg=#575B54
+      \ | hi CocHelperNormalFloat guibg=#575B54
+
+"==
+"==coc.nvim
+"==
+"coc-split-term
+nmap <silent> <C-k> <Plug>(coc-split-term-show)
+nmap <silent> <C-k> <Plug>(coc-split-term-hide)
+nmap <silent> <C-k> <Plug>(coc-split-term-toggle)
