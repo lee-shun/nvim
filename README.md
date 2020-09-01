@@ -6,7 +6,7 @@
 learning and tuning neovim in the past one year; </br>
 
 * Due to my study and work in Robotics, I usually code in C/C++ as well as Python. So if you 
-  are using (neo)vim as a lightweight IDE for C++, This config is **JUST FOR YOU!**
+  want to use (neo)vim as a lightweight IDE for C++ as well as Python, This config is **JUST FOR YOU!**
 
 * Take whatever you want, but please **DO NOT** just clone it without skimming!</br>
 </br>
