@@ -184,3 +184,8 @@ function g:Undotree_CustomMap()
 	nmap <buffer> U 5<plug>UndotreeNextState
 	nmap <buffer> E 5<plug>UndotreePreviousState
 endfunc
+
+"==
+"== Vim floaterm
+"==
+nmap <C-t> :FloatermToggle<CR>

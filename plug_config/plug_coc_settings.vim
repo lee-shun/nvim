@@ -49,7 +49,6 @@ let g:coc_global_extensions = [
             \ 'coc-snippets',
             \ 'coc-html',
             \ 'coc-calc',
-            \ 'coc-split-term',
             \ 'coc-word',
             \]
 
@@ -290,6 +289,6 @@ vmap <Leader>rp <Plug>(coc-translator-rv)
 "==coc.nvim
 "==
 "coc-split-term
-nmap <silent> <C-t> <Plug>(coc-split-term-show)
-nmap <silent> <C-t> <Plug>(coc-split-term-hide)
-nmap <silent> <C-t> <Plug>(coc-split-term-toggle)
+" nmap <silent> <C-t> <Plug>(coc-split-term-show)
+" nmap <silent> <C-t> <Plug>(coc-split-term-hide)
+" nmap <silent> <C-t> <Plug>(coc-split-term-toggle)
