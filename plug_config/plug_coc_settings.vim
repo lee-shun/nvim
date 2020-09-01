@@ -49,7 +49,6 @@ let g:coc_global_extensions = [
             \ 'coc-snippets',
             \ 'coc-html',
             \ 'coc-calc',
-            \ 'coc-floatinput',
             \ 'coc-split-term',
             \ 'coc-word',
             \]
@@ -134,8 +133,8 @@ endfunction
 " autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
-" nmap <leader>rn <Plug>(coc-rename)
-nmap <leader>rn <Plug>(coc-floatinput-rename)
+nmap <leader>rn <Plug>(coc-rename)
+" nmap <silent> <Leader>rn <Plug>(coc-floatinput-rename)
 
 " Formatting selected code.
 xmap <leader>fo  <Plug>(coc-format-selected)
@@ -283,14 +282,14 @@ vmap <Leader>rp <Plug>(coc-translator-rv)
 "==coc.nvim
 "==
 "coc-floatinput
-autocmd ColorScheme *
-      \ hi CocHelperNormalFloatBorder guifg=#dddddd guibg=#575B54
-      \ | hi CocHelperNormalFloat guibg=#575B54
+" autocmd ColorScheme *
+"       \ hi CocHelperNormalFloatBorder guifg=#dddddd guibg=#575B54
+"       \ | hi CocHelperNormalFloat guibg=#575B54
 
 "==
 "==coc.nvim
 "==
 "coc-split-term
-nmap <silent> <C-k> <Plug>(coc-split-term-show)
-nmap <silent> <C-k> <Plug>(coc-split-term-hide)
-nmap <silent> <C-k> <Plug>(coc-split-term-toggle)
+nmap <silent> <C-t> <Plug>(coc-split-term-show)
+nmap <silent> <C-t> <Plug>(coc-split-term-hide)
+nmap <silent> <C-t> <Plug>(coc-split-term-toggle)
