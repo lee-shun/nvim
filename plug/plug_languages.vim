@@ -35,6 +35,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install_sync() }, 'f
 Plug 'vimwiki/vimwiki'
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
 Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown'] }
+" Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 
 
 "Python
