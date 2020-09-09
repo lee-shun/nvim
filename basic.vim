@@ -71,7 +71,7 @@ set softtabstop=4
 " icons:  ▏│ ¦ ╎ ┆ ⋮ ⦙ ┊ 
 set list
 set listchars=tab:\-\ ,trail:▫
-set listchars=extends:>,precedes:<,nbsp:␣
+" set listchars=extends:>,precedes:<,nbsp:␣
 let &showbreak='↳  '
 
 "共享设置
