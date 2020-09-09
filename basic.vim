@@ -67,8 +67,12 @@ set shiftwidth=4
 set softtabstop=4
 
 "显示非可见字符
+" UI Symbols
+" icons:  ▏│ ¦ ╎ ┆ ⋮ ⦙ ┊ 
 set list
-set listchars=tab:\|\ ,trail:▫
+set listchars=tab:\-\ ,trail:▫
+set listchars=extends:>,precedes:<,nbsp:␣
+let &showbreak='↳  '
 
 "共享设置
 set clipboard=unnamedplus
@@ -138,8 +142,8 @@ inoremap <C-A-right> <nop>
 "**************************************标签设置区**************************************************
 
 noremap te :tabe<CR>
-noremap th :-tabnext<CR>
-noremap tl :+tabnext<CR>
+noremap tp :-tabnext<CR>
+noremap tn :+tabnext<CR>
 
 "**************************************Buffer设置区************************************************
 
@@ -156,6 +160,11 @@ noremap <LEADER>b6 :buffer 6<CR>
 noremap <LEADER>b7 :buffer 7<CR>
 noremap <LEADER>b8 :buffer 8<CR>
 noremap <LEADER>b9 :buffer 9<CR>
+
+"**************************************编辑neovimrc********************************************
+noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
+
+
 "**************************************文件关闭光标记忆********************************************
 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
@@ -188,5 +197,34 @@ nnoremap ]<space> :<c-u>put =repeat(nr2char(10), v:count1)<cr>
 silent !mkdir -p ~/.config/nvim/tmp/backup
 silent !mkdir -p ~/.config/nvim/tmp/undo
 silent !mkdir -p ~/.config/nvim/tmp/sessions
-set backupdir=~/.config/nvim/tmp/backup,.
-set directory=~/.config/nvim/tmp/backup,.
+
+set undofile
+set swapfile
+set nobackup
+set undodir=~/.config/nvim/tmp/undo
+set backupdir=~/.config/nvim/tmp/backup
+set directory=~/.config/nvim/tmp/backup
+
+"****************************************内置终端**************************************************
+" ===
+" === Terminal Behaviors
+" ===
+let g:neoterm_autoscroll = 1
+autocmd TermOpen term://* startinsert
+tnoremap <C-N> <C-\><C-N>
+tnoremap <C-O> <C-\><C-N><C-O>
+let g:terminal_color_0  = '#000000'
+let g:terminal_color_1  = '#FF5555'
+let g:terminal_color_2  = '#50FA7B'
+let g:terminal_color_3  = '#F1FA8C'
+let g:terminal_color_4  = '#BD93F9'
+let g:terminal_color_5  = '#FF79C6'
+let g:terminal_color_6  = '#8BE9FD'
+let g:terminal_color_7  = '#BFBFBF'
+let g:terminal_color_8  = '#4D4D4D'
+let g:terminal_color_9  = '#FF6E67'
+let g:terminal_color_10 = '#5AF78E'
+let g:terminal_color_11 = '#F4F99D'
+let g:terminal_color_12 = '#CAA9FA'
+let g:terminal_color_13 = '#FF92D0'
+let g:terminal_color_14 = '#9AEDFE'
