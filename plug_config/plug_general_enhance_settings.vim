@@ -189,3 +189,13 @@ endfunc
 "== Vim floaterm
 "==
 nmap <C-t> :FloatermToggle<CR>
+
+"==
+"== FZF
+"==
+noremap <silent> <C-p> :Files<CR>
+noremap <silent> <C-w> :Ag<CR>
+noremap <silent> <C-l> :Buffers<CR>
+let g:fzf_preview_window = 'right:60%'
+let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
