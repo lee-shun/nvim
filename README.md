@@ -1,5 +1,10 @@
 ## <center>📘📘 My Neovim Config </center>
-#### <center>🙏🙏Thanks for theniceboy's [neovim video](https://space.bilibili.com/13081489?from=search&seid=9375318644841322836) and [config files](https://github.com/theniceboy/nvim)!!
+
+#### Ispired by: 🌟🌟
+
+* Theniceboy's [Neovim video](https://space.bilibili.com/13081489?from=search&seid=9375318644841322836) and [config files](https://github.com/theniceboy/nvim).
+
+* Amix's  [ Ultimate vimrc](https://github.com/amix/vimrc).
 
 #### About This Config
 * I began to use neovim about 1 year ago(2019), and now it's my **favourate** 🥰 editor! I keep
