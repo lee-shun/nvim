@@ -17,55 +17,50 @@ learning and tuning neovim in the past one year; </br>
 
 
 ####  Main Features
-1. As **LESS remaps** as I can do to keep the original vim keybings;
-2. Different moduls are well arranged;
-3. Use [coc.nvim](https://github.com/neoclide/coc.nvim) as the main platform;
-4. .....
+* As **LESS remaps** as I can do to keep the original vim keybings;
+* Different moduls are well arranged;
+* Use [coc.nvim](https://github.com/neoclide/coc.nvim) as the main platform;
+* .....
 
 ####  Files Tree
-    .
-    ├── autoload
-    │   ├── plug.vim
-    │   └── plug.vim.old
-    ├── basic.vim
-    ├── coc-settings.json
-    ├── init.vim
-    ├── _machine_specific.vim
-    ├── plug
-    │   ├── plug_beauty.vim
-    │   ├── plug_complete.vim
-    │   ├── plug_general_enhance.vim
-    │   ├── plug_languages.vim
-    │   └── plugs.vim
-    ├── plug_config
-    │   ├── plug_beauty_settings.vim
-    │   ├── plug_coc_settings.vim
-    │   ├── plug_complete_settings.vim
-    │   ├── plug_general_enhance_settings.vim
-    │   ├── plug_languages_settings.vim
-    │   └── plugs_settings.vim
-    ├── README.md
-    ├── tmp
-    │   ├── backup
-    │   │   └── README.md.swp
-    │   ├── sessions
-    │   └── undo
-    └── Ultisnips
-        ├── cpp.snippets
-        ├── snippets.snippets
-            └── tex.snippets
+
+* NOTE: the file or directory with * means it will be created automatically after installing.
+
+| Files or Directory     | Illstrations                                                                                     |
+|------------------------|--------------------------------------------------------------------------------------------------|
+| init.vim               | The entrance file of the whole config.                                                           |
+| basic.vim              | The basic config of the (neo)vim, includes keybindings and other basic features without plugins. |
+| *_machine_specific.vim | The config for different host computer. Python path, etc.                                        |
+| coc-settings.json      | The config for coc.nvim platform                                                                 |
+| **autolaod/**          | "Vim-plug" plugin manager.                                                                       |
+| **plug/**              | The catalog for the different plugins.                                                           |
+| **plug_config/**       | The custom settings for the above installed plugins.                                             |
+| **Ultisnips/**         | The custom collection of the snippest for coc-snippest.                                          |
+| ***plugged/**          | The plugin installing directory.                                                                 |
+| ***tmp/**              | The temporary file, like the undo and swap files, etc.                                           |
+
 #### Usage
 - [ ] before installing: the followering requirments should be satisfied!!!!
-1. nodejs
-2. clangd
-3. universial-ctags
-4. fzf
-5. ranger
-6. nerdfonts
+
+* Python
+* nodejs
+* clangd
+* universial-ctags
+* fzf
+* ranger
+* nerdfonts
+
+---
+- [ ] to "instal" this config
+
+* `mkdir ~/.config/` 
+* `cd ~/.config/` 
+* ` git clone https://github.com/lee-shun/nvim.git`
+
 ---
 - [ ]   after installing
-1. **RUN** `:checkhealth` in neovim to findout the further dependences
+* **RUN** `:checkhealth` in neovim to findout the further dependences
 
-#### License
+#### LICENSE
 MIT
 
