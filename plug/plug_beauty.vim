@@ -58,3 +58,5 @@ Plug 'mhartington/oceanic-next'
 Plug 'hardcoreplayers/dashboard-nvim'
 
 Plug 'junegunn/goyo.vim'
+
+Plug 'bpietravalle/vim-bolt'
