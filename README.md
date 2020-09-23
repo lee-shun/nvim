@@ -1,29 +1,32 @@
-## <center>📘📘 My Neovim Config </center>
+## <center>🚀🚀 Lee's Neovim Config 🚀🚀 </center>
 
-#### Ispired by: 🌟🌟
+#### Ispired by 🌟🌟:
 
 * Theniceboy's [Neovim video](https://space.bilibili.com/13081489?from=search&seid=9375318644841322836) and [config files](https://github.com/theniceboy/nvim).
 
 * Amix's  [ Ultimate vimrc](https://github.com/amix/vimrc).
 
 #### About This Config
+
 * I began to use neovim about 1 year ago(2019), and now it's my **favourate** 🥰 editor! I keep
 learning and tuning neovim in the past one year; </br>
 
 * Due to my study and work in Robotics 🤖, I usually code in C/C++ as well as Python. So if you 
-  want to use (neo)vim as a lightweight IDE for C++ as well as Python, This config is **JUST FOR YOU!**
+  want to use (neo)vim as a lightweight IDE for C++ as well as Python, This config is **JUST FOR YOU!**✌️
 
 * I strongly recommend to use **neovim rather than vim**. But if you have already fallen in love with vim,
 and feel guilty to cheat behind her 😉, at least make sure the vim version is above 8.2 to minimize the bugs while using the plugins.
 
 * Take whatever you want, but please **DO NOT** ❌ just clone it without skimming!</br>
 
-</br>
+---
 
 ![screenshot1](./screenshot1.png)
 
+---
 ![screenshot](./screenshot.png)
 
+---
 
 ####  Main Features
 
