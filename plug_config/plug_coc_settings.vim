@@ -198,21 +198,21 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Mappings using CoCList:
 " Show all diagnostics.
-nnoremap <silent> <space>ld  :<C-u>CocList diagnostics<cr>
+nnoremap <silent> \ld  :<C-u>CocList diagnostics<cr>
 " Manage extensions.
-nnoremap <silent> <space>le  :<C-u>CocList extensions<cr>
+nnoremap <silent> \le  :<C-u>CocList extensions<cr>
 " Show commands.
-nnoremap <silent> <space>lc  :<C-u>CocList commands<cr>
+nnoremap <silent> \lc  :<C-u>CocList commands<cr>
 " Find symbol of current document.
-nnoremap <silent> <space>lo  :<C-u>CocList outline<cr>
+nnoremap <silent> \lo  :<C-u>CocList outline<cr>
 " Search workspace symbols.
-nnoremap <silent> <space>ls  :<C-u>CocList -I symbols<cr>
+nnoremap <silent> \ls  :<C-u>CocList -I symbols<cr>
 " Do default action for next item.
-nnoremap <silent> <space>lj  :<C-u>CocNext<CR>
+nnoremap <silent> \lj  :<C-u>CocNext<CR>
 " Do default action for previous item.
-nnoremap <silent> <space>lk  :<C-u>CocPrev<CR>
+nnoremap <silent> \lk  :<C-u>CocPrev<CR>
 " Resume latest coc list.
-nnoremap <silent> <space>lp  :<C-u>CocListResume<CR>
+nnoremap <silent> \lp  :<C-u>CocListResume<CR>
 
 
 "==
