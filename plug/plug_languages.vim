@@ -15,11 +15,13 @@
 "
 "**********************************************************************************************************
 
+"MATLAB
+Plug 'yinflying/matlab.vim'
+
 "C++
 "Plug 'octol/vim-cpp-enhanced-highlight'
 "Plug 'LucHermitte/VimFold4C'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
-
 
 "Cmake
 Plug 'pboettch/vim-cmake-syntax'
@@ -36,7 +38,6 @@ Plug 'vimwiki/vimwiki'
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
 Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown'] }
 " Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
-
 
 "Python
 "Plug 'tmhedberg/SimpylFold', { 'for' :['python', 'vim-plug'] }
