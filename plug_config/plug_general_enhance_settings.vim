@@ -1,10 +1,10 @@
 "**********************************************************************************************************
 "
 "
-"  _                    _   _                 _                    
-" | |    ___  ___      | \ | | ___  _____   _(_)_ __ ___  _ __ ___ 
+"  _                    _   _                 _
+" | |    ___  ___      | \ | | ___  _____   _(_)_ __ ___  _ __ ___
 " | |   / _ \/ _ \_____|  \| |/ _ \/ _ \ \ / / | '_ ` _ \| '__/ __|
-" | |__|  __/  __/_____| |\  |  __/ (_) \ V /| | | | | | | | | (__ 
+" | |__|  __/  __/_____| |\  |  __/ (_) \ V /| | | | | | | | | (__
 " |_____\___|\___|     |_| \_|\___|\___/ \_/ |_|_| |_| |_|_|  \___|
 "
 "File   : plug_general_enhance_settings.vim
@@ -84,7 +84,7 @@ function! s:defx_my_settings() abort
                 \ defx#do_action('change_vim_cwd')
 endfunction
 " nnoremap tt :Defx -split=vertical -winwidth=30 -toggle -new
-"             \ -direction=topleft -columns=git:mark:icons:indent:filename:type<CR> 
+"             \ -direction=topleft -columns=git:mark:icons:indent:filename:type<CR>
 
 "===
 "=== NERDTree
