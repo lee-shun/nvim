@@ -28,6 +28,7 @@ let g:coc_global_extensions = [
             \ 'coc-cmake',
             \ 'coc-clangd',
             \ 'coc-lists',
+            \ 'coc-kite',
             \ 'coc-marketplace',
             \ 'coc-explorer',
             \ 'coc-highlight',
@@ -52,6 +53,10 @@ let g:coc_global_extensions = [
             \ 'coc-word',
             \ 'coc-tabnine',
             \ 'coc-conventional',
+            \ 'coc-floaterm',
+            \ 'coc-smartf',
+            \ 'coc-sh',
+            \ 'coc-weather',
             \]
 
 "==
@@ -294,3 +299,18 @@ vmap <Leader>rp <Plug>(coc-translator-rv)
 " nmap <silent> <C-t> <Plug>(coc-split-term-show)
 " nmap <silent> <C-t> <Plug>(coc-split-term-hide)
 " nmap <silent> <C-t> <Plug>(coc-split-term-toggle)
+
+"==
+"==coc.nvim
+"==
+"coc-smartf
+" press <esc> to cancel.
+nmap f <Plug>(coc-smartf-forward)
+nmap F <Plug>(coc-smartf-backward)
+nmap ; <Plug>(coc-smartf-repeat)
+nmap , <Plug>(coc-smartf-repeat-opposite)
+ 
+augroup Smartf
+  autocmd User SmartfEnter :hi Conceal ctermfg=220 guifg=#6638F0
+  autocmd User SmartfLeave :hi Conceal ctermfg=239 guifg=#504945
+augroup end
