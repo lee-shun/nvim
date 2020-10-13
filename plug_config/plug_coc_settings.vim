@@ -50,6 +50,8 @@ let g:coc_global_extensions = [
             \ 'coc-html',
             \ 'coc-calc',
             \ 'coc-word',
+            \ 'coc-tabnine',
+            \ 'coc-conventional',
             \]
 
 "==
