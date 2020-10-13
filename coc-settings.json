@@ -56,10 +56,8 @@
     "codeLens.enable": true,
     "coc.preferences.formatOnSaveFiletypes": [
         "python",
-        "c",
         "xml",
         "json",
-        "cpp"
     ],
     "clangd.semanticHighlighting": true,
     "explorer.sources": [
