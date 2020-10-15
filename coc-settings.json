@@ -57,7 +57,7 @@
     "coc.preferences.formatOnSaveFiletypes": [
         "python",
         "xml",
-        "json",
+        "json"
     ],
     "clangd.semanticHighlighting": true,
     "explorer.sources": [
@@ -80,7 +80,7 @@
     "explorer.buffer.showHiddenBuffers": false,
     "git.showCommitInFloating": true,
     "git.addGBlameToVirtualText": true,
-    "coc-actions.hideCursor": false,
+    "coc-actions.hideCursor": true,
     "coc-actions.showActionKind": true,
     "python.autoComplete.addBrackets": true,
     "python.jediEnabled": false,
