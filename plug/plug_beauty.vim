@@ -21,7 +21,7 @@
 
 "Plug 'theniceboy/eleline.vim'
 
-Plug 'mg979/vim-xtabline'
+" Plug 'mg979/vim-xtabline'
 
 "Plug 'ap/vim-buftabline'
 
@@ -33,7 +33,7 @@ Plug 'mg979/vim-xtabline'
 
 "Plug 'zefei/vim-wintabs-powerline'
 
-Plug 'hardcoreplayers/spaceline.vim'
+" Plug 'hardcoreplayers/spaceline.vim'
 
 Plug 'ryanoasis/vim-devicons'
 
