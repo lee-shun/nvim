@@ -24,6 +24,9 @@ Plug 'RRethy/vim-illuminate'
 "彩虹括号
 Plug 'luochen1990/rainbow'
 
+"平滑翻页
+Plug 'psliwka/vim-smoothie'
+
 "自动括号
 " Plug 'jiangmiao/auto-pairs'
 
