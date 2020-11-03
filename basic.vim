@@ -45,13 +45,13 @@ set ttimeoutlen=0     " 单字符命令等待时间
 set wildmenu          " vim命令自动补全
 set foldmethod=manual " 语法折叠
 set nofoldenable      " 开始关闭语法折叠
-set termguicolors     " 使用gui，不和终端混合
 set lazyredraw        " same as above
 set visualbell
 set ttyfast           " should make scrolling faster
+set t_Co=256          " 256颜色
 
 if has('nvim')
-    set t_Co=256          " 256颜色
+    set termguicolors     " 使用gui，不和终端混合
 endif
 
 "搜索设置
