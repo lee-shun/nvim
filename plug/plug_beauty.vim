@@ -41,17 +41,17 @@ Plug 'ryanoasis/vim-devicons'
 
 "Plug 'vim-airline/vim-airline-themes'
 
-Plug 'connorholyday/vim-snazzy'
+" Plug 'connorholyday/vim-snazzy'
 
-Plug 'ajmwagar/vim-deus'
+" Plug 'ajmwagar/vim-deus'
 
 Plug 'hardcoreplayers/oceanic-material'
 
-Plug 'morhetz/gruvbox'
+" Plug 'morhetz/gruvbox'
 
-Plug 'joshdick/onedark.vim'
+" Plug 'joshdick/onedark.vim'
 
-Plug 'mhartington/oceanic-next'
+" Plug 'mhartington/oceanic-next'
 
 "Plug 'mhinz/vim-startify'
 
