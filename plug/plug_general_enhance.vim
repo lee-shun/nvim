@@ -37,6 +37,9 @@ Plug 'junegunn/vim-peekaboo'
 "包围改变
 Plug 'tpope/vim-surround' " type yskw' to wrap the word with '' or type cs'` to change 'word' to `word`
 
+"包围选中
+Plug 'gcmt/wildfire.vim'
+
 "强化删除
 Plug 'junegunn/vim-after-object' " da= to delete what's after =
 

@@ -33,7 +33,7 @@
 
 "Plug 'zefei/vim-wintabs-powerline'
 
-" Plug 'hardcoreplayers/spaceline.vim'
+Plug 'hardcoreplayers/spaceline.vim'
 
 Plug 'ryanoasis/vim-devicons'
 
