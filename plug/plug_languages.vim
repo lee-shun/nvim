@@ -31,13 +31,13 @@ Plug 'vhdirk/vim-cmake'
 " Plug 'lervag/vimtex'
 
 "markdown
-Plug 'plasticboy/vim-markdown'
 Plug 'dkarter/bullets.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install_sync() }, 'for' :['markdown', 'vim-plug'] }
-Plug 'vimwiki/vimwiki'
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
 Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown'] }
 " Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+" Plug 'vimwiki/vimwiki'
+Plug 'plasticboy/vim-markdown'
 
 "Python
 "Plug 'tmhedberg/SimpylFold', { 'for' :['python', 'vim-plug'] }
