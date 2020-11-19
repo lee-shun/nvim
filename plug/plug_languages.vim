@@ -37,7 +37,7 @@ Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
 Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown'] }
 " Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 " Plug 'vimwiki/vimwiki'
-" Plug 'plasticboy/vim-markdown'
+Plug 'plasticboy/vim-markdown'
 
 "Python
 "Plug 'tmhedberg/SimpylFold', { 'for' :['python', 'vim-plug'] }

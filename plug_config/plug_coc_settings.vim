@@ -57,6 +57,8 @@ let g:coc_global_extensions = [
             \ 'coc-smartf',
             \ 'coc-sh',
             \ 'coc-weather',
+            \ 'coc-markdownlint',
+            \ 'coc-markmap',
             \]
 
 "==
