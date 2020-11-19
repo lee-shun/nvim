@@ -12,7 +12,7 @@
 learning and tuning neovim in the past one year; </br>
 
 * Due to my study and work in Robotics 🤖, I usually code in C/C++ as well as Python. So if you 
-  want to use (neo)vim as a lightweight IDE for C++ as well as Python, This config is **JUST FOR YOU!**✌️
+  want to use (neo)vim as a lightweight IDE for C++ as well as Python, This config is **JUST FOR YOU!** ✌️
 
 * I strongly recommend to use **neovim rather than vim**. But if you have already fallen in love with vim,
 and feel guilty to cheat behind her 😉, at least make sure the vim version is above 8.2 to minimize the bugs while using the plugins.
@@ -59,8 +59,9 @@ and feel guilty to cheat behind her 😉, at least make sure the vim version is 
 #### Usage
 
 **NOTE:** 
-* If you just want to use the *Pure Vim*, don't bother to install the whole config, just use the "basic.vim" instead.
-* 👇👇The following instructions are for the ultimate config version.
+* If you just want to use the *Pure Vim*, don't bother to install the whole config, just use the "basic.vim" instead. Or, change the vimrc to install the modules you want; And I highly recommend you guys to search the plugs on github.com to find more information before you really about to install them.
+
+* 👇👇The following instructions are for the ultimate config version. 
 
 ---
 - [ ] Before installing: the followering requirments should be satisfied!!!!
@@ -85,6 +86,7 @@ and feel guilty to cheat behind her 😉, at least make sure the vim version is 
 ---
 - [ ]   After installing
 * **RUN** `:checkhealth` in neovim to findout the further dependences
+* **FOLLOW** the advice the neovim gives to you to install the complete dependences.
 
 #### LICENSE
 MIT

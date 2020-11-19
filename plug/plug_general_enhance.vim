@@ -70,6 +70,7 @@ Plug 'Yggdroot/indentLine'
 
 "多重光标
 "Plug 'terryma/vim-multiple-cursors'
+Plug 'mg979/vim-visual-multi'
 
 "对齐，排版
 Plug 'godlygeek/tabular'
