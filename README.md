@@ -59,7 +59,9 @@ and feel guilty to cheat behind her 😉, at least make sure the vim version is 
 #### Usage
 
 **NOTE:** 
-* If you just want to use the *Pure Vim*, don't bother to install the whole config, just use the "basic.vim" instead. Or, change the vimrc to install the modules you want; And I highly recommend you guys to search the plugs on github.com to find more information before you really about to install them.
+* If you just want to use the *Pure Vim*, don't bother to install the whole config, just use the "basic.vim" instead. Or,
+change the vimrc to install the modules you want; And I highly recommend you guys to search the plugs on [github](https://github.com)
+to find more information before you are really about to install them.
 
 * 👇👇The following instructions are for the ultimate config version. 
 
@@ -77,7 +79,7 @@ and feel guilty to cheat behind her 😉, at least make sure the vim version is 
 | [ nerd-font       ](https://github.com/ryanoasis/nerd-fonts)  | Fancy fonts to make the nvim more elegent. |
 
 ---
-- [ ] To fully instal this config
+- [ ] To fully install this config
 
 * `mkdir ~/.config/`
 * `cd ~/.config/`
