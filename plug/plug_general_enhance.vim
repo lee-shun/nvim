@@ -115,3 +115,24 @@ Plug 'mbbill/undotree'
 
 "calender
 Plug 'itchyny/calendar.vim'
+
+"自动折叠
+Plug 'wellle/context.vim'
+
+"快速折叠
+Plug 'Konfekt/FastFold'
+
+"替换
+Plug 'svermeulen/vim-subversive'
+
+"
+Plug 'theniceboy/argtextobj.vim'
+
+"f F命令
+Plug 'rhysd/clever-f.vim'
+
+"单独编辑
+Plug 'chrisbra/NrrwRgn'
+
+"emoji
+Plug 'AndrewRadev/splitjoin.vim'
