@@ -37,11 +37,11 @@ Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
 Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown'] }
 " Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 " Plug 'vimwiki/vimwiki'
-" Plug 'plasticboy/vim-markdown'
-Plug 'gabrielelana/vim-markdown'
+Plug 'plasticboy/vim-markdown'
+" Plug 'gabrielelana/vim-markdown'
 "!!it will change .md to .pandoc file
-" Plug 'vim-pandoc/vim-pandoc-syntax'
-" Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'vim-pandoc/vim-pandoc'
 
 
 "Python
