@@ -29,6 +29,7 @@ Plug 'psliwka/vim-smoothie'
 
 "自动括号
 " Plug 'jiangmiao/auto-pairs'
+" Plug 'Raimondi/delimitMate'
 
 "剪切板历史
 Plug 'junegunn/vim-peekaboo'
