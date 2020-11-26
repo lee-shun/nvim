@@ -58,8 +58,8 @@ Plug 'liuchengxu/vista.vim'
 Plug 'rlue/vim-barbaric' " slowing down vim-multiple-cursors
 
 "英语书写加强
-Plug 'reedes/vim-wordy'
-Plug 'ron89/thesaurus_query.vim'
+" Plug 'reedes/vim-wordy'
+" Plug 'ron89/thesaurus_query.vim'
 
 "缩进显示
 Plug 'nathanaelkane/vim-indent-guides'
