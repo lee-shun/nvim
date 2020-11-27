@@ -43,7 +43,7 @@ Plug 'ryanoasis/vim-devicons'
 
 " Plug 'connorholyday/vim-snazzy'
 
-" Plug 'ajmwagar/vim-deus'
+Plug 'ajmwagar/vim-deus'
 
 Plug 'hardcoreplayers/oceanic-material'
 
