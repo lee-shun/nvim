@@ -97,13 +97,16 @@ noremap <LEADER>= @a
 
 "**************************************移动映射**************************************************
 
-noremap M J "合并行
-noremap S :w<CR>
-noremap Q :q<CR>
-noremap J 5j
-noremap K 5k
-noremap H 5h
-noremap L 5l
+nnoremap M J "合并行
+nnoremap <home> H
+nnoremap <end> L
+nnoremap S :w<CR>
+nnoremap Q :q<CR>
+nnoremap J 5j
+nnoremap K 5k
+nnoremap H 5h
+nnoremap L 5l
+
 
 "**************************************共享剪切板**************************************************
 

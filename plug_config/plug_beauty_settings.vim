@@ -21,7 +21,7 @@
 set background=dark
 " let g:deus_termcolors=256
 " let g:SnazzyTransparent = 1
-let g:oceanic_material_transparent_background = 1
+" let g:oceanic_material_transparent_background = 1
 "colorscheme gruvbox
 "colorscheme onedark
 " colorscheme snazzy
