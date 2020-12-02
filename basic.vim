@@ -107,6 +107,15 @@ nnoremap K 5k
 nnoremap H 5h
 nnoremap L 5l
 
+vnoremap M J "合并行
+vnoremap <home> H
+vnoremap <end> L
+vnoremap S :w<CR>
+vnoremap Q :q<CR>
+vnoremap J 5j
+vnoremap K 5k
+vnoremap H 5h
+vnoremap L 5l
 
 "**************************************共享剪切板**************************************************
 
