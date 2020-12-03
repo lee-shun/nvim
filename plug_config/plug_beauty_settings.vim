@@ -22,11 +22,17 @@ set background=dark
 " let g:deus_termcolors=256
 " let g:SnazzyTransparent = 1
 " let g:oceanic_material_transparent_background = 1
-"colorscheme gruvbox
-"colorscheme onedark
+colorscheme gruvbox9_soft
+" colorscheme onedark
 " colorscheme snazzy
-colorscheme oceanic_material
+" colorscheme oceanic_material
 
+"===
+"===lightline
+"===
+let g:lightline = {
+      \ 'colorscheme': 'seoul256',
+      \ }
 
 "===
 "=== eleline

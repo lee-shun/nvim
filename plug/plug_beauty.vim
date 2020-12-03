@@ -21,9 +21,13 @@
 
 "Plug 'theniceboy/eleline.vim'
 
-" Plug 'mg979/vim-xtabline'
+Plug 'itchyny/lightline.vim'
+
+Plug 'mg979/vim-xtabline'
 
 "Plug 'ap/vim-buftabline'
+
+" Plug 'bagrat/vim-buffet'
 
 "Plug 'jeetsukumaran/vim-buffergator'
 
@@ -33,7 +37,7 @@
 
 "Plug 'zefei/vim-wintabs-powerline'
 
-Plug 'hardcoreplayers/spaceline.vim'
+" Plug 'hardcoreplayers/spaceline.vim'
 
 Plug 'ryanoasis/vim-devicons'
 
@@ -42,6 +46,8 @@ Plug 'ryanoasis/vim-devicons'
 "Plug 'vim-airline/vim-airline-themes'
 
 " Plug 'connorholyday/vim-snazzy'
+
+Plug 'hardcoreplayers/gruvbox9'
 
 Plug 'ajmwagar/vim-deus'
 
