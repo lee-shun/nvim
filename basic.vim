@@ -328,3 +328,86 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
+
+"****************************************自动注释**************************************************
+autocmd BufNewFile *.cc,*.hpp,*.h,*.cpp,Makefile,CMakeLists.txt,*.sh,*.zsh exec ":call SetTitle()"
+" 加入注释
+func SetComment()
+    call setline(1,"/*******************************************************************************")
+    call append(line(".")    , "*   Copyright (C) ".strftime("%Y")." Lee Ltd. All rights reserved.")
+    call append(line(".")+1  , "*")
+    call append(line(".")+2  , "*   @Filename: ".expand("%:t"))
+    call append(line(".")+3  , "*")
+    call append(line(".")+4  , "*   @Author: lee-shun")
+    call append(line(".")+5  , "*")
+    call append(line(".")+6  , "*   @Date: ".strftime("%Y-%m-%d"))
+    call append(line(".")+7  , "*")
+    call append(line(".")+8  , "*   @Description: ")
+    call append(line(".")+9  , "*")
+    call append(line(".")+10 , "*******************************************************************************/")
+    call append(line(".")+11 , "")
+    call append(line(".")+12 , "")
+endfunc
+" 加入shell,Makefile注释
+func SetComment_sh()
+    call setline(3, "################################################################################")
+    call setline(4  , "#   Copyright (C) ".strftime("%Y")." Lee Ltd. All rights reserved.")
+    call setline(5  , "#")
+    call setline(6  , "#   @Filename: ".expand("%:t"))
+    call setline(7  , "#")
+    call setline(8  , "#   @Author: LuZhenrong")
+    call setline(9  , "#")
+    call setline(10 , "#   @Date: ".strftime("%Y-%m-%d"))
+    call setline(11 , "#")
+    call setline(12 , "#   @Description: ")
+    call setline(13 , "#")
+    call setline(14, "################################################################################")
+    call setline(15, "")
+    call setline(16, "")
+endfunc
+" 定义函数SetTitle，自动插入文件头
+func SetTitle()
+    if expand("%:e") == 'make'
+        call setline(1,"")
+        call setline(2,"")
+        call SetComment_sh()
+
+    elseif expand("%:e") == 'txt'
+        call setline(1,"")
+        call setline(2,"")
+        call SetComment_sh()
+
+    elseif expand("%:e") == 'sh'
+        call setline(1,"#!/system/bin/sh")
+        call setline(2,"")
+        call SetComment_sh()
+
+    elseif expand("%:e") == 'zsh'
+        call setline(1,"#!/system/bin/zsh")
+        call setline(2,"")
+        call SetComment_sh()
+    else
+        call SetComment()
+        if expand("%:e") == 'hpp'
+            call append(line(".")+13, "#ifndef _".toupper(expand("%:t:r"))."_HPP")
+            call append(line(".")+14, "#define _".toupper(expand("%:t:r"))."_HPP")
+            call append(line(".")+15, "#ifdef __cplusplus")
+            call append(line(".")+16, "extern \"C\"")
+            call append(line(".")+17, "{")
+            call append(line(".")+18, "#endif")
+            call append(line(".")+19, "")
+            call append(line(".")+20, "#ifdef __cplusplus")
+            call append(line(".")+21, "}")
+            call append(line(".")+22, "#endif")
+            call append(line(".")+23, "#endif //".toupper(expand("%:t:r"))."_HPP")
+        elseif expand("%:e") == 'h'
+            call append(line(".")+13, "#pragma once")
+        elseif expand("%:e") == 'c'
+            call append(line(".")+13,"#include \"".expand("%:t:r").".h\"")
+        elseif expand("%:e") == 'cpp'
+            call append(line(".")+13,"#include \"".expand("%:t:r").".hpp\"")
+        elseif expand("%:e") == 'cc'
+            call append(line(".")+13,"#include \"".expand("%:t:r").".hpp\"")
+        endif
+    endif
+endfunc
