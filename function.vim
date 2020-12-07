@@ -102,7 +102,7 @@ endfunction
 "===
 "=== 自动文件
 "===
-autocmd BufNewFile *,cxx,*.c,*.cc,*.hpp,*.h,*.cpp,Makefile,CMakeLists.txt,*.sh,*.zsh exec ":call SetTitle()"
+autocmd BufNewFile *.cxx,*.c,*.cc,*.hpp,*.h,*.cpp,Makefile,CMakeLists.txt,*.sh,*.zsh exec ":call SetTitle()"
 " 加入注释
 func SetComment()
     call setline(1,"/*******************************************************************************")
