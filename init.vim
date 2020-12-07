@@ -46,6 +46,11 @@ source ~/.config/nvim/_machine_specific.vim
 source ~/.config/nvim/basic.vim
 
 "===
+"=== function.vim
+"===
+source ~/.config/nvim/function.vim
+
+"===
 "=== plugs.vim
 "===
 source ~/.config/nvim/plug/plugs.vim
