@@ -1,14 +1,14 @@
-## <center>🚀🚀 Lee's Neovim Config 🚀🚀 </center>
+# 🚀🚀 Lee's Neovim Config </center>
 
-#### Ispired by 🌟🌟:
+## Inspired by 🌟🌟
 
 * Theniceboy's [Neovim video](https://space.bilibili.com/13081489?from=search&seid=9375318644841322836) and [config files](https://github.com/theniceboy/nvim).
 
 * Amix's  [ Ultimate vimrc](https://github.com/amix/vimrc).
 
-#### About This Config
+## About This Config
 
-* I began to use neovim about 1 year ago(2019), and now it's my **favourate** 🥰 editor! I keep
+* I began to use neovim about 1 year ago(2019), and now it's my **favorite** 🥰 editor! I keep
 learning and tuning neovim in the past one year; </br>
 
 * Due to my study and work in Robotics 🤖, I usually code in C/C++ as well as Python. So if you 
@@ -24,11 +24,15 @@ and feel guilty to cheat behind her 😉, at least make sure the vim version is 
 ![screenshot1](./screenshot1.png)
 
 ---
+
+![screenshot2](./screenshot2.png)
+
+---
 ![screenshot](./screenshot.png)
 
 ---
 
-####  Main Features
+## Main Features
 
 * As **LESS remaps** as I can do to keep the original vim keybings;
 
@@ -38,15 +42,17 @@ and feel guilty to cheat behind her 😉, at least make sure the vim version is 
 
 * .....
 
-####  Config Structure
+## Config Structure
 
 **NOTE:**
+
 * the file or directory with * means it will be created automatically after installing.
 
 | Files or Directory     | Illstrations                                                                                     |
 |------------------------|--------------------------------------------------------------------------------------------------|
 | init.vim               | The entrance file of the whole config.                                                           |
 | basic.vim              | The basic config of the (neo)vim, includes keybindings and other basic features without plugins. |
+| function.vim           | The additional functions that help a lot.                                                        |
 | *_machine_specific.vim | The config for different host computer. Python path, etc.                                        |
 | coc-settings.json      | The config for coc.nvim platform                                                                 |
 | **autolaod/**          | "Vim-plug" plugin manager.                                                                       |
@@ -56,7 +62,7 @@ and feel guilty to cheat behind her 😉, at least make sure the vim version is 
 | ***plugged/**          | The plugin installing directory.                                                                 |
 | ***tmp/**              | The temporary file, like the undo and swap files, etc.                                           |
 
-#### Usage
+## Usage
 
 **NOTE:** 
 * If you just want to use the *Pure Vim*, don't bother to install the whole config, just use the "basic.vim" instead. Or,
@@ -86,10 +92,13 @@ to find more information before you are really about to install them.
 * `git clone https://github.com/lee-shun/nvim.git`
 
 ---
+
 - [ ]   After installing
+
 * **RUN** `:checkhealth` in neovim to findout the further dependences
 * **FOLLOW** the advice the neovim gives to you to install the complete dependences.
 
-#### LICENSE
+## LICENSE
+
 MIT
 
