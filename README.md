@@ -1,4 +1,4 @@
-# 🚀🚀 Lee's Neovim Config </center>
+# 🚀🚀 Lee's Neovim Config
 
 ## Inspired by 🌟🌟
 
@@ -34,9 +34,9 @@ and feel guilty to cheat behind her 😉, at least make sure the vim version is 
 
 ## Main Features
 
-* As **LESS remaps** as I can do to keep the original vim keybings;
+* As **LESS remaps** as I can do to keep the original vim keybindings;
 
-* Different moduls are well arranged and separated;
+* Different modulus are well arranged and separated;
 
 * Use [coc.nvim](https://github.com/neoclide/coc.nvim) as the main platform;
 
@@ -48,7 +48,7 @@ and feel guilty to cheat behind her 😉, at least make sure the vim version is 
 
 * the file or directory with * means it will be created automatically after installing.
 
-| Files or Directory     | Illstrations                                                                                     |
+| Files or Directory     | Illustrations                                                                                     |
 |------------------------|--------------------------------------------------------------------------------------------------|
 | init.vim               | The entrance file of the whole config.                                                           |
 | basic.vim              | The basic config of the (neo)vim, includes keybindings and other basic features without plugins. |
@@ -95,8 +95,8 @@ to find more information before you are really about to install them.
 
 - [ ]   After installing
 
-* **RUN** `:checkhealth` in neovim to findout the further dependences
-* **FOLLOW** the advice the neovim gives to you to install the complete dependences.
+* **RUN** `:checkhealth` in neovim to find out the further dependencies.
+* **FOLLOW** the advice the neovim gives to you to install the complete dependencies.
 
 ## LICENSE
 
