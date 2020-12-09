@@ -200,6 +200,10 @@ noremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
 
 noremap <LEADER>c <Esc>k^/\/\/<CR>d2lv$hdA/* */<Esc>2hP$:set nohlsearch<CR>
 
+"************************************C++注释更改******************************************
+
+noremap ci* <Esc>0f*2lvt*hc
+
 "****************************************快速移动行************************************************
 
 nnoremap [e  :<c-u>execute 'move -1-'. v:count1<cr>
