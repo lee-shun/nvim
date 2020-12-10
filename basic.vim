@@ -194,15 +194,15 @@ noremap <c-g>  :term lazygit<CR>
 
 "************************************双击查找下一个占位符******************************************
 
-noremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
+nnoremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
 
 "************************************C++单行注释方式改变******************************************
 
-noremap <LEADER>c <Esc>k^/\/\/<CR>d2lv$hdA/* */<Esc>2hP$:set nohlsearch<CR>
+nnoremap <LEADER>c <Esc>k^/\/\/<CR>d2lv$hdA/* */<Esc>2hP$:set nohlsearch<CR>
 
 "************************************C++注释更改******************************************
 
-noremap ci* <Esc>0f*2lvt*hc
+nnoremap cic <Esc>0f*2lvt*hc
 
 "****************************************快速移动行************************************************
 
