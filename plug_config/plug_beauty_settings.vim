@@ -22,17 +22,38 @@ set background=dark
 " let g:deus_termcolors=256
 " let g:SnazzyTransparent = 1
 " let g:oceanic_material_transparent_background = 1
-colorscheme gruvbox9_soft
+" colorscheme gruvbox9_soft
 " colorscheme onedark
 " colorscheme snazzy
-" colorscheme oceanic_material
+colorscheme oceanic_material
 
 "===
 "===lightline
 "===
 let g:lightline = {
-      \ 'colorscheme': 'seoul256',
-      \ }
+            \ 'colorscheme': 'wombat',
+            \ 'active': {
+            \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'filename', 'modified' ] ]
+            \ },
+            \ 'tabline': {
+            \   'left': [ ['buffers'] ],
+            \   'right': [ ['close'] ]
+            \ },
+            \ 'component_expand': {
+            \   'buffers': 'lightline#bufferline#buffers'
+            \ },
+            \ 'component_type': {
+            \   'buffers': 'tabsel'
+            \ }
+            \ }
+
+"===
+"===lightline-bufferline
+"===
+set showtabline=2
+let g:lightline#bufferline#show_number = 1
+let g:lightline#bufferline#enable_devicons = 1
+let g:lightline#bufferline#enable_nerdfont = 1
 
 "===
 "=== eleline

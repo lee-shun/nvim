@@ -23,6 +23,8 @@
 
 Plug 'itchyny/lightline.vim'
 
+" Plug 'mengelbrecht/lightline-bufferline'
+
 Plug 'mg979/vim-xtabline'
 
 "Plug 'ap/vim-buftabline'
