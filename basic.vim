@@ -180,8 +180,13 @@ noremap <LEADER>b8 :buffer 8<CR>
 noremap <LEADER>b9 :buffer 9<CR>
 
 "**************************************编辑neovimrc********************************************
+
 noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
 
+"***************************************突出显示80*********************************************
+let &colorcolumn=join(range(81,999),",")
+let &colorcolumn="80,".join(range(120,999),",")
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
 "**************************************文件关闭光标记忆********************************************
 
