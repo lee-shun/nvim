@@ -38,6 +38,7 @@ set number            " 打开行号
 set relativenumber    " 相对行号
 set cursorline        " 打开光标提示线
 set cursorcolumn      " 打开光标提示线
+set colorcolumn=81    " 设置80列提示
 set noshowmode        " 不要显示模式
 set nowrap            " 显示行折叠
 set linebreak         " 不在单词内部折行
@@ -182,11 +183,6 @@ noremap <LEADER>b9 :buffer 9<CR>
 "**************************************编辑neovimrc********************************************
 
 noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
-
-"***************************************突出显示80*********************************************
-let &colorcolumn=join(range(81,999),",")
-let &colorcolumn="80,".join(range(120,999),",")
-highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
 "**************************************文件关闭光标记忆********************************************
 
