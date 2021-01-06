@@ -28,7 +28,7 @@ Plug 'pboettch/vim-cmake-syntax'
 Plug 'vhdirk/vim-cmake'
 
 "LATEX
-" Plug 'lervag/vimtex'
+Plug 'lervag/vimtex'
 
 "markdown
 Plug 'dkarter/bullets.vim'
