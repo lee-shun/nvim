@@ -137,3 +137,9 @@ Plug 'chrisbra/NrrwRgn'
 
 "emoji
 Plug 'AndrewRadev/splitjoin.vim'
+
+"block moving with 'Shift+Ctrl--hjkl'
+Plug 'matze/vim-move'
+
+"行号切换
+Plug 'jeffkreeftmeijer/vim-numbertoggle'

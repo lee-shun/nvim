@@ -213,3 +213,9 @@ noremap \\ :Calendar -view=clock -position=here<CR>
 " ===
 
 let g:context_add_mappings=0
+
+" ===
+" === vim-move
+" ===
+
+let g:move_key_modifier = 'S-C'
