@@ -59,6 +59,7 @@ let g:coc_global_extensions = [
             \ 'coc-weather',
             \ 'coc-markdownlint',
             \ 'coc-markmap',
+            \ 'coc-vimtex'
             \]
 
 "==
