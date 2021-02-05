@@ -218,4 +218,4 @@ let g:context_add_mappings=0
 " === vim-move
 " ===
 
-let g:move_key_modifier = 'S-C'
+let g:move_key_modifier = 'S-A'
