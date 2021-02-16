@@ -34,7 +34,6 @@ let g:coc_global_extensions = [
             \ 'coc-highlight',
             \ 'coc-translator',
             \ 'coc-python',
-            \ 'coc-pyright',
             \ 'coc-pairs',
             \ 'coc-spell-checker',
             \ 'coc-json',
@@ -62,6 +61,7 @@ let g:coc_global_extensions = [
             \ 'coc-vimtex'
             \]
 
+            " \ 'coc-pyright',
 "==
 "==coc.nvim
 "==
