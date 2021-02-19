@@ -33,8 +33,6 @@ let g:coc_global_extensions = [
             \ 'coc-explorer',
             \ 'coc-highlight',
             \ 'coc-translator',
-            \ 'coc-python',
-            \ 'coc-pyright',
             \ 'coc-pairs',
             \ 'coc-spell-checker',
             \ 'coc-json',
@@ -59,9 +57,12 @@ let g:coc_global_extensions = [
             \ 'coc-weather',
             \ 'coc-markdownlint',
             \ 'coc-markmap',
-            \ 'coc-vimtex'
+            \ 'coc-vimtex',
+            \ 'coc-jedi',
             \]
 
+            " \ 'coc-pyright',
+            " \ 'coc-jedi',
 "==
 "==coc.nvim
 "==
