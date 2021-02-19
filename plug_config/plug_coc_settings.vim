@@ -34,10 +34,6 @@ let g:coc_global_extensions = [
             \ 'coc-explorer',
             \ 'coc-highlight',
             \ 'coc-translator',
-<<<<<<< HEAD
-=======
-            \ 'coc-python',
->>>>>>> 49825df2c028a3582c7cbdebd6c01b204863e213
             \ 'coc-pairs',
             \ 'coc-spell-checker',
             \ 'coc-json',
