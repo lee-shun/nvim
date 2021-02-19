@@ -30,7 +30,7 @@ set autochdir "自动切换工作目录
 set encoding=UTF-8
 
 "显示设置
-syntax on             " 设置高亮
+" syntax on             " 设置高亮
 set scrolloff=5       " 设置滚动余量
 "set mouse=a           " 打开鼠标
 "colorscheme evening   "设置默认颜色
