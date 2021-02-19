@@ -90,7 +90,8 @@
         "{SPACES_AROUND_POWER_OPERATOR: True, SPACES_BEFORE_COMMENT: 1}"
     ],
     "cSpell.userWords": [
-        "moveit",
-        "neovim"
+      "moveit",
+      "neovim",
+      "numpy"
     ]
 }
