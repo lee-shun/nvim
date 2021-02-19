@@ -85,7 +85,5 @@
         "neovim",
         "numpy"
     ],
-    "jedi.workspace.extraPaths": [
-        "/usr/local/lib/python3.6/dist-packages"
-    ]
+    "jedi.executable.command": "/usr/local/bin/jedi-language-server"
 }

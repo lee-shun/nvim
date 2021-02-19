@@ -27,7 +27,6 @@ let g:coc_global_extensions = [
             \ 'coc-yank',
             \ 'coc-cmake',
             \ 'coc-clangd',
-            \ 'coc-jedi',
             \ 'coc-lists',
             \ 'coc-kite',
             \ 'coc-marketplace',
@@ -58,10 +57,12 @@ let g:coc_global_extensions = [
             \ 'coc-weather',
             \ 'coc-markdownlint',
             \ 'coc-markmap',
-            \ 'coc-vimtex'
+            \ 'coc-vimtex',
+            \ 'coc-jedi',
             \]
 
             " \ 'coc-pyright',
+            " \ 'coc-jedi',
 "==
 "==coc.nvim
 "==

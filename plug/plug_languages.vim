@@ -46,12 +46,12 @@ Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown'] }
 
 "Python
 "Plug 'tmhedberg/SimpylFold', { 'for' :['python', 'vim-plug'] }
-"Plug 'Vimjas/vim-python-pep8-indent', { 'for' :['python', 'vim-plug'] }
+Plug 'Vimjas/vim-python-pep8-indent', { 'for' :['python', 'vim-plug'] }
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins', 'for' :['python', 'vim-plug'] }
 "Plug 'vim-scripts/indentpython.vim', { 'for' :['python', 'vim-plug'] }
 "Plug 'plytophogy/vim-virtualenv', { 'for' :['python', 'vim-plug'] }
 "Plug 'tweekmonster/braceless.vim', { 'for' :['python', 'vim-plug'] }
-Plug 'vim-python/python-syntax', { 'for' :['python', 'vim-plug'] }
-"Plug 'davidhalter/jedi-vim'     "autocomplete
+" Plug 'vim-python/python-syntax', { 'for' :['python', 'vim-plug'] }
+" Plug 'davidhalter/jedi-vim'     "autocomplete
 Plug 'tell-k/vim-autopep8'      "auto format
 "Plug 'nvie/vim-flake8'          "static check
