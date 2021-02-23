@@ -49,11 +49,11 @@ Plug 'ryanoasis/vim-devicons'
 
 " Plug 'connorholyday/vim-snazzy'
 
-Plug 'hardcoreplayers/gruvbox9'
+" Plug 'hardcoreplayers/gruvbox9'
 
 Plug 'ajmwagar/vim-deus'
 
-Plug 'hardcoreplayers/oceanic-material'
+Plug 'glepnir/oceanic-material'
 
 " Plug 'morhetz/gruvbox'
 
@@ -63,7 +63,7 @@ Plug 'hardcoreplayers/oceanic-material'
 
 "Plug 'mhinz/vim-startify'
 
-Plug 'hardcoreplayers/dashboard-nvim'
+Plug 'glepnir/dashboard-nvim'
 
 Plug 'junegunn/goyo.vim'
 
