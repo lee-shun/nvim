@@ -170,16 +170,6 @@ noremap <LEADER>bn :bn<CR>
 noremap <LEADER>bp :bp<CR>
 noremap <LEADER>bd :bd<CR>
 
-noremap <LEADER>b1 :buffer 1<CR>
-noremap <LEADER>b2 :buffer 2<CR>
-noremap <LEADER>b3 :buffer 3<CR>
-noremap <LEADER>b4 :buffer 4<CR>
-noremap <LEADER>b5 :buffer 5<CR>
-noremap <LEADER>b6 :buffer 6<CR>
-noremap <LEADER>b7 :buffer 7<CR>
-noremap <LEADER>b8 :buffer 8<CR>
-noremap <LEADER>b9 :buffer 9<CR>
-
 "**************************************编辑neovimrc********************************************
 
 noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
@@ -189,9 +179,6 @@ noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 "****************************************外部程序启动**********************************************
-
-" Open up lazygit
-noremap <c-g>  :term lazygit<CR>
 
 "************************************双击查找下一个占位符******************************************
 
@@ -218,7 +205,6 @@ nnoremap ]<space> :<c-u>put =repeat(nr2char(10), v:count1)<cr>
 "****************************************快速选中查找**********************************************
 " Visual mode pressing * or # searches for the current selection
 " Super useful! From an idea by Michael Naumann
-vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
 "****************************************存储历史记录**************************************************
