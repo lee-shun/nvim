@@ -28,7 +28,6 @@ let g:coc_global_extensions = [
             \ 'coc-cmake',
             \ 'coc-clangd',
             \ 'coc-lists',
-            \ 'coc-kite',
             \ 'coc-marketplace',
             \ 'coc-explorer',
             \ 'coc-highlight',
@@ -54,15 +53,12 @@ let g:coc_global_extensions = [
             \ 'coc-floaterm',
             \ 'coc-smartf',
             \ 'coc-sh',
-            \ 'coc-weather',
             \ 'coc-markdownlint',
             \ 'coc-markmap',
             \ 'coc-vimtex',
             \ 'coc-jedi',
             \]
 
-            " \ 'coc-pyright',
-            " \ 'coc-jedi',
 "==
 "==coc.nvim
 "==
