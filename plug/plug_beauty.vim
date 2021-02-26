@@ -51,7 +51,7 @@ Plug 'ryanoasis/vim-devicons'
 
 " Plug 'hardcoreplayers/gruvbox9'
 
-Plug 'ajmwagar/vim-deus'
+" Plug 'ajmwagar/vim-deus'
 
 Plug 'glepnir/oceanic-material'
 
@@ -65,6 +65,6 @@ Plug 'glepnir/oceanic-material'
 
 Plug 'glepnir/dashboard-nvim'
 
-Plug 'junegunn/goyo.vim'
+" Plug 'junegunn/goyo.vim'
 
-Plug 'bpietravalle/vim-bolt'
+" Plug 'bpietravalle/vim-bolt'

@@ -32,7 +32,7 @@ Plug 'psliwka/vim-smoothie'
 " Plug 'Raimondi/delimitMate'
 
 "剪切板历史
-Plug 'junegunn/vim-peekaboo'
+" Plug 'junegunn/vim-peekaboo'
 
 "包围改变
 Plug 'tpope/vim-surround' " type yskw' to wrap the word with '' or type cs'` to change 'word' to `word`
@@ -79,15 +79,15 @@ Plug 'godlygeek/tabular'
 Plug 'junegunn/vim-easy-align'
 
 "浮动窗体
-Plug 'voldikss/vim-floaterm'
+" Plug 'voldikss/vim-floaterm'
 
 "强化书签
-Plug 'MattesGroeger/vim-bookmarks'
+" Plug 'MattesGroeger/vim-bookmarks'
 
 "查找替换`
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'brooth/far.vim'
+" Plug 'brooth/far.vim'
 "Plug 'ctrlpvim/ctrlp.vim'
 "Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
@@ -115,28 +115,28 @@ Plug 'mhinz/vim-signify'
 Plug 'mbbill/undotree'
 
 "calender
-Plug 'itchyny/calendar.vim'
+" Plug 'itchyny/calendar.vim'
 
 "自动折叠
 Plug 'wellle/context.vim'
 
 "快速折叠
-Plug 'Konfekt/FastFold'
+" Plug 'Konfekt/FastFold'
 
 "替换
-Plug 'svermeulen/vim-subversive'
+" Plug 'svermeulen/vim-subversive'
 
 "
-Plug 'theniceboy/argtextobj.vim'
+" Plug 'theniceboy/argtextobj.vim'
 
 "f F命令
 Plug 'rhysd/clever-f.vim'
 
 "单独编辑
-Plug 'chrisbra/NrrwRgn'
+" Plug 'chrisbra/NrrwRgn'
 
 "emoji
-Plug 'AndrewRadev/splitjoin.vim'
+" Plug 'AndrewRadev/splitjoin.vim'
 
 "block moving with 'Shift+Ctrl--hjkl'
 Plug 'matze/vim-move'
