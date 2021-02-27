@@ -22,6 +22,7 @@
 " Plug 'octol/vim-cpp-enhanced-highlight'
 " Plug 'LucHermitte/VimFold4C'
 " Plug 'jackguo380/vim-lsp-cxx-highlight'
+Plug 'LucHermitte/VimFold4C'
 
 "Cmake
 Plug 'pboettch/vim-cmake-syntax'

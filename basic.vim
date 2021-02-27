@@ -21,9 +21,8 @@
 "****************************************基本设置区************************************************
 
 let g:mapleader = ' '
-filetype on
-filetype plugin on
 set autochdir "自动切换工作目录
+filetype plugin indent on
 
 "****************************************基本设置区************************************************
 "编码设置
@@ -44,8 +43,6 @@ set nowrap            " 显示行折叠
 set linebreak         " 不在单词内部折行
 set ttimeoutlen=0     " 单字符命令等待时间
 set wildmenu          " vim命令自动补全
-set foldmethod=manual " 语法折叠
-set nofoldenable      " 开始关闭语法折叠
 set lazyredraw        " same as above
 set visualbell
 set ttyfast           " should make scrolling faster
@@ -63,13 +60,14 @@ set ignorecase
 set smartcase
 noremap <C-h> :set nohlsearch!<CR>
 
-"缩进设置
-filetype indent on
+"缩进与折叠
 set smartindent
-set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+set foldmethod=manual " 手动折叠
+set foldlevel=99      " 折叠文件打开展开
+set foldenable
 
 "显示非可见字符
 " UI Symbols
@@ -210,7 +208,7 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 "****************************************存储历史记录**************************************************
 silent !mkdir -p ~/.config/nvim/tmp/backup
 silent !mkdir -p ~/.config/nvim/tmp/undo
-silent !mkdir -p ~/.config/nvim/tmp/sessions
+" silent !mkdir -p ~/.config/nvim/tmp/sessions
 
 set undofile
 set swapfile
