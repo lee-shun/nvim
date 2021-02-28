@@ -20,9 +20,8 @@
 
 "C++
 " Plug 'octol/vim-cpp-enhanced-highlight'
-" Plug 'LucHermitte/VimFold4C'
 " Plug 'jackguo380/vim-lsp-cxx-highlight'
-Plug 'LucHermitte/VimFold4C'
+" Plug 'LucHermitte/VimFold4C'
 
 "Cmake
 Plug 'pboettch/vim-cmake-syntax'
@@ -52,7 +51,7 @@ Plug 'Vimjas/vim-python-pep8-indent', { 'for' :['python', 'vim-plug'] }
 " Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins', 'for' :['python', 'vim-plug'] }
 " Plug 'vim-scripts/indentpython.vim', { 'for' :['python', 'vim-plug'] }
 " Plug 'plytophogy/vim-virtualenv', { 'for' :['python', 'vim-plug'] }
-Plug 'tweekmonster/braceless.vim', { 'for' :['python', 'vim-plug'] }
+" Plug 'tweekmonster/braceless.vim', { 'for' :['python', 'vim-plug'] }
 " Plug 'vim-python/python-syntax', { 'for' :['python', 'vim-plug'] }
 " Plug 'davidhalter/jedi-vim'     "autocomplete
 Plug 'tell-k/vim-autopep8'      "auto format

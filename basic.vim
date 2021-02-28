@@ -73,9 +73,9 @@ set foldenable
 " UI Symbols
 " icons:  ▏│ ¦ ╎ ┆ ⋮ ⦙ ┊ 
 set list
-set listchars=tab:\-\ ,trail:▫
+set listchars=tab:\•\ ,trail:▫
 " set listchars=extends:>,precedes:<,nbsp:␣
-let &showbreak='↳  '
+let &showbreak='↳'
 
 "共享设置
 set clipboard=unnamedplus

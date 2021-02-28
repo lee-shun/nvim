@@ -118,10 +118,16 @@ Plug 'mbbill/undotree'
 " Plug 'itchyny/calendar.vim'
 
 "自动折叠
-Plug 'wellle/context.vim'
+" Plug 'wellle/context.vim'
 
-"快速折叠
-" Plug 'Konfekt/FastFold'
+"强化折叠
+Plug 'pseewald/vim-anyfold'
+
+"折叠加速
+Plug 'Konfekt/FastFold'
+"
+"改变折叠样式
+Plug 'lambdalisue/readablefold.vim'
 
 "替换
 " Plug 'svermeulen/vim-subversive'
