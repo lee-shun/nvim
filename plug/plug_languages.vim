@@ -30,6 +30,7 @@ Plug 'vhdirk/vim-cmake'
 
 "LATEX
 Plug 'lervag/vimtex'
+" Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 "markdown
 Plug 'dkarter/bullets.vim'

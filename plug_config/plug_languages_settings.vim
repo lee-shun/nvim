@@ -24,17 +24,22 @@
 "let g:cpp_experimental_simple_template_highlight = 1
 "let g:cpp_concepts_highlight = 1
 
+"===
+"===vim-latex-live-preview
+"===
+let g:livepreview_previewer = 'zathura'
+let g:livepreview_engine = 'latexmk'.'-f'
+let g:livepreview_use_biber = 1
+let g:livepreview_cursorhold_recompile = 0
 
 "===
 "===vimtex
 "===
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
-"let g:vimtex_compiler_method='latexmk' "default setting
 let g:vimtex_quickfix_mode=1
 set conceallevel=1
 let g:tex_conceal='abdmg'
-let g:UltiSnipsSnippetDirectories = [$HOME.'/.config/nvim/Ultisnips/', 'UltiSnips']
 silent! au BufEnter,BufRead,BufNewFile * silent! unmap <c-r>
 let g:vimtex_compiler_progname = 'nvr'
 let g:vimtex_compiler_latexmk_engines = {

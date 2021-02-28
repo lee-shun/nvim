@@ -49,15 +49,18 @@ let g:coc_global_extensions = [
             \ 'coc-calc',
             \ 'coc-word',
             \ 'coc-tabnine',
-            \ 'coc-conventional',
             \ 'coc-floaterm',
             \ 'coc-smartf',
             \ 'coc-sh',
             \ 'coc-markdownlint',
             \ 'coc-markmap',
-            \ 'coc-vimtex',
             \ 'coc-jedi',
+			\ 'coc-texlab',
             \]
+"			\ 'coc-texlab',
+"			\ 'coc-vimtex'
+
+
 
 "==
 "==coc.nvim
