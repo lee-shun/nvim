@@ -121,7 +121,7 @@ Plug 'mbbill/undotree'
 " Plug 'wellle/context.vim'
 
 "强化折叠
-Plug 'pseewald/vim-anyfold'
+" Plug 'pseewald/vim-anyfold'
 
 "折叠加速
 Plug 'Konfekt/FastFold'
