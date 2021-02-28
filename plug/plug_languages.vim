@@ -32,15 +32,16 @@ Plug 'lervag/vimtex'
 " Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 "markdown
-Plug 'dkarter/bullets.vim'
+" Plug 'dkarter/bullets.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install_sync() }, 'for' :['markdown', 'vim-plug'] }
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
 Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown'] }
 " Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 " Plug 'vimwiki/vimwiki'
-" Plug 'plasticboy/vim-markdown'
+Plug 'plasticboy/vim-markdown'
 " Plug 'gabrielelana/vim-markdown'
-"!!it will change .md to .pandoc file
+
+"!!it will change filetype  from md to pandoc file
 " Plug 'vim-pandoc/vim-pandoc-syntax'
 " Plug 'vim-pandoc/vim-pandoc'
 

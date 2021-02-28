@@ -55,9 +55,16 @@ let g:vimtex_compiler_latexmk_engines = {
 
 
 "===
+"===bullets
+"===
+let g:bullets_set_mappings = 0
+
+
+"===
 "===vim-markdown
 "===
 let g:vim_markdown_math = 1
+
 
 
 "===
