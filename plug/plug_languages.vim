@@ -20,7 +20,7 @@
 
 "C++
 " Plug 'octol/vim-cpp-enhanced-highlight'
-" Plug 'jackguo380/vim-lsp-cxx-highlight'
+Plug 'jackguo380/vim-lsp-cxx-highlight'
 " Plug 'LucHermitte/VimFold4C'
 
 "Cmake
