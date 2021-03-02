@@ -51,6 +51,7 @@
     "diagnostic.checkCurrentLine": true,
     "diagnostic.virtualTextPrefix": " ❯❯❯ ",
     "diagnostic.virtualText": true,
+    "diagnostic.messageTarget": "echo",
     "codeLens.enable": true,
     "coc.preferences.formatOnSaveFiletypes": [
         "python",
