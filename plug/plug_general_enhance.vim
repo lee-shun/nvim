@@ -114,6 +114,9 @@ Plug 'mhinz/vim-signify'
 "undotree
 Plug 'mbbill/undotree'
 
+"todo 管理
+Plug 'Dimercel/todo-vim'
+
 "calender
 " Plug 'itchyny/calendar.vim'
 
