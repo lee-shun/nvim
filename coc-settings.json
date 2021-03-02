@@ -76,10 +76,13 @@
     "coc-actions.hideCursor": true,
     "coc-actions.showActionKind": true,
     "cSpell.userWords": [
-        "imread",
-        "moveit",
-        "neovim",
-        "numpy"
+      "imread",
+      "imshow",
+      "moveit",
+      "neovim",
+      "nparray",
+      "numpy",
+      "sobel"
     ],
     "coc.preferences.formatOnSaveFiletypes": [
         "xml",

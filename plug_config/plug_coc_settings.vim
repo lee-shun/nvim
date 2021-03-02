@@ -45,7 +45,6 @@ let g:coc_global_extensions = [
             \ 'coc-spell-checker',
             \ 'coc-syntax',
             \ 'coc-highlight',
-            \ 'coc-todolist',
             \ 'coc-diagnostic',
             \ 'coc-actions',
             \ 'coc-calc',
