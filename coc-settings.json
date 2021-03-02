@@ -56,11 +56,6 @@
         "$HOME/.config/nvim/Ultisnips/",
         "$HOME/.config/nvim/plugged/vim-snippets/UltiSnips/"
     ],
-    "coc.preferences.formatOnSaveFiletypes": [
-        "python",
-        "xml",
-        "json"
-    ],
     "explorer.sources": [
         {
             "name": "buffer",
@@ -85,7 +80,11 @@
         "neovim",
         "numpy"
     ],
+    "coc.preferences.formatOnSaveFiletypes": [
+        "python",
+        "xml",
+        "json"
+    ],
     "clangd.semanticHighlighting": true,
-    "jedi.executable.command": "/usr/local/bin/jedi-language-server",
     "texlab.path": "/usr/local/bin/texlab"
 }
