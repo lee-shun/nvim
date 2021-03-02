@@ -52,6 +52,7 @@
     "diagnostic.virtualTextPrefix": " ❯❯❯ ",
     "diagnostic.virtualText": true,
     "diagnostic.messageTarget": "echo",
+    "tabnine.limit": 3,
     "snippets.ultisnips.directories": [
         "$HOME/.config/nvim/Ultisnips/",
         "$HOME/.config/nvim/plugged/vim-snippets/UltiSnips/"
@@ -81,10 +82,67 @@
         "numpy"
     ],
     "coc.preferences.formatOnSaveFiletypes": [
-        "python",
         "xml",
         "json"
     ],
     "clangd.semanticHighlighting": true,
-    "texlab.path": "/usr/local/bin/texlab"
+    "jedi.executable.command": "/usr/local/bin/jedi-language-server",
+    "texlab.path": "/usr/local/bin/texlab",
+    "diagnostic-languageserver.filetypes": {
+        "python": "pylint"
+    },
+    "diagnostic-languageserver.linters": {
+        "pylint": {
+            "sourceName": "pylint",
+            "command": "pylint",
+            "args": [
+                "--output-format",
+                "--extension-pkg-whitelist=cv2",
+                "text",
+                "--score",
+                "no",
+                "--msg-template",
+                "'{line}:{column}:{category}:{msg} ({msg_id}:{symbol})'",
+                "%file"
+            ],
+            "formatPattern": [
+                "^(\\d+?):(\\d+?):([a-z]+?):(.*)$",
+                {
+                    "line": 1,
+                    "column": 2,
+                    "security": 3,
+                    "message": 4
+                }
+            ],
+            "rootPatterns": [
+                ".git",
+                "pyproject.toml",
+                "setup.py"
+            ],
+            "securities": {
+                "informational": "hint",
+                "refactor": "info",
+                "convention": "info",
+                "warning": "warning",
+                "error": "error",
+                "fatal": "error"
+            },
+            "offsetColumn": 1,
+            "formatLines": 1
+        }
+    },
+    "diagnostic-languageserver.formatFiletypes": {
+        "python": [
+            "black"
+        ]
+    },
+    "diagnostic-languageserver.formatters": {
+        "black": {
+            "command": "black",
+            "args": [
+                "-q",
+                "-"
+            ]
+        }
+    }
 }

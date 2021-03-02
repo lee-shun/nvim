@@ -53,8 +53,6 @@ let g:coc_global_extensions = [
             \ 'coc-yank',
             \ 'coc-tabnine',
             \]
-"           \ 'coc-texlab',
-"           \ 'coc-vimtex'
 
 
 
