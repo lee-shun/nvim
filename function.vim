@@ -19,6 +19,24 @@
 "****************************************有用函数**************************************************
 
 "===
+"=== 转换tab为空格
+"===
+fun! Tab2Sapce()
+    exec "set tabstop=4"
+    exec "set expandtab"
+    exec "%retab!"
+endfun
+ 
+"===
+"=== 空格替换为TAB：
+"===
+fun! Sapce2Tab()
+    exec "set tabstop=4"
+    exec "set noexpandtab"
+    exec "%retab!"
+endfun
+
+"===
 "=== 清理空格
 "===
 fun! CleanExtraSpaces()

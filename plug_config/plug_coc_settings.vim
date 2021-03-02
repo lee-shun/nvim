@@ -55,10 +55,10 @@ let g:coc_global_extensions = [
             \ 'coc-markdownlint',
             \ 'coc-markmap',
             \ 'coc-jedi',
-			\ 'coc-texlab',
+            \ 'coc-texlab',
             \]
-"			\ 'coc-texlab',
-"			\ 'coc-vimtex'
+"           \ 'coc-texlab',
+"           \ 'coc-vimtex'
 
 
 

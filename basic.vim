@@ -63,8 +63,10 @@ noremap <C-h> :set nohlsearch!<CR>
 "缩进与折叠
 set smartindent
 set tabstop=4
-set shiftwidth=4
 set softtabstop=4
+set shiftwidth=4
+set expandtab
+
 set foldmethod=manual " 手动折叠
 set foldlevel=99      " 折叠文件打开展开
 set foldenable
