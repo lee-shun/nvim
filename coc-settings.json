@@ -52,13 +52,15 @@
     "diagnostic.virtualTextPrefix": " ❯❯❯ ",
     "diagnostic.virtualText": true,
     "diagnostic.messageTarget": "echo",
-    "codeLens.enable": true,
+    "snippets.ultisnips.directories": [
+        "$HOME/.config/nvim/Ultisnips/",
+        "$HOME/.config/nvim/plugged/vim-snippets/UltiSnips/"
+    ],
     "coc.preferences.formatOnSaveFiletypes": [
         "python",
         "xml",
         "json"
     ],
-    "clangd.semanticHighlighting": true,
     "explorer.sources": [
         {
             "name": "buffer",
@@ -69,15 +71,12 @@
             "expand": true
         }
     ],
-    "snippets.ultisnips.directories": [
-        "$HOME/.config/nvim/Ultisnips/",
-        "$HOME/.config/nvim/plugged/vim-snippets/UltiSnips/"
-    ],
     "explorer.file.showHiddenFiles": true,
     "explorer.icon.enableNerdfont": true,
     "explorer.buffer.showHiddenBuffers": false,
     "git.showCommitInFloating": true,
     "git.addGBlameToVirtualText": true,
+    "codeLens.enable": true,
     "coc-actions.hideCursor": true,
     "coc-actions.showActionKind": true,
     "cSpell.userWords": [
@@ -86,6 +85,7 @@
         "neovim",
         "numpy"
     ],
+    "clangd.semanticHighlighting": true,
     "jedi.executable.command": "/usr/local/bin/jedi-language-server",
     "texlab.path": "/usr/local/bin/texlab"
 }
