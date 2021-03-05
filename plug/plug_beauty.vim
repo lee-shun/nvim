@@ -59,6 +59,8 @@ Plug 'romgrk/barbar.nvim'
 
 Plug 'glepnir/oceanic-material'
 
+Plug 'sainnhe/sonokai'
+
 " Plug 'morhetz/gruvbox'
 
 " Plug 'joshdick/onedark.vim'

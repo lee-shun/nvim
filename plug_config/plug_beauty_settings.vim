@@ -25,13 +25,13 @@ set background=dark
 " colorscheme gruvbox9_soft
 " colorscheme onedark
 " colorscheme snazzy
-colorscheme oceanic_material
+colorscheme sonokai
 
 "===
 "===lightline
 "===
 let g:lightline = {
-            \ 'colorscheme': 'wombat',
+            \ 'colorscheme': 'sonokai',
             \ 'active': {
             \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'filename', 'modified' ] ]
             \ },
