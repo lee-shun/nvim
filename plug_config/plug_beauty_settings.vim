@@ -106,6 +106,12 @@ let g:xtabline_settings.last_open_first = 1
 " noremap \p :XTabInfo<CR>
 
 
+
+" ===
+" === xtabline
+" ===
+nnoremap <backspace> :BufferPick<CR>
+
 "===
 "=== airline
 "===

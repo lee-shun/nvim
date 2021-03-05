@@ -25,7 +25,7 @@ Plug 'itchyny/lightline.vim'
 
 " Plug 'mengelbrecht/lightline-bufferline'
 
-Plug 'mg979/vim-xtabline'
+" Plug 'mg979/vim-xtabline'
 
 "Plug 'ap/vim-buftabline'
 
@@ -41,7 +41,11 @@ Plug 'mg979/vim-xtabline'
 
 " Plug 'hardcoreplayers/spaceline.vim'
 
-Plug 'ryanoasis/vim-devicons'
+" Plug 'ryanoasis/vim-devicons'
+
+Plug 'kyazdani42/nvim-web-devicons'
+
+Plug 'romgrk/barbar.nvim'
 
 "Plug 'vim-airline/vim-airline'
 
