@@ -48,7 +48,7 @@ and feel guilty to cheat behind her 😉, at least make sure the vim version is 
 
 * the file or directory with * means it will be created automatically after installing.
 
-| Files or Directory     | Illustrations                                                                                     |
+| Files or Directory     | Illustrations                                                                                    |
 |------------------------|--------------------------------------------------------------------------------------------------|
 | init.vim               | The entrance file of the whole config.                                                           |
 | basic.vim              | The basic config of the (neo)vim, includes keybindings and other basic features without plugins. |
@@ -57,6 +57,7 @@ and feel guilty to cheat behind her 😉, at least make sure the vim version is 
 | coc-settings.json      | The config for coc.nvim platform                                                                 |
 | **autolaod/**          | "Vim-plug" plugin manager.                                                                       |
 | **plug/**              | The catalog for the different plugins.                                                           |
+| **ftplugin/**          | The special settings for different kinds of filetypes.                                           |
 | **plug_config/**       | The custom settings for the above installed plugins.                                             |
 | **Ultisnips/**         | The custom collection of the snippest for coc-snippest.                                          |
 | ***plugged/**          | The plugin installing directory.                                                                 |
