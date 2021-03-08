@@ -172,7 +172,7 @@ noremap <LEADER>bd :bd<CR>
 
 "**************************************编辑neovimrc********************************************
 
-noremap <LEADER>rc :e $NVIM_CONF_PATH/init.vim<CR>
+noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
 
 "**************************************文件关闭光标记忆********************************************
 
@@ -206,7 +206,7 @@ nnoremap ]<space> :<c-u>put =repeat(nr2char(10), v:count1)<cr>
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
 "****************************************存储历史记录**************************************************
-if empty(glob('$NVIM_CONF_PATH/tmp/'))
+if empty(glob('~/.config/nvim/tmp/'))
     echo "Making the tmp dir!"
     silent exec "!mkdir -p ~/.config/nvim/tmp/backup"
     silent exec "!mkdir -p ~/.config/nvim/tmp/undo"
@@ -215,9 +215,9 @@ endif
 set undofile
 set swapfile
 set nobackup
-set undodir=$NVIM_CONF_PATH/tmp/undo
-set backupdir=$NVIM_CONF_PATH/tmp/backup
-set directory=$NVIM_CONF_PATH/tmp/backup
+set undodir=~/.config/nvim/tmp/undo
+set backupdir=~/.config/nvim/tmp/backup
+set directory=~/.config/nvim/tmp/backup
 
 "****************************************内置终端**************************************************
 " ===
