@@ -16,46 +16,29 @@
 "**********************************************************************************************************
 
 
-""===
-""=== Auto load for first time uses
-""===
-"if empty(glob('~/.config/nvim/autoload/plug.vim'))
-"    silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
-"                \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-"    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-"endif
-
-
-"===
-"=== Create a _machine_specific.vim file to adjust machine specific stuff, like python interpreter location
-"===
-let has_machine_specific_file = 1
-if empty(glob('~/.config/nvim/_machine_specific.vim'))
-    let has_machine_specific_file = 0
-    silent! exec "!touch ~/.config/nvim/_machine_specific.vim"
-endif
+let $NVIM_CONF_PATH = "$HOME/.config/nvim"
 
 "===
 "=== machine_specific.vim
 "===
-source ~/.config/nvim/_machine_specific.vim
+source $NVIM_CONF_PATH/_machine_specific.vim
 
 "===
 "=== basic.vim
 "===
-source ~/.config/nvim/basic.vim
+source $NVIM_CONF_PATH/basic.vim
 
 "===
 "=== function.vim
 "===
-source ~/.config/nvim/function.vim
+source $NVIM_CONF_PATH/function.vim
 
 "===
 "=== plugs.vim
 "===
-source ~/.config/nvim/plug/plugs.vim
+source $NVIM_CONF_PATH/plug/plugs.vim
 
 "===
 "=== plugs_settings.vim
 "===
-source ~/.config/nvim/plug_config/plugs_settings.vim
+source $NVIM_CONF_PATH/plug_config/plugs_settings.vim

@@ -172,23 +172,21 @@ noremap <LEADER>bd :bd<CR>
 
 "**************************************编辑neovimrc********************************************
 
-noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
+noremap <LEADER>rc :e $NVIM_CONF_PATH/init.vim<CR>
 
 "**************************************文件关闭光标记忆********************************************
 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-"****************************************外部程序启动**********************************************
-
 "************************************双击查找下一个占位符******************************************
 
 nnoremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
 
-"************************************C++单行注释方式改变******************************************
+"************************************C/C++单行注释方式改变******************************************
 
-nnoremap <LEADER>c <Esc>k^/\/\/<CR>d2lv$hdA/* */<Esc>2hP$:set nohlsearch<CR>
+nnoremap <LEADER>c <Esc>$F/ld2hd$i/*<Esc>pa<space>*/<Esc>
 
-"************************************C++注释更改******************************************
+"************************************C/C++注释更改******************************************
 
 nnoremap cic <Esc>0f*2lvt*hc
 
@@ -208,16 +206,16 @@ nnoremap ]<space> :<c-u>put =repeat(nr2char(10), v:count1)<cr>
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
 "****************************************存储历史记录**************************************************
-silent !mkdir -p ~/.config/nvim/tmp/backup
-silent !mkdir -p ~/.config/nvim/tmp/undo
-" silent !mkdir -p ~/.config/nvim/tmp/sessions
+silent !mkdir -p $NVIM_CONF_PATH/tmp/backup
+silent !mkdir -p $NVIM_CONF_PATH/tmp/undo
+" silent !mkdir -p $NVIM_CONF_PATH/tmp/sessions
 
 set undofile
 set swapfile
 set nobackup
-set undodir=~/.config/nvim/tmp/undo
-set backupdir=~/.config/nvim/tmp/backup
-set directory=~/.config/nvim/tmp/backup
+set undodir=$NVIM_CONF_PATH/tmp/undo
+set backupdir=$NVIM_CONF_PATH/tmp/backup
+set directory=$NVIM_CONF_PATH/tmp/backup
 
 "****************************************内置终端**************************************************
 " ===
