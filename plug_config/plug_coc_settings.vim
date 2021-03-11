@@ -24,7 +24,7 @@
 let g:coc_global_extensions = [
             \ 'coc-cmake',
             \ 'coc-clangd',
-            \ 'coc-jedi',
+            \ 'coc-pyright',
             \ 'coc-texlab',
             \ 'coc-sh',
             \ 'coc-markdownlint',
