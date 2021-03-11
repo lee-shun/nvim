@@ -76,20 +76,20 @@
     "coc-actions.hideCursor": true,
     "coc-actions.showActionKind": true,
     "cSpell.userWords": [
-      "imread",
-      "imshow",
-      "moveit",
-      "neovim",
-      "nparray",
-      "numpy",
-      "sobel"
+        "imread",
+        "imshow",
+        "moveit",
+        "neovim",
+        "nparray",
+        "numpy",
+        "sobel"
     ],
     "coc.preferences.formatOnSaveFiletypes": [
         "xml",
         "json"
     ],
     "clangd.semanticHighlighting": true,
-    "jedi.executable.command": "/usr/local/bin/jedi-language-server",
+    "jedi.executable.command": "jedi-language-server",
     "texlab.path": "/usr/local/bin/texlab",
     "diagnostic-languageserver.filetypes": {
         "python": "pylint"
