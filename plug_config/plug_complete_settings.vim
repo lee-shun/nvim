@@ -18,12 +18,12 @@
 "===
 "=== coc.nvim
 "===
-source ~/.config/nvim/plug_config/plug_coc_settings.vim
+source $NVIM_CONF_PATH/plug_config/plug_coc_settings.vim
 
 "===
 "=== ncm2
 "===
-" source ~/.config/nvim/plug_config/plug_ncm2_settings.vim
+" source $NVIM_CONF_PATH/plug_config/plug_ncm2_settings.vim
 
 "===
 "===sinps
@@ -31,4 +31,4 @@ source ~/.config/nvim/plug_config/plug_coc_settings.vim
 let g:UltiSnipsExpandTrigger="<c-e>"
 let g:UltiSnipsJumpForwardTrigger="<c-e>"
 let g:UltiSnipsJumpBackwardTrigger="<c-n>"
-let g:UltiSnipsSnippetDirectories = [$HOME.'/.config/nvim/Ultisnips/', $HOME.'/.config/nvim/plugged/vim-snippets/UltiSnips/']
+let g:UltiSnipsSnippetDirectories = [$NVIM_CONF_PATH . '/Ultisnips/', $NVIM_CONF_PATH . '/plugged/vim-snippets/UltiSnips/']
