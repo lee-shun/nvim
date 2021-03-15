@@ -76,7 +76,7 @@ let g:mkdp_refresh_slow       = 0
 let g:mkdp_command_for_global = 0
 let g:mkdp_open_to_the_world  = 0
 let g:mkdp_open_ip            = ''
-let g:mkdp_browser            = 'chromium'
+let g:mkdp_browser            = default_browser
 let g:mkdp_echo_preview_url   = 0
 let g:mkdp_browserfunc        = ''
 let g:mkdp_preview_options    = {
@@ -110,7 +110,7 @@ let g:instant_markdown_autostart = 0
 " let g:instant_markdown_allow_external_content = 0
 " let g:instant_markdown_mathjax = 1
 let g:instant_markdown_autoscroll = 1
-let g:instant_markdown_browser = " chromium --new-window"
+let g:instant_markdown_browser = default_browser
 
 
 " ===
