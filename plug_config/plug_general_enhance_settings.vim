@@ -188,7 +188,7 @@ endfunc
 "==
 "== Vim floaterm
 "==
-nmap <C-t> :FloatermToggle<CR>
+" nmap <C-t> :FloatermToggle<CR>
 
 "==
 "== FZF

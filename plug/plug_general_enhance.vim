@@ -103,7 +103,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'kristijanhusak/defx-icons'
 " Plug 'preservim/nerdtree'
 " Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+Plug 'kevinhwang91/rnvimr'
 
 "git
 Plug 'rhysd/conflict-marker.vim'
