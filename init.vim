@@ -15,28 +15,32 @@
 "
 "**********************************************************************************************************
 
+"===
+"=== environment variables
+"===
+let $NVIM_CONF_PATH = "$HOME/.config/nvim"
 
 "===
 "=== machine_specific.vim
 "===
-source ~/.config/nvim/_machine_specific.vim
+source $NVIM_CONF_PATH/_machine_specific.vim
 
 "===
 "=== basic.vim
 "===
-source ~/.config/nvim/basic.vim
+source $NVIM_CONF_PATH/basic.vim
 
 "===
 "=== function.vim
 "===
-source ~/.config/nvim/function.vim
+source $NVIM_CONF_PATH/function.vim
 
 "===
 "=== plugs.vim
 "===
-source ~/.config/nvim/plug/plugs.vim
+source $NVIM_CONF_PATH/plug/plugs.vim
 
 "===
 "=== plugs_settings.vim
 "===
-source ~/.config/nvim/plug_config/plugs_settings.vim
+source $NVIM_CONF_PATH/plug_config/plugs_settings.vim

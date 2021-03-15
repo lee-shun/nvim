@@ -206,10 +206,10 @@ nnoremap ]<space> :<c-u>put =repeat(nr2char(10), v:count1)<cr>
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
 "****************************************存储历史记录**************************************************
-if empty(glob('~/.config/nvim/tmp/'))
+if empty(glob($NVIM_CONF_PATH ."/tmp/"))
     echo "Making the tmp dir!"
-    silent exec "!mkdir -p ~/.config/nvim/tmp/backup"
-    silent exec "!mkdir -p ~/.config/nvim/tmp/undo"
+    silent exec "!mkdir -p" . $NVIM_CONF_PATH . "/tmp/backup"
+    silent exec "!mkdir -p" . $NVIM_CONF_PATH . "/tmp/undo"
 endif
 
 set undofile
