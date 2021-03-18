@@ -29,10 +29,7 @@ filetype plugin indent on
 set encoding=UTF-8
 
 "显示设置
-" syntax on             " 设置高亮
 set scrolloff=5       " 设置滚动余量
-"set mouse=a           " 打开鼠标
-"colorscheme evening   "设置默认颜色
 set number            " 打开行号
 set relativenumber    " 相对行号
 set cursorline        " 打开光标提示线
