@@ -15,9 +15,6 @@
 "
 "**************************************************************************************************
 
-
-"**************************************交换文件设置区**********************************************
-
 "****************************************基本设置区************************************************
 
 let g:mapleader = ' '
@@ -55,7 +52,6 @@ exec "nohlsearch"
 set incsearch
 set ignorecase
 set smartcase
-noremap <C-h> :set nohlsearch!<CR>
 
 "缩进与折叠
 set smartindent
@@ -69,73 +65,18 @@ set foldlevel=99      " 折叠文件打开展开
 set foldenable
 
 "显示非可见字符
-" UI Symbols
-" icons:  ▏│ ¦ ╎ ┆ ⋮ ⦙ ┊ 
 set list
 set listchars=tab:\•\ ,trail:▫
-" set listchars=extends:>,precedes:<,nbsp:␣
 let &showbreak='↳'
 
 "共享设置
 set clipboard=unnamedplus
-
-"设置拼写检查
-noremap <LEADER>sc :set spell!<CR>
-
-"设置插入模式下自动提示
-inoremap <C-x> <C-x>s
-
-"************************************自动刷新vimrc*************************************************
-
-"autocmd BufWritePost $MYVIMRC source $MYVIMRC
-
-"***********************************宏快捷键*******************************************************
-
-noremap <LEADER>= @a
-
-"**************************************移动映射**************************************************
-
-nnoremap M J "合并行
-nnoremap <home> H
-nnoremap <end> L
-nnoremap S :w<CR>
-nnoremap Q :q<CR>
-nnoremap J 5j
-nnoremap K 5k
-nnoremap H 5h
-nnoremap L 5l
-
-vnoremap M J "合并行
-vnoremap <home> H
-vnoremap <end> L
-vnoremap S :w<CR>
-vnoremap Q :q<CR>
-vnoremap J 5j
-vnoremap K 5k
-vnoremap H 5h
-vnoremap L 5l
-
-"**************************************共享剪切板**************************************************
-
-"共享剪切板
-"vnoremap <Leader>y "+y
-"vnoremap <Leader>yy "+yy
-"nmap <Leader>p "+p
-
-"**************************************行号设置**************************************************
 
 nnoremap <F2> :set relativenumber! number!<CR>
 
 "**************************************分屏设置区**************************************************
 set splitright
 set splitbelow
-noremap <LEADER>sv :set splitright<CR>:vsplit<CR>
-noremap <LEADER>sl :split<CR>
-noremap <LEADER>l <C-w>l
-noremap <LEADER>h <C-w>h
-noremap <LEADER>j <C-w>j
-noremap <LEADER>k <C-w>k
-noremap <LEADER>w <C-w>w
 
 nnoremap <up> :res +5<CR>
 nnoremap <down> :res -5<CR>
@@ -152,24 +93,6 @@ inoremap <C-A-up> <nop>
 inoremap <C-A-down> <nop>
 inoremap <C-A-left> <nop>
 inoremap <C-A-right> <nop>
-
-"**************************************标签设置区**************************************************
-
-noremap te :tabe<CR>
-noremap tp :-tabnext<CR>
-noremap tn :+tabnext<CR>
-noremap tc :tabclose<cr>
-noremap tm :tabmove
-
-"**************************************Buffer设置区************************************************
-
-noremap <LEADER>bn :bn<CR>
-noremap <LEADER>bp :bp<CR>
-noremap <LEADER>bd :bd<CR>
-
-"**************************************编辑neovimrc********************************************
-
-noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
 
 "**************************************文件关闭光标记忆********************************************
 
@@ -203,10 +126,10 @@ nnoremap ]<space> :<c-u>put =repeat(nr2char(10), v:count1)<cr>
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
 "****************************************存储历史记录**************************************************
-if empty(glob($NVIM_CONF_PATH ."/tmp/"))
+if empty(glob("~/.config/nvim/tmp/"))
     echo "Making the tmp dir!"
-    silent exec "!mkdir -p" . $NVIM_CONF_PATH . "/tmp/backup"
-    silent exec "!mkdir -p" . $NVIM_CONF_PATH . "/tmp/undo"
+    silent exec "!mkdir -p ~/.config/nvim/tmp/backup"
+    silent exec "!mkdir -p ~/.config/nvim/tmp/undo"
 endif
 
 set undofile
