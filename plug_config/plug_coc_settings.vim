@@ -48,6 +48,7 @@ let g:coc_global_extensions = [
             \ 'coc-diagnostic',
             \ 'coc-actions',
             \ 'coc-calc',
+            \ 'coc-emoji',
             \ 'coc-word',
             \ 'coc-yank',
             \ 'coc-tabnine',

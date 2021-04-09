@@ -76,14 +76,15 @@
     "coc-actions.hideCursor": true,
     "coc-actions.showActionKind": true,
     "cSpell.userWords": [
-      "imread",
-      "imshow",
-      "moveit",
-      "ndarray",
-      "neovim",
-      "nparray",
-      "numpy",
-      "sobel"
+        "imread",
+        "imshow",
+        "markdownlint",
+        "moveit",
+        "ndarray",
+        "neovim",
+        "nparray",
+        "numpy",
+        "sobel"
     ],
     "coc.preferences.formatOnSaveFiletypes": [
         "python",
@@ -91,5 +92,6 @@
         "json"
     ],
     "clangd.semanticHighlighting": true,
+    "python.analysis.logLevel": "Trace",
     "texlab.path": "/usr/local/bin/texlab"
 }
