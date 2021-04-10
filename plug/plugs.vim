@@ -16,18 +16,18 @@
 "**********************************************************************************************************
 
 
-call plug#begin($NVIM_CONF_PATH . '/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 "VIM外观美化
-source $NVIM_CONF_PATH/plug/plug_beauty.vim
+source ~/.config/nvim/plug/plug_beauty.vim
 
 "基本输入提升
-source $NVIM_CONF_PATH/plug/plug_general_enhance.vim
+source ~/.config/nvim/plug/plug_general_enhance.vim
 
 "自动补全
-source $NVIM_CONF_PATH/plug/plug_complete.vim
+source ~/.config/nvim/plug/plug_complete.vim
 
 "各类语言支持
-source $NVIM_CONF_PATH/plug/plug_languages.vim
+source ~/.config/nvim/plug/plug_languages.vim
 
 call plug#end()

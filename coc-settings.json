@@ -76,15 +76,16 @@
     "coc-actions.hideCursor": true,
     "coc-actions.showActionKind": true,
     "cSpell.userWords": [
-        "imread",
-        "imshow",
-        "markdownlint",
-        "moveit",
-        "ndarray",
-        "neovim",
-        "nparray",
-        "numpy",
-        "sobel"
+      "Maxout",
+      "imread",
+      "imshow",
+      "markdownlint",
+      "moveit",
+      "ndarray",
+      "neovim",
+      "nparray",
+      "numpy",
+      "sobel"
     ],
     "coc.preferences.formatOnSaveFiletypes": [
         "python",

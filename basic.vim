@@ -41,10 +41,7 @@ set lazyredraw        " same as above
 set visualbell
 set ttyfast           " should make scrolling faster
 set t_Co=256          " 256颜色
-
-if has('nvim')
-    set termguicolors     " 使用gui，不和终端混合
-endif
+set termguicolors     " 使用gui，不和终端混合
 
 "搜索设置
 set hlsearch
@@ -71,10 +68,17 @@ let &showbreak='↳'
 
 "共享设置
 set clipboard=unnamedplus
+"共享剪切板
+"vnoremap <Leader>y "+y
+"vnoremap <Leader>yy "+yy
+"nmap <Leader>p "+p
+
+"**************************************行号设置**************************************************
 
 nnoremap <F2> :set relativenumber! number!<CR>
 
 "**************************************分屏设置区**************************************************
+
 set splitright
 set splitbelow
 
@@ -93,6 +97,10 @@ inoremap <C-A-up> <nop>
 inoremap <C-A-down> <nop>
 inoremap <C-A-left> <nop>
 inoremap <C-A-right> <nop>
+
+"**************************************编辑neovimrc********************************************
+
+noremap <LEADER>rc :e ~/.vim/vimrc<CR>
 
 "**************************************文件关闭光标记忆********************************************
 
@@ -121,11 +129,11 @@ nnoremap [<space> :<c-u>put! =repeat(nr2char(10), v:count1)<cr>'[
 nnoremap ]<space> :<c-u>put =repeat(nr2char(10), v:count1)<cr>
 
 "****************************************快速选中查找**********************************************
-" Visual mode pressing * or # searches for the current selection
-" Super useful! From an idea by Michael Naumann
+
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
 "****************************************存储历史记录**************************************************
+
 if empty(glob("~/.config/nvim/tmp/"))
     echo "Making the tmp dir!"
     silent exec "!mkdir -p ~/.config/nvim/tmp/backup"
@@ -143,24 +151,22 @@ set directory=~/.config/nvim/tmp/backup
 " ===
 " === Terminal Behaviors
 " ===
-if has('nvim')
-    let g:neoterm_autoscroll = 1
-    autocmd TermOpen term://* startinsert
-    tnoremap <C-N> <C-\><C-N>
-    tnoremap <C-O> <C-\><C-N><C-O>
-    let g:terminal_color_0  = '#000000'
-    let g:terminal_color_1  = '#FF5555'
-    let g:terminal_color_2  = '#50FA7B'
-    let g:terminal_color_3  = '#F1FA8C'
-    let g:terminal_color_4  = '#BD93F9'
-    let g:terminal_color_5  = '#FF79C6'
-    let g:terminal_color_6  = '#8BE9FD'
-    let g:terminal_color_7  = '#BFBFBF'
-    let g:terminal_color_8  = '#4D4D4D'
-    let g:terminal_color_9  = '#FF6E67'
-    let g:terminal_color_10 = '#5AF78E'
-    let g:terminal_color_11 = '#F4F99D'
-    let g:terminal_color_12 = '#CAA9FA'
-    let g:terminal_color_13 = '#FF92D0'
-    let g:terminal_color_14 = '#9AEDFE'
-endif
+let g:neoterm_autoscroll = 1
+autocmd TermOpen term://* startinsert
+tnoremap <C-N> <C-\><C-N>
+tnoremap <C-O> <C-\><C-N><C-O>
+let g:terminal_color_0  = '#000000'
+let g:terminal_color_1  = '#FF5555'
+let g:terminal_color_2  = '#50FA7B'
+let g:terminal_color_3  = '#F1FA8C'
+let g:terminal_color_4  = '#BD93F9'
+let g:terminal_color_5  = '#FF79C6'
+let g:terminal_color_6  = '#8BE9FD'
+let g:terminal_color_7  = '#BFBFBF'
+let g:terminal_color_8  = '#4D4D4D'
+let g:terminal_color_9  = '#FF6E67'
+let g:terminal_color_10 = '#5AF78E'
+let g:terminal_color_11 = '#F4F99D'
+let g:terminal_color_12 = '#CAA9FA'
+let g:terminal_color_13 = '#FF92D0'
+let g:terminal_color_14 = '#9AEDFE'
