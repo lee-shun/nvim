@@ -45,7 +45,7 @@ Plug 'itchyny/lightline.vim'
 
 Plug 'kyazdani42/nvim-web-devicons'
 
-Plug 'romgrk/barbar.nvim'
+" Plug 'romgrk/barbar.nvim'
 
 "Plug 'vim-airline/vim-airline'
 
