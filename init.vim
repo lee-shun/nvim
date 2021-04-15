@@ -18,24 +18,24 @@
 "===
 "=== machine_specific.vim
 "===
-source ~/.config/nvim/_machine_specific.vim
+source ~/AppData/Local/nvim/_machine_specific.vim
 
 "===
 "=== basic.vim
 "===
-source ~/.config/nvim/basic.vim
+source ~/AppData/Local/nvim/basic.vim
 
 "===
 "=== function.vim
 "===
-source ~/.config/nvim/function.vim
+source ~/AppData/Local/nvim/function.vim
 
 "===
 "=== plugs.vim
 "===
-source ~/.config/nvim/plug/plugs.vim
+source ~/AppData/Local/nvim/plug/plugs.vim
 
 "===
 "=== plugs_settings.vim
 "===
-source ~/.config/nvim/plug_config/plugs_settings.vim
+source ~/AppData/Local/nvim/plug_config/plugs_settings.vim

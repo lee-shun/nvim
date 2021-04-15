@@ -18,7 +18,7 @@
 "===
 "=== coc.nvim
 "===
-source ~/.config/nvim/plug_config/plug_coc_settings.vim
+" source ~/AppData/Local/nvim/plug_config/plug_coc_settings.vim
 
 "===
 "=== ncm2
@@ -31,4 +31,4 @@ source ~/.config/nvim/plug_config/plug_coc_settings.vim
 let g:UltiSnipsExpandTrigger="<c-e>"
 let g:UltiSnipsJumpForwardTrigger="<c-e>"
 let g:UltiSnipsJumpBackwardTrigger="<c-n>"
-let g:UltiSnipsSnippetDirectories = ['~/.config/nvim/Ultisnips/', '~/.config/nvim/plugged/vim-snippets/UltiSnips/']
+let g:UltiSnipsSnippetDirectories = ['~/AppData/Local/nvim/Ultisnips/', '~/AppData/Local/nvim/plugged/vim-snippets/UltiSnips/']

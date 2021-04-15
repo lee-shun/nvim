@@ -134,18 +134,18 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
 "****************************************存储历史记录**************************************************
 
-if empty(glob("~/.config/nvim/tmp/"))
+if empty(glob("~/AppData/Local/nvim/tmp/"))
     echo "Making the tmp dir!"
-    silent exec "!mkdir -p ~/.config/nvim/tmp/backup"
-    silent exec "!mkdir -p ~/.config/nvim/tmp/undo"
+    silent exec "!mkdir -p ~/AppData/Local/nvim/tmp/backup"
+    silent exec "!mkdir -p ~/AppData/Local/nvim/tmp/undo"
 endif
 
 set undofile
 set swapfile
 set nobackup
-set undodir=~/.config/nvim/tmp/undo
-set backupdir=~/.config/nvim/tmp/backup
-set directory=~/.config/nvim/tmp/backup
+set undodir=~/AppData/Local/nvim/tmp/undo
+set backupdir=~/AppData/Local/nvim/tmp/backup
+set directory=~/AppData/Local/nvim/tmp/backup
 
 "****************************************内置终端**************************************************
 " ===

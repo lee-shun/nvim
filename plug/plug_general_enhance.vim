@@ -51,11 +51,11 @@ Plug 'tpope/vim-commentary'
 Plug 'AndrewRadev/switch.vim' " gs to switch
 
 "函数列表" Taglist
-Plug 'liuchengxu/vista.vim'
+" Plug 'liuchengxu/vista.vim'
 
 "输入法自动切换
 "Plug 'lilydjwg/fcitx.vim'
-Plug 'rlue/vim-barbaric' " slowing down vim-multiple-cursors
+" Plug 'rlue/vim-barbaric' " slowing down vim-multiple-cursors
 
 "英语书写加强
 " Plug 'reedes/vim-wordy'
@@ -85,8 +85,8 @@ Plug 'junegunn/vim-easy-align'
 " Plug 'MattesGroeger/vim-bookmarks'
 
 "查找替换`
-Plug 'junegunn/fzf.vim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'brooth/far.vim'
 "Plug 'ctrlpvim/ctrlp.vim'
 "Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
@@ -101,9 +101,9 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " endif
 " Plug 'kristijanhusak/defx-git'
 " Plug 'kristijanhusak/defx-icons'
-" Plug 'preservim/nerdtree'
-" Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'kevinhwang91/rnvimr'
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'kevinhwang91/rnvimr'
 
 "git
 Plug 'rhysd/conflict-marker.vim'

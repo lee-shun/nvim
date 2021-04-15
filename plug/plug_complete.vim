@@ -17,11 +17,11 @@
 
 "代码片段
 " Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+" Plug 'honza/vim-snippets'
 " Plug 'theniceboy/vim-snippets'
 
 "coc平台
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "YCM平台
 "Plug 'ycm-core/YouCompleteMe'
