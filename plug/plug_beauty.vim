@@ -21,7 +21,7 @@
 
 "Plug 'theniceboy/eleline.vim'
 
-Plug 'itchyny/lightline.vim'
+" Plug 'itchyny/lightline.vim'
 
 " Plug 'mengelbrecht/lightline-bufferline'
 
@@ -47,9 +47,9 @@ Plug 'kyazdani42/nvim-web-devicons'
 
 " Plug 'romgrk/barbar.nvim'
 
-"Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline'
 
-"Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline-themes'
 
 " Plug 'connorholyday/vim-snazzy'
 
@@ -63,13 +63,13 @@ Plug 'sainnhe/sonokai'
 
 " Plug 'morhetz/gruvbox'
 
-" Plug 'joshdick/onedark.vim'
+Plug 'joshdick/onedark.vim'
 
 " Plug 'mhartington/oceanic-next'
 
-"Plug 'mhinz/vim-startify'
+Plug 'mhinz/vim-startify'
 
-Plug 'glepnir/dashboard-nvim'
+" Plug 'glepnir/dashboard-nvim'
 
 " Plug 'junegunn/goyo.vim'
 

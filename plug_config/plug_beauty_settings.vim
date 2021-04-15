@@ -116,11 +116,11 @@ nnoremap <backspace> :BufferPick<CR>
 "=== airline
 "===
 let g:airline_powerline_fonts = 1
-"let g:airline_theme='gruvbox'
+let g:airline_theme='sonokai'
 "let g:airline_theme='powerlineish'
 "let g:airline_theme='deus'
-let g:airline_theme='oceanicnext'
-"let g:airline#extensions#tabline#enabled = 1
+" let g:airline_theme='oceanicnext'
+let g:airline#extensions#tabline#enabled = 1
 
 
 "===
