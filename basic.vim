@@ -63,7 +63,7 @@ set foldenable
 
 "显示非可见字符
 set list
-set listchars=tab:\•\ ,trail:▫
+set listchars=tab:»·,nbsp:+,trail:·,extends:→,precedes:←
 let &showbreak='↳'
 
 "共享设置
@@ -125,7 +125,7 @@ nnoremap ]e  :<c-u>execute 'move +'. v:count1<cr>
 
 "****************************************快速添加空行**********************************************
 
-nnoremap [<space> :<c-u>put! =repeat(nr2char(10), v:count1)<cr>'[
+nnoremap [<space> :<c-u>put! =repeat(nr2char(10), v:count1)<cr>
 nnoremap ]<space> :<c-u>put =repeat(nr2char(10), v:count1)<cr>
 
 "****************************************快速选中查找**********************************************
