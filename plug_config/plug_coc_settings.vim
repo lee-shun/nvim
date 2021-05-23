@@ -34,8 +34,6 @@ let g:coc_global_extensions = [
             \ 'coc-xml',
             \ 'coc-yaml',
             \ 'coc-vimlsp',
-            \ 'coc-gitignore',
-            \ 'coc-git',
             \ 'coc-snippets',
             \ 'coc-lists',
             \ 'coc-marketplace',

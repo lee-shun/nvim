@@ -114,8 +114,6 @@ let g:NERDTreeIndicatorMapCustom = {
 let g:rainbow_active = 1
 
 
-
-
 "===
 "===Far
 "===
@@ -141,11 +139,14 @@ let g:far#enable_undo = 1
 "nnoremap <leader>rw :ThesaurusQueryReplaceCurrentWord<CR>
 "vnoremap <Leader>rw y:ThesaurusQueryReplace <C-r>"<CR>
 
+
 " ===
 " === indentLine
 " ===
 let g:indentLine_setColors = 0
 let g:indentLine_enabled = 0
+
+
 "===
 "===indent_guides
 "===
@@ -153,6 +154,7 @@ let g:indent_guides_enable_on_vim_startup = 0
 "let g:indent_guides_auto_colors = 0
 "autocmd VimEnter,Colorscheme * hi IndentGuidesOdd  ctermbg=black
 "autocmd VimEnter,Colorscheme * hi IndentGuidesEven ctermbg=darkgrey
+
 
 "===
 "===Vista
@@ -167,6 +169,7 @@ let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
 "===
 let g:bookmark_sign = '♥'
 "let g:bookmark_highlight_lines = 1
+
 
 " ===
 " === Undotree
@@ -185,10 +188,12 @@ function g:Undotree_CustomMap()
     nmap <buffer> E 5<plug>UndotreePreviousState
 endfunc
 
+
 "==
 "== Vim floaterm
 "==
 " nmap <C-t> :FloatermToggle<CR>
+
 
 "==
 "== FZF
@@ -200,22 +205,29 @@ let g:fzf_preview_window = 'right:60%'
 let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
 
-" ===
-" === vim-calendar
-" ===
+
+"===
+"=== vim-calendar
+"===
 noremap \c :Calendar -position=here<CR>
 noremap \\ :Calendar -view=clock -position=here<CR>
 " let g:calendar_google_calendar = 1
 " let g:calendar_google_task = 1
 
-" ===
-" === vim-context
-" ===
 
+"===
+"=== vim-context
+"===
 let g:context_add_mappings=0
 
-" ===
-" === vim-move
-" ===
 
+"===
+"=== vim-move
+"===
 let g:move_key_modifier = 'S-A'
+
+
+"===
+"=== git sign
+"===
+lua require('gitsigns').setup()
