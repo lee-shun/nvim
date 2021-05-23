@@ -62,6 +62,13 @@ let g:spaceline_seperate_style= 'slant-cons'
 
 
 "===
+"=== spaceline
+"===
+lua << EOF
+require('statusline.miniline')
+EOF
+
+"===
 "=== DashBoard
 "===
 " Default value is clap

@@ -21,7 +21,7 @@
 
 "Plug 'theniceboy/eleline.vim'
 
-Plug 'itchyny/lightline.vim'
+" Plug 'itchyny/lightline.vim'
 
 " Plug 'mengelbrecht/lightline-bufferline'
 
@@ -43,7 +43,11 @@ Plug 'itchyny/lightline.vim'
 
 " Plug 'ryanoasis/vim-devicons'
 
+Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+
 Plug 'kyazdani42/nvim-web-devicons'
+
+Plug 'ryanoasis/vim-devicons'
 
 Plug 'romgrk/barbar.nvim'
 
