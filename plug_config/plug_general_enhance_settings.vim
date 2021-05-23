@@ -230,4 +230,29 @@ let g:move_key_modifier = 'S-A'
 "===
 "=== git sign
 "===
-lua require('gitsigns').setup()
+lua << EOF
+require('gitsigns').setup()
+EOF
+
+
+"===
+"=== treesitter
+"===
+lua << EOF
+require('nvim-treesitter.configs').setup {
+  highlight = {
+    enable = true,
+  },
+  rainbow = {
+    enable = true,
+  }
+}
+EOF
+
+
+"===
+"=== comment
+"===
+lua << EOF
+require('nvim_comment').setup()
+EOF

@@ -39,10 +39,8 @@ let g:coc_global_extensions = [
             \ 'coc-marketplace',
             \ 'coc-explorer',
             \ 'coc-translator',
-            \ 'coc-pairs',
             \ 'coc-spell-checker',
             \ 'coc-syntax',
-            \ 'coc-highlight',
             \ 'coc-diagnostic',
             \ 'coc-actions',
             \ 'coc-calc',
@@ -51,6 +49,11 @@ let g:coc_global_extensions = [
             \ 'coc-yank',
             \ 'coc-tabnine',
             \]
+            " \ 'coc-gitignore',
+            " \ 'coc-git',
+            " \ 'coc-pairs',
+            " \ 'coc-highlight',
+
 
 
 

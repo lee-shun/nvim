@@ -16,13 +16,16 @@
 "**********************************************************************************************************
 
 " 普通高亮
-Plug 'jaxbot/semantic-highlight.vim'
-" Plug 'norcalli/nvim-colorizer.lua'
+" Plug 'jaxbot/semantic-highlight.vim'
+Plug 'norcalli/nvim-colorizer.lua'
 " Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
-Plug 'RRethy/vim-illuminate'
+" Plug 'RRethy/vim-illuminate'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  
+Plug 'nvim-treesitter/playground'
 
 "彩虹括号
-Plug 'luochen1990/rainbow'
+" Plug 'luochen1990/rainbow'
+Plug 'p00f/nvim-ts-rainbow'
 
 "平滑翻页
 Plug 'psliwka/vim-smoothie'
@@ -30,6 +33,7 @@ Plug 'psliwka/vim-smoothie'
 "自动括号
 " Plug 'jiangmiao/auto-pairs'
 " Plug 'Raimondi/delimitMate'
+Plug 'windwp/nvim-autopairs'
 
 "剪切板历史
 " Plug 'junegunn/vim-peekaboo'
@@ -44,8 +48,9 @@ Plug 'gcmt/wildfire.vim'
 Plug 'junegunn/vim-after-object' " da= to delete what's after =
 
 "自动注释
-Plug 'tpope/vim-commentary'
+" Plug 'tpope/vim-commentary'
 "Plug 'scrooloose/nerdcommenter' " in <space>cn to comment a line
+Plug 'terrortylor/nvim-comment'
 
 "bool型翻转
 Plug 'AndrewRadev/switch.vim' " gs to switch
