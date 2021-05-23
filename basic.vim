@@ -36,6 +36,7 @@ set noshowmode        " 不要显示模式
 set nowrap            " 显示行折叠
 set linebreak         " 不在单词内部折行
 set ttimeoutlen=0     " 单字符命令等待时间
+set conceallevel=0    " 不要隐藏显示
 set wildmenu          " vim命令自动补全
 set lazyredraw        " same as above
 set visualbell
