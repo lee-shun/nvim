@@ -32,7 +32,7 @@ Plug 'lervag/vimtex'
 " Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 "markdown
-" Plug 'dkarter/bullets.vim'
+Plug 'dkarter/bullets.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install_sync() }, 'for' :['markdown', 'vim-plug'] }
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
 Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown'] }
