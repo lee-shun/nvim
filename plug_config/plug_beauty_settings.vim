@@ -31,23 +31,15 @@ colorscheme sonokai
 "===lightline
 "===
 let g:lightline = {
-            \ 'colorscheme': 'sonokai',
-            \ 'active': {
-                \   'left': [ [ 'mode', 'paste' ],
-                \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-                \ },
-            \ 'tabline': {
-            \   'left': [ ['buffers'] ],
-            \   'right': [ ['close'] ]
-            \ },
-            \ 'component_expand': {
-            \   'buffers': 'lightline#bufferline#buffers',
-            \   'gitbranch': 'FugitiveHead'
-            \ },
-            \ 'component_type': {
-            \   'buffers': 'tabsel'
-            \ }
-            \ }
+      \ 'colorscheme': 'sonokai',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
 
 "===
 "===lightline-bufferline
