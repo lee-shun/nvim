@@ -256,3 +256,27 @@ EOF
 lua << EOF
 require('nvim_comment').setup()
 EOF
+
+
+"===
+"=== auto-pairs
+"===
+lua << EOF
+require('nvim-autopairs').setup()
+EOF
+
+
+"===
+"=== colorizer
+"===
+lua << EOF
+require("colorizer").setup()
+EOF
+
+
+"===
+"=== shade
+"===
+lua << EOF
+require("shade").setup()
+EOF

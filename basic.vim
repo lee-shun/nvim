@@ -43,6 +43,7 @@ set visualbell
 set ttyfast           " should make scrolling faster
 set t_Co=256          " 256颜色
 set termguicolors     " 使用gui，不和终端混合
+au TextYankPost * silent! lua vim.highlight.on_yank()
 
 "搜索设置
 set hlsearch

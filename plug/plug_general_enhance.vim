@@ -72,6 +72,7 @@ Plug 'Yggdroot/indentLine'
 
 "光标所在单词下划线
 " Plug 'itchyny/vim-cursorword'
+Plug 'yamatsum/nvim-cursorline'
 
 "多重光标
 "Plug 'terryma/vim-multiple-cursors'
@@ -159,3 +160,6 @@ Plug 'matze/vim-move'
 
 "行号切换
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
+
+"注意集中
+Plug 'sunjon/shade.nvim'
