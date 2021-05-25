@@ -135,7 +135,7 @@ Plug 'Dimercel/todo-vim'
 " Plug 'pseewald/vim-anyfold'
 
 "折叠加速
-Plug 'Konfekt/FastFold'
+" Plug 'Konfekt/FastFold'
 "
 "改变折叠样式
 Plug 'lambdalisue/readablefold.vim'
@@ -143,7 +143,6 @@ Plug 'lambdalisue/readablefold.vim'
 "替换
 " Plug 'svermeulen/vim-subversive'
 
-"
 " Plug 'theniceboy/argtextobj.vim'
 
 "f F命令
@@ -159,7 +158,7 @@ Plug 'rhysd/clever-f.vim'
 Plug 'matze/vim-move'
 
 "行号切换
-Plug 'jeffkreeftmeijer/vim-numbertoggle'
+" Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 "注意集中
-Plug 'sunjon/shade.nvim'
+" Plug 'sunjon/shade.nvim'
