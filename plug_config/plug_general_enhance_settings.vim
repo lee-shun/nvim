@@ -278,5 +278,5 @@ EOF
 "=== shade
 "===
 lua << EOF
-require("shade").setup()
+-- require("shade").setup()
 EOF

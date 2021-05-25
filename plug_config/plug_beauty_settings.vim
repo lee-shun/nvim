@@ -65,7 +65,7 @@ let g:spaceline_seperate_style= 'slant-cons'
 "=== spaceline
 "===
 lua << EOF
-require('statusline.miniline')
+require('statusline.fulline')
 EOF
 
 "===
