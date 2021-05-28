@@ -15,18 +15,26 @@
 "
 "**********************************************************************************************************
 
-"代码片段
-" Plug 'SirVer/ultisnips'
+"===
+"=== Snippest
+"===
+Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 " Plug 'theniceboy/vim-snippets'
 
-"coc平台
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"===
+"=== Coc
+"===
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-"YCM平台
+"===
+"=== You Complete Me
+"===
 "Plug 'ycm-core/YouCompleteMe'
 
-""NCM2平台
+"===
+"=== NCM2
+"===
 "Plug 'ncm2/ncm2'
 "Plug 'roxma/nvim-yarp'
 
@@ -42,3 +50,16 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 ""NCM2-python
 "Plug 'ncm2/ncm2-jedi'
+
+
+"===
+"=== Neovim Lsp
+"===
+Plug 'neovim/nvim-lspconfig'
+" Plug 'nvim-lua/completion-nvim'
+Plug 'hrsh7th/nvim-compe'
+Plug 'onsails/lspkind-nvim'
+Plug 'glepnir/lspsaga.nvim'
+Plug 'sbdchd/neoformat'
+Plug 'folke/lsp-colors.nvim'
+Plug 'folke/trouble.nvim'

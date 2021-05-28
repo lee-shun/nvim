@@ -107,6 +107,12 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 
+"===
+"=== git sign
+"===
+lua << EOF
+require('nvimtree')
+EOF
 
 "===
 "===rainbow

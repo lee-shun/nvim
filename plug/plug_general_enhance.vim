@@ -15,6 +15,14 @@
 "
 "**********************************************************************************************************
 
+
+"===
+"=== basic lib
+"===
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+"
+
 " 普通高亮
 " Plug 'jaxbot/semantic-highlight.vim'
 Plug 'norcalli/nvim-colorizer.lua'
@@ -96,6 +104,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'brooth/far.vim'
 "Plug 'ctrlpvim/ctrlp.vim'
 "Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
+Plug 'nvim-telescope/telescope.nvim'
 
 "文件目录
 " if has('nvim')
@@ -109,6 +118,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'kristijanhusak/defx-icons'
 " Plug 'preservim/nerdtree'
 " Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'kyazdani42/nvim-tree.lua'
 Plug 'kevinhwang91/rnvimr'
 
 "git
