@@ -18,6 +18,9 @@
 
 call plug#begin('~/.config/nvim/plugged')
 
+"Plugs written in lua
+source ~/.config/nvim/plug/plug_lua.vim
+
 "VIM外观美化
 source ~/.config/nvim/plug/plug_beauty.vim
 

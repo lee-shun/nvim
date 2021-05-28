@@ -18,16 +18,14 @@
 "===
 "=== Snippest
 "===
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 " Plug 'theniceboy/vim-snippets'
-Plug 'rafamadriz/friendly-snippets'
-Plug 'hrsh7th/vim-vsnip'
 
 "===
 "=== Coc
 "===
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "===
 "=== You Complete Me
@@ -52,17 +50,3 @@ Plug 'hrsh7th/vim-vsnip'
 
 ""NCM2-python
 "Plug 'ncm2/ncm2-jedi'
-
-
-"===
-"=== Neovim Lsp
-"===
-Plug 'neovim/nvim-lspconfig'
-" Plug 'nvim-lua/completion-nvim'
-Plug 'hrsh7th/nvim-compe'
-Plug 'onsails/lspkind-nvim'
-Plug 'glepnir/lspsaga.nvim'
-Plug 'sbdchd/neoformat'
-Plug 'folke/lsp-colors.nvim'
-Plug 'folke/trouble.nvim'
-Plug 'lewis6991/spellsitter.nvim'

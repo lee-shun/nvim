@@ -35,7 +35,7 @@ Plug 'lervag/vimtex'
 Plug 'dkarter/bullets.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install_sync() }, 'for' :['markdown', 'vim-plug'] }
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
-Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown'] }
+" Plug 'mzlogin/vim-markdown-toc', { 'for': ['gitignore', 'markdown'] }
 " Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 " Plug 'vimwiki/vimwiki'
 Plug 'plasticboy/vim-markdown'
@@ -48,14 +48,14 @@ Plug 'plasticboy/vim-markdown'
 
 "Python
 " Plug 'tmhedberg/SimpylFold', { 'for' :['python', 'vim-plug'] }
-Plug 'Vimjas/vim-python-pep8-indent', { 'for' :['python', 'vim-plug'] }
+" Plug 'Vimjas/vim-python-pep8-indent', { 'for' :['python', 'vim-plug'] }
 " Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins', 'for' :['python', 'vim-plug'] }
 " Plug 'vim-scripts/indentpython.vim', { 'for' :['python', 'vim-plug'] }
 " Plug 'plytophogy/vim-virtualenv', { 'for' :['python', 'vim-plug'] }
 " Plug 'tweekmonster/braceless.vim', { 'for' :['python', 'vim-plug'] }
 " Plug 'vim-python/python-syntax', { 'for' :['python', 'vim-plug'] }
 " Plug 'davidhalter/jedi-vim'     "autocomplete
-Plug 'tell-k/vim-autopep8'      "auto format
+" Plug 'tell-k/vim-autopep8'      "auto format
 "Plug 'nvie/vim-flake8'          "static check
 
 

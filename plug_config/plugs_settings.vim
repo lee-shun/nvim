@@ -15,18 +15,17 @@
 "
 "**********************************************************************************************************
 
+"lua
+source ~/.config/nvim/plug_config/plug_lua_settings.vim
 
 "外观设置
 source ~/.config/nvim/plug_config/plug_beauty_settings.vim
 
-
 "普通输入提升设置
 source ~/.config/nvim/plug_config/plug_general_enhance_settings.vim
 
-
 "自动补全设置
 source ~/.config/nvim/plug_config/plug_complete_settings.vim
-
 
 "语言支持设置
 source ~/.config/nvim/plug_config/plug_languages_settings.vim

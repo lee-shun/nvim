@@ -15,25 +15,14 @@
 "
 "**********************************************************************************************************
 
-
-"===
-"=== basic lib
-"===
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-"
-
 " 普通高亮
 " Plug 'jaxbot/semantic-highlight.vim'
-Plug 'norcalli/nvim-colorizer.lua'
 " Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 " Plug 'RRethy/vim-illuminate'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  
-Plug 'nvim-treesitter/playground'
+" Plug 'sheerun/vim-polyglot'
 
 "彩虹括号
 " Plug 'luochen1990/rainbow'
-Plug 'p00f/nvim-ts-rainbow'
 
 "平滑翻页
 Plug 'psliwka/vim-smoothie'
@@ -41,7 +30,6 @@ Plug 'psliwka/vim-smoothie'
 "自动括号
 " Plug 'jiangmiao/auto-pairs'
 " Plug 'Raimondi/delimitMate'
-Plug 'windwp/nvim-autopairs'
 
 "剪切板历史
 " Plug 'junegunn/vim-peekaboo'
@@ -58,7 +46,6 @@ Plug 'junegunn/vim-after-object' " da= to delete what's after =
 "自动注释
 " Plug 'tpope/vim-commentary'
 "Plug 'scrooloose/nerdcommenter' " in <space>cn to comment a line
-Plug 'terrortylor/nvim-comment'
 
 "bool型翻转
 Plug 'AndrewRadev/switch.vim' " gs to switch
@@ -80,7 +67,6 @@ Plug 'Yggdroot/indentLine'
 
 "光标所在单词下划线
 " Plug 'itchyny/vim-cursorword'
-Plug 'yamatsum/nvim-cursorline'
 
 "多重光标
 "Plug 'terryma/vim-multiple-cursors'
@@ -104,7 +90,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'brooth/far.vim'
 "Plug 'ctrlpvim/ctrlp.vim'
 "Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
-Plug 'nvim-telescope/telescope.nvim'
+" Plug 'nvim-telescope/telescope.nvim'
 
 "文件目录
 " if has('nvim')
@@ -118,8 +104,6 @@ Plug 'nvim-telescope/telescope.nvim'
 " Plug 'kristijanhusak/defx-icons'
 " Plug 'preservim/nerdtree'
 " Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'kyazdani42/nvim-tree.lua'
-Plug 'ahmedkhalf/lsp-rooter.nvim'
 Plug 'kevinhwang91/rnvimr'
 
 "git
@@ -127,15 +111,12 @@ Plug 'rhysd/conflict-marker.vim'
 " Plug 'tpope/vim-fugitive'
 " Plug 'mhinz/vim-signify'
 " Plug 'gisphm/vim-gitignore'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'lewis6991/gitsigns.nvim'
 
 "undotree
 Plug 'mbbill/undotree'
 
 "todo 管理
-" Plug 'Dimercel/todo-vim'
-Plug 'folke/todo-comments.nvim'
+Plug 'Dimercel/todo-vim'
 
 "calender
 " Plug 'itchyny/calendar.vim'

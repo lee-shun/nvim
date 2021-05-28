@@ -41,10 +41,6 @@
 
 " Plug 'hardcoreplayers/spaceline.vim'
 
-" Plug 'ryanoasis/vim-devicons'
-
-Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
-
 Plug 'kyazdani42/nvim-web-devicons'
 
 Plug 'ryanoasis/vim-devicons'

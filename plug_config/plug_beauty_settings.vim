@@ -55,20 +55,6 @@ let g:lightline#bufferline#enable_nerdfont = 1
 let g:eleline_powerline_fonts = 1
 
 "===
-"=== spaceline
-"===
-let g:spaceline_colorscheme = 'space'
-let g:spaceline_seperate_style= 'slant-cons'
-
-
-"===
-"=== spaceline
-"===
-lua << EOF
-require('statusline.fulline')
-EOF
-
-"===
 "=== DashBoard
 "===
 " Default value is clap
@@ -106,10 +92,8 @@ let g:xtabline_settings.last_open_first = 1
 " noremap to :XTabMode<CR>
 " noremap \p :XTabInfo<CR>
 
-
-
 " ===
-" === xtabline
+" === barbar
 " ===
 nnoremap <backspace> :BufferPick<CR>
 

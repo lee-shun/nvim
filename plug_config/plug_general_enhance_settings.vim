@@ -107,19 +107,6 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 
-"===
-"=== nvimtree
-"===
-lua << EOF
-require('nvimtree')
-EOF
-
-"===
-"=== change rooter
-"===
-lua << EOF
-require("lsp-rooter").setup{}
-EOF
 
 "===
 "===rainbow
@@ -238,58 +225,3 @@ let g:context_add_mappings=0
 "=== vim-move
 "===
 let g:move_key_modifier = 'S-A'
-
-
-"===
-"=== git sign
-"===
-lua << EOF
-require('gitsigns').setup()
-EOF
-
-
-"===
-"=== treesitter
-"===
-lua << EOF
-require'nvim-treesitter.configs'.setup {
-  highlight = {
-    enable = true,
-  },
-  rainbow = {
-    enable = true,
-  }
-}
-EOF
-
-
-"===
-"=== comment
-"===
-lua << EOF
-require('nvim_comment').setup()
-EOF
-
-
-"===
-"=== auto-pairs
-"===
-lua << EOF
-require('nvim-autopairs').setup()
-EOF
-
-
-"===
-"=== colorizer
-"===
-lua << EOF
-require("colorizer").setup()
-EOF
-
-
-"===
-"=== shade
-"===
-lua << EOF
--- require("shade").setup()
-EOF
