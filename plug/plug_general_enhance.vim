@@ -119,6 +119,7 @@ Plug 'nvim-telescope/telescope.nvim'
 " Plug 'preservim/nerdtree'
 " Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'ahmedkhalf/lsp-rooter.nvim'
 Plug 'kevinhwang91/rnvimr'
 
 "git
@@ -133,7 +134,8 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'mbbill/undotree'
 
 "todo 管理
-Plug 'Dimercel/todo-vim'
+" Plug 'Dimercel/todo-vim'
+Plug 'folke/todo-comments.nvim'
 
 "calender
 " Plug 'itchyny/calendar.vim'

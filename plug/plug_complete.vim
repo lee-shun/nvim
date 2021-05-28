@@ -21,6 +21,8 @@
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 " Plug 'theniceboy/vim-snippets'
+Plug 'rafamadriz/friendly-snippets'
+Plug 'hrsh7th/vim-vsnip'
 
 "===
 "=== Coc
@@ -63,3 +65,4 @@ Plug 'glepnir/lspsaga.nvim'
 Plug 'sbdchd/neoformat'
 Plug 'folke/lsp-colors.nvim'
 Plug 'folke/trouble.nvim'
+Plug 'lewis6991/spellsitter.nvim'

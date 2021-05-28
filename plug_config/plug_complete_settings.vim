@@ -45,4 +45,5 @@ require("lsp.lv-color")
 -- require("lsp.lv-completion")
 require("lsp.lv-compe")
 require("lsp.lv-lspkind")
+require('spellsitter').setup()
 EOF

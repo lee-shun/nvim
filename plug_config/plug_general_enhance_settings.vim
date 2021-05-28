@@ -108,10 +108,17 @@ let g:NERDTreeIndicatorMapCustom = {
     \ }
 
 "===
-"=== git sign
+"=== nvimtree
 "===
 lua << EOF
 require('nvimtree')
+EOF
+
+"===
+"=== change rooter
+"===
+lua << EOF
+require("lsp-rooter").setup{}
 EOF
 
 "===
