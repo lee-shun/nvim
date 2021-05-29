@@ -85,8 +85,8 @@ Plug 'junegunn/vim-easy-align'
 " Plug 'MattesGroeger/vim-bookmarks'
 
 "查找替换`
-Plug 'junegunn/fzf.vim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'brooth/far.vim'
 "Plug 'ctrlpvim/ctrlp.vim'
 "Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }

@@ -51,6 +51,9 @@ require("colorizer").setup()
 -- shade
 -- require("shade").setup()
 
+-- telescope
+require('scope')
+
 -- Neovim-lsp
 -- require("lsp.lv-lspconfig")
 -- require("lsp.lv-color")

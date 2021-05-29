@@ -58,7 +58,7 @@ let g:eleline_powerline_fonts = 1
 "=== DashBoard
 "===
 " Default value is clap
-let g:dashboard_default_executive ='fzf'
+let g:dashboard_default_executive ='telescope'
 let g:dashboard_custom_header=[
     \'',
     \'',

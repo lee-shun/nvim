@@ -29,6 +29,7 @@ Plug 'yamatsum/nvim-cursorline'
 " "===
 " Plug 'kyazdani42/nvim-tree.lua'
 " Plug 'ahmedkhalf/lsp-rooter.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 "===
 "=== Git
