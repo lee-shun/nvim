@@ -30,29 +30,29 @@ colorscheme sonokai
 "===
 "===lightline
 "===
-let g:lightline = {
-      \ 'colorscheme': 'sonokai',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'FugitiveHead'
-      \ },
-      \ }
+" let g:lightline = {
+"       \ 'colorscheme': 'sonokai',
+"       \ 'active': {
+"       \   'left': [ [ 'mode', 'paste' ],
+"       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+"       \ },
+"       \ 'component_function': {
+"       \   'gitbranch': 'FugitiveHead'
+"       \ },
+"       \ }
 
 "===
 "===lightline-bufferline
 "===
-set showtabline=2
-let g:lightline#bufferline#show_number = 1
-let g:lightline#bufferline#enable_devicons = 1
-let g:lightline#bufferline#enable_nerdfont = 1
+" set showtabline=2
+" let g:lightline#bufferline#show_number = 1
+" let g:lightline#bufferline#enable_devicons = 1
+" let g:lightline#bufferline#enable_nerdfont = 1
 
 "===
 "=== eleline
 "===
-let g:eleline_powerline_fonts = 1
+" let g:eleline_powerline_fonts = 1
 
 "===
 "=== DashBoard
@@ -84,11 +84,11 @@ let g:dashboard_custom_header=[
 " ===
 " === xtabline
 " ===
-let g:xtabline_settings = {}
-let g:xtabline_settings.enable_mappings = 1
-let g:xtabline_settings.tabline_modes = [ 'buffers', 'tabs']
-let g:xtabline_settings.enable_persistance = 0
-let g:xtabline_settings.last_open_first = 1
+" let g:xtabline_settings = {}
+" let g:xtabline_settings.enable_mappings = 1
+" let g:xtabline_settings.tabline_modes = [ 'buffers', 'tabs']
+" let g:xtabline_settings.enable_persistance = 0
+" let g:xtabline_settings.last_open_first = 1
 " noremap to :XTabMode<CR>
 " noremap \p :XTabInfo<CR>
 
@@ -111,7 +111,7 @@ let g:airline_theme='oceanicnext'
 "===
 "=== bufferline
 "===
-"let g:bufferline_echo = 0
+" let g:bufferline_echo = 0
 
 
 "===

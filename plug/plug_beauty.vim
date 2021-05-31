@@ -39,13 +39,15 @@
 
 "Plug 'zefei/vim-wintabs-powerline'
 
-" Plug 'hardcoreplayers/spaceline.vim'
+"Plug 'hardcoreplayers/spaceline.vim'
 
 Plug 'kyazdani42/nvim-web-devicons'
 
 Plug 'ryanoasis/vim-devicons'
 
-Plug 'romgrk/barbar.nvim'
+" Plug 'romgrk/barbar.nvim'
+
+Plug 'bling/vim-bufferline'
 
 "Plug 'vim-airline/vim-airline'
 
@@ -60,6 +62,10 @@ Plug 'romgrk/barbar.nvim'
 Plug 'glepnir/oceanic-material'
 
 Plug 'sainnhe/sonokai'
+
+Plug 'navarasu/onedark.nvim'
+
+Plug 'eddyekofo94/gruvbox-flat.nvim'
 
 " Plug 'morhetz/gruvbox'
 
