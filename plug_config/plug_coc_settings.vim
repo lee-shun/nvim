@@ -238,7 +238,7 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 "==coc.nvim
 "==
 "coc-explorer
-nmap tt :CocCommand explorer<CR>
+nmap <leader>t :CocCommand explorer<CR>
 
 
 "==

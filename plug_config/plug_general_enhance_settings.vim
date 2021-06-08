@@ -159,7 +159,6 @@ let g:indent_guides_enable_on_vim_startup = 0
 "===
 "===Vista
 "===
-noremap <LEADER>t :Vista<CR>
 let g:vista_default_executive = 'ctags' "可以是ctags，注意版本问题
 let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
 
