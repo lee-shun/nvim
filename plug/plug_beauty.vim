@@ -47,8 +47,6 @@ Plug 'ryanoasis/vim-devicons'
 
 " Plug 'romgrk/barbar.nvim'
 
-Plug 'bling/vim-bufferline'
-
 "Plug 'vim-airline/vim-airline'
 
 "Plug 'vim-airline/vim-airline-themes'
