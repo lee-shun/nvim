@@ -18,7 +18,7 @@
 "===
 "=== coc.nvim
 "===
-source ~/.config/nvim/plug_config/plug_coc_settings.vim
+" source ~/.config/nvim/plug_config/plug_coc_settings.vim
 
 "===
 "=== ncm2

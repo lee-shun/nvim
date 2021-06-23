@@ -25,7 +25,7 @@ Plug 'honza/vim-snippets'
 "===
 "=== Coc
 "===
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "===
 "=== You Complete Me

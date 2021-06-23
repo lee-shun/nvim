@@ -18,13 +18,13 @@
 lua<<EOF
 
 -- galaxyline
-require('statusline.fulline')
+require('statusline.nvchadline')
 
 -- nvimtree
---require('nvimtree')
+require('nvimtree')
 
 -- change rooter
---require("lsp-rooter").setup{}
+require("lsp-rooter").setup{}
 
 -- gitsign
 require('gitsigns').setup()
@@ -55,11 +55,11 @@ require("colorizer").setup()
 require('scope')
 
 -- Neovim-lsp
--- require("lsp.lv-lspconfig")
--- require("lsp.lv-color")
--- -- require("lsp.lv-completion")
--- require("lsp.lv-compe")
--- require("lsp.lv-lspkind")
--- require('spellsitter').setup()
+require("lsp.lv-lspconfig")
+require("lsp.lv-color")
+-- require("lsp.lv-completion")
+require("lsp.lv-compe")
+require("lsp.lv-lspkind")
+require('spellsitter').setup()
 
 EOF

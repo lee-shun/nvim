@@ -17,10 +17,10 @@ require "compe".setup {
         path = true,
         buffer = true,
         calc = true,
-        vsnip = true,
+        vsnip = {kind = "{}"},
         nvim_lsp = true,
         nvim_lua = true,
-        spell = true,
+        spell = {kind = "﬘", true},
         tags = true,
         snippets_nvim = true,
         treesitter = true
