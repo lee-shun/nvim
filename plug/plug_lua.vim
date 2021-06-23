@@ -27,8 +27,8 @@ Plug 'yamatsum/nvim-cursorline'
 " "===
 " "=== File Nagivation
 " "===
-Plug 'kyazdani42/nvim-tree.lua'
-Plug 'ahmedkhalf/lsp-rooter.nvim'
+" Plug 'kyazdani42/nvim-tree.lua'
+" Plug 'ahmedkhalf/lsp-rooter.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
 "===
@@ -44,18 +44,18 @@ Plug 'folke/todo-comments.nvim'
 "===
 "=== Snippest
 "===
-Plug 'rafamadriz/friendly-snippets'
-Plug 'hrsh7th/vim-vsnip'
+" Plug 'rafamadriz/friendly-snippets'
+" Plug 'hrsh7th/vim-vsnip'
 
 "===
 "=== Neovim Lsp
 "===
-Plug 'neovim/nvim-lspconfig'
-" Plug 'nvim-lua/completion-nvim'
-Plug 'hrsh7th/nvim-compe'
-Plug 'onsails/lspkind-nvim'
-Plug 'glepnir/lspsaga.nvim'
-Plug 'sbdchd/neoformat'
-Plug 'folke/lsp-colors.nvim'
-Plug 'folke/trouble.nvim'
-Plug 'lewis6991/spellsitter.nvim'
+" Plug 'neovim/nvim-lspconfig'
+" " Plug 'nvim-lua/completion-nvim'
+" Plug 'hrsh7th/nvim-compe'
+" Plug 'onsails/lspkind-nvim'
+" Plug 'glepnir/lspsaga.nvim'
+" Plug 'sbdchd/neoformat'
+" Plug 'folke/lsp-colors.nvim'
+" Plug 'folke/trouble.nvim'
+" Plug 'lewis6991/spellsitter.nvim'
