@@ -33,14 +33,14 @@ require'lspconfig'.texlab.setup{}
 require'lspconfig'.pyright.setup{}
 
 -- C&C++
--- require'lspconfig'.clangd.setup{}
-require'lspconfig'.ccls.setup{
-    init_options = {
-        cache = {
-            directory = ".ccls-cache";
-        };
-        highlight = {
-            lsRanges = true;
-        }
-    }
-}
+require'lspconfig'.clangd.setup{}
+-- require'lspconfig'.ccls.setup{
+--     init_options = {
+--         cache = {
+--             directory = ".ccls-cache";
+--         };
+--         highlight = {
+--             lsRanges = true;
+--         }
+--     }
+-- }

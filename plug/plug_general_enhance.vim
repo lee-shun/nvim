@@ -116,7 +116,7 @@ Plug 'rhysd/conflict-marker.vim'
 Plug 'mbbill/undotree'
 
 "todo 管理
-Plug 'Dimercel/todo-vim'
+" Plug 'Dimercel/todo-vim'
 
 "calender
 " Plug 'itchyny/calendar.vim'

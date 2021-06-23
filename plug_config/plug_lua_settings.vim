@@ -39,6 +39,9 @@ require'nvim-treesitter.configs'.setup {
   }
 }
 
+-- TODO
+require('todo-comments').setup()
+
 -- comment
 require('nvim_comment').setup()
 
