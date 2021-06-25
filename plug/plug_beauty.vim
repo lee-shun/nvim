@@ -57,13 +57,13 @@ Plug 'ryanoasis/vim-devicons'
 
 " Plug 'ajmwagar/vim-deus'
 
-Plug 'glepnir/oceanic-material'
+" Plug 'glepnir/oceanic-material'
 
 Plug 'sainnhe/sonokai'
 
-Plug 'navarasu/onedark.nvim'
+" Plug 'navarasu/onedark.nvim'
 
-Plug 'eddyekofo94/gruvbox-flat.nvim'
+" Plug 'eddyekofo94/gruvbox-flat.nvim'
 
 " Plug 'morhetz/gruvbox'
 

@@ -17,6 +17,11 @@
 
 lua<<EOF
 
+-- colorscheme
+-- local base16 = require "base16"
+-- base16(base16.themes["onedark"], true)
+require('highlights')
+
 -- galaxyline
 require('statusline.fulline')
 
@@ -58,11 +63,11 @@ require("colorizer").setup()
 require('scope')
 
 -- Neovim-lsp
--- require("lsp.lv-lspconfig")
--- require("lsp.lv-color")
--- -- require("lsp.lv-completion")
--- require("lsp.lv-compe")
--- require("lsp.lv-lspkind")
+-- require("lsp.lsp-lspconfig")
+-- require("lsp.lsp-color")
+-- -- require("lsp.lsp-completion")
+-- require("lsp.lsp-compe")
+-- require("lsp.lsp-lspkind")
 -- require('spellsitter').setup()
 
 EOF

@@ -8,6 +8,7 @@ Plug 'nvim-lua/plenary.nvim'
 "=== UI
 "===
 Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+" Plug 'siduck76/nvim-base16.lua'
 
 "===
 "=== Gerneral Highlight
@@ -22,7 +23,7 @@ Plug 'p00f/nvim-ts-rainbow'
 "===
 Plug 'windwp/nvim-autopairs'
 Plug 'terrortylor/nvim-comment'
-Plug 'yamatsum/nvim-cursorline'
+" Plug 'yamatsum/nvim-cursorline'
 
 " "===
 " "=== File Nagivation
