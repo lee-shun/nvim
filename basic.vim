@@ -44,6 +44,7 @@ set ttyfast           " should make scrolling faster
 set t_Co=256          " 256颜色
 set termguicolors     " 使用gui，不和终端混合
 au TextYankPost * silent! lua vim.highlight.on_yank()
+set laststatus=2
 
 "搜索设置
 set hlsearch
@@ -112,14 +113,6 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 
 nnoremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
 
-"************************************C/C++单行注释方式改变******************************************
-
-nnoremap <LEADER>c <Esc>$F/ld2hd$i/*<Esc>pa<space>*/<Esc>
-
-"************************************C/C++注释更改******************************************
-
-nnoremap cic <Esc>0f*2lvt*hc
-
 "****************************************快速移动行************************************************
 
 nnoremap [e  :<c-u>execute 'move -1-'. v:count1<cr>
@@ -172,3 +165,29 @@ let g:terminal_color_11 = '#F4F99D'
 let g:terminal_color_12 = '#CAA9FA'
 let g:terminal_color_13 = '#FF92D0'
 let g:terminal_color_14 = '#9AEDFE'
+
+
+
+"===
+"===ignore some file types
+"===
+if has('win32')
+    set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+elseif has('mac')
+    set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOS/Linux
+elseif has('unix')
+    set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOS/Linux
+endif
+
+"===
+"===build-in netrw
+"===
+let g:netrw_hide = 1
+let g:netrw_liststyle = 1
+let g:netrw_banner = 0
+let g:netrw_browse_split = 4
+let g:netrw_winsize = 24
+let g:netrw_altv = 1
+let g:netrw_chgwin = 2
+let g:netrw_list_hide = '.*\.swp$'
+let g:netrw_localrmdir = 'rm -rf'

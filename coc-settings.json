@@ -77,7 +77,9 @@
     "coc-actions.hideCursor": true,
     "coc-actions.showActionKind": true,
     "cSpell.userWords": [
+        "CPSs",
         "Maxout",
+        "Wyner",
         "imread",
         "imshow",
         "markdownlint",
