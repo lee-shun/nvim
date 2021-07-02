@@ -18,7 +18,6 @@
 " 普通高亮
 " Plug 'jaxbot/semantic-highlight.vim'
 " Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
-" Plug 'RRethy/vim-illuminate'
 " Plug 'sheerun/vim-polyglot'
 
 "彩虹括号
@@ -67,6 +66,7 @@ Plug 'Yggdroot/indentLine'
 
 "光标所在单词下划线
 " Plug 'itchyny/vim-cursorword'
+" Plug 'RRethy/vim-illuminate'
 
 "多重光标
 "Plug 'terryma/vim-multiple-cursors'
@@ -90,7 +90,6 @@ Plug 'junegunn/vim-easy-align'
 " Plug 'brooth/far.vim'
 "Plug 'ctrlpvim/ctrlp.vim'
 "Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
-" Plug 'nvim-telescope/telescope.nvim'
 
 "文件目录
 " if has('nvim')
