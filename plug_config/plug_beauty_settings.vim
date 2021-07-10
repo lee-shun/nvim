@@ -95,7 +95,7 @@ let g:dashboard_custom_header=[
 " ===
 " === barbar
 " ===
-nnoremap <backspace> :BufferPick<CR>
+" nnoremap <backspace> :BufferPick<CR>
 
 "===
 "=== airline

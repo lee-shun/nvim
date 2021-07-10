@@ -52,6 +52,7 @@ exec "nohlsearch"
 set incsearch
 set ignorecase
 set smartcase
+nnoremap <C-h> :set hlsearch!<CR>
 
 "缩进与折叠
 set smartindent
@@ -191,3 +192,8 @@ let g:netrw_altv = 1
 let g:netrw_chgwin = 2
 let g:netrw_list_hide = '.*\.swp$'
 let g:netrw_localrmdir = 'rm -rf'
+
+"===
+"=== better file type
+"===
+au BufNewFile,BufRead *.launch set filetype=xml
