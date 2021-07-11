@@ -23,7 +23,7 @@ Plug 'p00f/nvim-ts-rainbow'
 "===
 Plug 'windwp/nvim-autopairs'
 Plug 'terrortylor/nvim-comment'
-" Plug 'yamatsum/nvim-cursorline'
+Plug 'yamatsum/nvim-cursorline'
 
 " "===
 " "=== File Nagivation
