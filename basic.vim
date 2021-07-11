@@ -15,74 +15,87 @@
 "
 "**************************************************************************************************
 
-"****************************************基本设置区************************************************
+" basic
+set encoding=utf-8                                                      " 设置新文件的编码为 UTF-8
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1 " 自动判断编码时，依次尝试以下编码：
+set helplang=cn
+" set langmenu=zh_CN.UTF-8
+" set enc=2byte-gb18030
+set termencoding=utf-8                                                  " 下面这句只影响普通模式 (非图形界面) 下的 Vim
+
+set ffs=unix,dos,mac                                                    " Use Unix as the standard file type
+
+set formatoptions+=m                                                    " 如遇Unicode值大于255的文本，不必等到空格再折行
+set formatoptions+=B                                                    " 合并两行中文时，不在中间加空格
 
 let g:mapleader = ' '
-set autochdir "自动切换工作目录
+set autochdir
 filetype plugin indent on
 
-"****************************************基本设置区************************************************
-"编码设置
-set encoding=UTF-8
-
-"显示设置
-set scrolloff=5       " 设置滚动余量
-set number            " 打开行号
-set relativenumber    " 相对行号
-set cursorline        " 打开光标提示线
-set cursorcolumn      " 打开光标提示线
-set colorcolumn=121   " 设置80列提示
-set noshowmode        " 不要显示模式
-set nowrap            " 显示行折叠
-set linebreak         " 不在单词内部折行
-set ttimeoutlen=0     " 单字符命令等待时间
-set conceallevel=0    " 不要隐藏显示
-set wildmenu          " vim命令自动补全
-set lazyredraw        " same as above
-set visualbell
-set ttyfast           " should make scrolling faster
-set t_Co=256          " 256颜色
-set termguicolors     " 使用gui，不和终端混合
-au TextYankPost * silent! lua vim.highlight.on_yank()
+" display
+syntax on
+set scrolloff=5
+set number
+set relativenumber
+set cursorline
+set cursorcolumn
+set colorcolumn=121
+set noshowmode
+set nowrap
+set linebreak
+set timeout           " for mappings
+set timeoutlen=1000   " default value
+set ttimeout          " for key codes
+set ttimeoutlen=10    " unnoticeable small value
+set conceallevel=0
+set wildmenu
+set lazyredraw
+set ttyfast
+set t_Co=256
+set termguicolors
 set laststatus=2
+au TextYankPost * silent! lua vim.highlight.on_yank()
 
-"搜索设置
+" search
 set hlsearch
 exec "nohlsearch"
 set incsearch
 set ignorecase
 set smartcase
-nnoremap <C-h> :set hlsearch!<CR>
 
-"缩进与折叠
+" indent
 set smartindent
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set expandtab
+set smarttab  " 将Tab自动转化成空格[需要输入真正的Tab键时，使用 Ctrl+V + Tab]
+set expandtab " 缩进时，取整 use multiple of shiftwidth when indenting with '<' and '>'
+set shiftround
 
-set foldmethod=manual " 手动折叠
-set foldlevel=99      " 折叠文件打开展开
+" folding
+set foldmethod=manual
+set foldlevel=99
 set foldenable
 
-"显示非可见字符
+" invisible symbol
 set list
 set listchars=tab:»·,nbsp:+,trail:·,extends:→,precedes:←
 let &showbreak='↳'
 
-"共享设置
+" share clipboard
 set clipboard=unnamedplus
-"共享剪切板
-"vnoremap <Leader>y "+y
-"vnoremap <Leader>yy "+yy
-"nmap <Leader>p "+p
 
-"**************************************行号设置**************************************************
-
+"===
+"=== quick mapping
+"===
+noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
 nnoremap <F2> :set relativenumber! number!<CR>
+nnoremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
+nnoremap <C-h> :set hlsearch!<CR>
 
-"**************************************分屏设置区**************************************************
-
+"===
+"=== window split
+"===
 set splitright
 set splitbelow
 
@@ -90,8 +103,6 @@ nnoremap <up> :res +5<CR>
 nnoremap <down> :res -5<CR>
 nnoremap <left> :vertical resize-5<CR>
 nnoremap <right> :vertical resize+5<CR>
-
-"**************************************ctrl-alt工作区冲突******************************************
 
 nnoremap <C-A-up> <nop>
 nnoremap <C-A-down> <nop>
@@ -102,34 +113,31 @@ inoremap <C-A-down> <nop>
 inoremap <C-A-left> <nop>
 inoremap <C-A-right> <nop>
 
-"**************************************编辑neovimrc********************************************
-
-noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
-
-"**************************************文件关闭光标记忆********************************************
-
+"===
+"=== save the cursor line position
+"===
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-"************************************双击查找下一个占位符******************************************
-
-nnoremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
-
-"****************************************快速移动行************************************************
-
+"===
+"=== add and move line
+"===
 nnoremap [e  :<c-u>execute 'move -1-'. v:count1<cr>
 nnoremap ]e  :<c-u>execute 'move +'. v:count1<cr>
-
-"****************************************快速添加空行**********************************************
-
-nnoremap [<space> :<c-u>put! =repeat(nr2char(10), v:count1)<cr>
+nnoremap [<space> :<c-u>put! =repeat(nr2char(10), v:count1)<cr>'[
 nnoremap ]<space> :<c-u>put =repeat(nr2char(10), v:count1)<cr>
 
-"****************************************快速选中查找**********************************************
+" change indent and select in v-mode
+xnoremap <  <gv
+xnoremap >  >gv
 
+"===
+"=== search the chosen
+"===
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
-"****************************************存储历史记录**************************************************
-
+"===
+"=== modify history
+"===
 if empty(glob("~/.config/nvim/tmp/"))
     echo "Making the tmp dir!"
     silent exec "!mkdir -p ~/.config/nvim/tmp/backup"
@@ -143,7 +151,6 @@ set undodir=~/.config/nvim/tmp/undo
 set backupdir=~/.config/nvim/tmp/backup
 set directory=~/.config/nvim/tmp/backup
 
-"****************************************内置终端**************************************************
 " ===
 " === Terminal Behaviors
 " ===
@@ -167,10 +174,8 @@ let g:terminal_color_12 = '#CAA9FA'
 let g:terminal_color_13 = '#FF92D0'
 let g:terminal_color_14 = '#9AEDFE'
 
-
-
 "===
-"===ignore some file types
+"=== ignore some file types
 "===
 if has('win32')
     set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
@@ -181,7 +186,7 @@ elseif has('unix')
 endif
 
 "===
-"===build-in netrw
+"=== build-in netrw
 "===
 let g:netrw_hide = 1
 let g:netrw_liststyle = 1
