@@ -48,6 +48,7 @@ let g:coc_global_extensions = [
             \ 'coc-word',
             \ 'coc-yank',
             \ 'coc-tabnine',
+            \ 'coc-highlight',
             \]
             " \ 'coc-gitignore',
             " \ 'coc-git',

@@ -66,7 +66,7 @@ Plug 'Yggdroot/indentLine'
 
 "光标所在单词下划线
 " Plug 'itchyny/vim-cursorword'
-" Plug 'RRethy/vim-illuminate'
+Plug 'RRethy/vim-illuminate'
 
 "多重光标
 "Plug 'terryma/vim-multiple-cursors'

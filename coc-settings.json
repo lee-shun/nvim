@@ -1,5 +1,5 @@
 {
-    "coc.preferences.hoverTarget": "preview",
+    "hover.target": "preview",
     "coc.preferences.enableFloatHighlight": true,
     "coc.preferences.snippetStatusText": "Ⓢ ",
     "coc.preferences.extensionUpdateCheck": "daily",
@@ -71,8 +71,6 @@
     "explorer.file.showHiddenFiles": true,
     "explorer.icon.enableNerdfont": true,
     "explorer.buffer.showHiddenBuffers": false,
-    "git.showCommitInFloating": true,
-    "git.addGBlameToVirtualText": true,
     "codeLens.enable": true,
     "coc-actions.hideCursor": true,
     "coc-actions.showActionKind": true,
@@ -88,6 +86,7 @@
         "neovim",
         "nparray",
         "numpy",
+        "osdk",
         "sobel"
     ],
     "coc.preferences.formatOnSaveFiletypes": [

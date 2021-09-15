@@ -69,8 +69,8 @@ skimming!</br>
 | **plug_config/**       | The custom settings for the above installed plugins.                                             |
 | **Ultisnips/**         | The custom collection of the snippest for coc-snippest.                                          |
 | **lua/**               | The lua plugins configure.                                                                       |
-| ***plugged/**          | The plugin installing directory.                                                                 |
-| ***tmp/**              | The temporary file, like the undo and swap files, etc.                                           |
+| **plugged/**          | The plugin installing directory.                                                                 |
+| **tmp/**              | The temporary file, like the undo and swap files, etc.                                           |
 
 ## Usage
 
