@@ -72,6 +72,7 @@
     "explorer.icon.enableNerdfont": true,
     "explorer.buffer.showHiddenBuffers": false,
     "codeLens.enable": true,
+    "cSpell.enabled": false,
     "coc-actions.hideCursor": true,
     "coc-actions.showActionKind": true,
     "cSpell.userWords": [
