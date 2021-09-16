@@ -40,11 +40,11 @@
 
 "Plug 'zefei/vim-wintabs-powerline'
 
-"Plug 'hardcoreplayers/spaceline.vim'
+" Plug 'glepnir/spaceline.vim'
 
 Plug 'kyazdani42/nvim-web-devicons'
 
-Plug 'ryanoasis/vim-devicons'
+" Plug 'ryanoasis/vim-devicons'
 
 " Plug 'romgrk/barbar.nvim'
 
@@ -64,7 +64,7 @@ Plug 'sainnhe/sonokai'
 
 " Plug 'sainnhe/gruvbox-material'
 
-" Plug 'sainnhe/everforest'
+Plug 'sainnhe/everforest'
 
 " Plug 'sainnhe/edge'
 
