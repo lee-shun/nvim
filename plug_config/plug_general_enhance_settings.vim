@@ -227,3 +227,15 @@ let g:context_add_mappings=0
 "=== vim-move
 "===
 let g:move_key_modifier = 'S-A'
+
+" ===
+" === auto save
+" ===
+let g:auto_save = 0
+let g:auto_save_silent = 0
+let g:auto_save_events = ["InsertLeave", "TextChanged"]
+
+augroup ft_tex
+    autocmd!
+    autocmd FileType tex let b:auto_save = 1
+augroup END

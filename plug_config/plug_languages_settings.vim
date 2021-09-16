@@ -34,25 +34,26 @@ let g:livepreview_engine = 'latexmk'.'-f'
 let g:livepreview_use_biber = 1
 let g:livepreview_cursorhold_recompile = 0
 
-"===
-"===vimtex
-"===
+" ===
+" === vimtex
+" ===
+let g:vimtex_mappings_enabled=0
+let g:vimtex_imaps_enabled=0
+let g:vimtex_text_obj_enabled=0
+let g:vimtex_fold_enabled=1
 let g:tex_flavor='latex'
-let g:vimtex_view_method='zathura'
-let g:vimtex_quickfix_mode=1
+if has('win32')
+      let g:vimtex_view_general_viewer = 'SumatraPDF'
+      let g:vimtex_view_general_options
+                  \ = '-reuse-instance -forward-search @tex @line @pdf'
+      let g:vimtex_view_general_options_latexmk = '-reuse-instance'
+else
+      let g:vimtex_view_method = 'zathura'
+endif
+let g:vimtex_quickfix_mode=0
 let g:tex_conceal='abdmg'
-silent! au BufEnter,BufRead,BufNewFile * silent! unmap <c-r>
 let g:vimtex_compiler_progname = 'nvr'
-let g:vimtex_compiler_latexmk_engines = {
-            \ '_'                : '-xelatex',
-            \ 'pdflatex'         : '-pdf',
-            \ 'dvipdfex'         : '-pdfdvi',
-            \ 'lualatex'         : '-lualatex',
-            \ 'xelatex'          : '-xelatex',
-            \ 'context (pdftex)' : '-pdf -pdflatex=texexec',
-            \ 'context (luatex)' : '-pdf -pdflatex=context',
-            \ 'context (xetex)'  : '-pdf -pdflatex=''texexec --xtx''',
-            \}
+let g:vimtex_format_enabled=1
 
 
 "===
@@ -61,44 +62,22 @@ let g:vimtex_compiler_latexmk_engines = {
 let g:bullets_set_mappings = 0
 
 
-"===
-"===vim-markdown
-"===
-let g:vim_markdown_conceal = 0
-let g:tex_conceal = ""
-let g:vim_markdown_math = 1
+" ===
+" === markdown
+" ===
+" NOTE: use the plasticboy markdown sytanx file + SidOFc mxkd.vim functions.
+let g:vim_markdown_math=1
+let g:vim_markdown_conceal=1
+let g:closetag_html_style=1
 
-
-
-"===
-"===markdown-preview
-"===
-let g:mkdp_auto_start         = 0
-let g:mkdp_auto_close         = 1
-let g:mkdp_refresh_slow       = 0
-let g:mkdp_command_for_global = 0
-let g:mkdp_open_to_the_world  = 0
-let g:mkdp_open_ip            = ''
-let g:mkdp_browser            = default_browser
-let g:mkdp_echo_preview_url   = 0
-let g:mkdp_browserfunc        = ''
-let g:mkdp_preview_options    = {
-    \ 'mkit': {},
-    \ 'katex': {},
-    \ 'uml': {},
-    \ 'maid': {},
-    \ 'disable_sync_scroll': 0,
-    \ 'sync_scroll_type': 'middle',
-    \ 'hide_yaml_meta': 1
-    \ }
-let g:mkdp_markdown_css = ''
-let g:mkdp_highlight_css = ''
-let g:mkdp_port = ''
-let g:mkdp_page_title = '「${name}」'
+" ===
+" === markdown_preview
+" ===
+let vim_markdown_preview_github=1
 
 
 "===
-"===markdownWiKi
+"===vimWiKi
 "===
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
