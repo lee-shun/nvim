@@ -112,6 +112,7 @@ set showbreak=↪
 " share clipboard
 set clipboard+=unnamed
 set clipboard+=unnamedplus
+au TextYankPost * silent! lua vim.highlight.on_yank()
 
 " ===
 " === quick mapping
