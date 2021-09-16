@@ -1,35 +1,40 @@
-"**************************************************************************************************
-"
-"
-"  _                    _   _                 _
-" | |    ___  ___      | \ | | ___  _____   _(_)_ __ ___  _ __ ___
-" | |   / _ \/ _ \_____|  \| |/ _ \/ _ \ \ / / | '_ ` _ \| '__/ __|
-" | |__|  __/  __/_____| |\  |  __/ (_) \ V /| | | | | | | | | (__
-" |_____\___|\___|     |_| \_|\___|\___/ \_/ |_|_| |_| |_|_|  \___|
-"
-"File   : basic.vim
+"***********************************************************************************************************************
+"       ___       ___           ___           ___                    ___           ___                       ___
+"      /\__\     /\  \         /\  \         /\  \                  /\__\         /\__\          ___        /\__\
+"     /:/  /    /::\  \       /::\  \       /::\  \                /::|  |       /:/  /         /\  \      /::|  |
+"    /:/  /    /:/\:\  \     /:/\:\  \     /:/\ \  \              /:|:|  |      /:/  /          \:\  \    /:|:|  |
+"   /:/  /    /::\~\:\  \   /::\~\:\  \   _\:\~\ \  \            /:/|:|  |__   /:/__/  ___      /::\__\  /:/|:|__|__
+"  /:/__/    /:/\:\ \:\__\ /:/\:\ \:\__\ /\ \:\ \ \__\          /:/ |:| /\__\  |:|  | /\__\  __/:/\/__/ /:/ |::::\__\
+"  \:\  \    \:\~\:\ \/__/ \:\~\:\ \/__/ \:\ \:\ \/__/          \/__|:|/:/  /  |:|  |/:/  / /\/:/  /    \/__/~~/:/  /
+"   \:\  \    \:\ \:\__\    \:\ \:\__\    \:\ \:\__\                |:/:/  /   |:|__/:/  /  \::/__/           /:/  /
+"    \:\  \    \:\ \/__/     \:\ \/__/     \:\/:/  /                |::/  /     \::::/__/    \:\__\          /:/  /
+"     \:\__\    \:\__\        \:\__\        \::/  /                 /:/  /       ~~~~         \/__/         /:/  /
+"      \/__/     \/__/         \/__/         \/__/                  \/__/                                   \/__/
 "
 "Author : lee-shun
 "
 "Email  : 2015097272@qq.com
 "
-"**************************************************************************************************
+"***********************************************************************************************************************
 
-" basic
-set encoding=utf-8                                                      " 设置新文件的编码为 UTF-8
-set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1 " 自动判断编码时，依次尝试以下编码：
-set helplang=cn
-" set langmenu=zh_CN.UTF-8
-" set enc=2byte-gb18030
-set termencoding=utf-8                                                  " 下面这句只影响普通模式 (非图形界面) 下的 Vim
+" ===
+" === basic
+" ===
+set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set termencoding=utf-8
+set ffs=unix,dos,mac
 
-set ffs=unix,dos,mac                                                    " Use Unix as the standard file type
+" NOTE: if directly use 'set ..', it will be reset by the buildin vimscripts.
+augroup Format-Options
+    autocmd!
+    autocmd BufEnter * setlocal formatoptions+=m formatoptions+=B formatoptions-=o
+augroup END
 
-set formatoptions+=m                                                    " 如遇Unicode值大于255的文本，不必等到空格再折行
-set formatoptions+=B                                                    " 合并两行中文时，不在中间加空格
-
+set nocompatible
 let g:mapleader = ' '
 set autochdir
+set autoread
 filetype plugin indent on
 
 " display
@@ -39,8 +44,13 @@ set number
 set relativenumber
 set cursorline
 set cursorcolumn
-set colorcolumn=121
-set noshowmode
+" let &colorcolumn="81,".join(range(121,999),",")
+let &colorcolumn="81,121"
+set textwidth=80
+set hidden
+set showmode
+set showcmd
+set mouse=
 set nowrap
 set linebreak
 set timeout           " for mappings
@@ -54,7 +64,24 @@ set ttyfast
 set t_Co=256
 set termguicolors
 set laststatus=2
-au TextYankPost * silent! lua vim.highlight.on_yank()
+set cmdheight=1
+set spelllang=en,cjk  " Spell languages
+" Align indent to next multiple value of shiftwidth. For its meaning,
+" see http://vim.1045645.n5.nabble.com/shiftround-option-td5712100.html
+set shiftround
+" Virtual edit is useful for visual block edit
+set virtualedit=block
+
+" incremental substitution (neovim)
+if has('nvim')
+  set inccommand=split
+endif
+
+" keyword match
+set showmatch               " 显示括号配对情况
+set iskeyword+=_,$,@,%,#,-  " 带有如下符号的单词不要被换行分割
+set matchpairs=(:),{:},[:],<:>
+set whichwrap=b,s,<,>,[,]
 
 " search
 set hlsearch
@@ -80,22 +107,23 @@ set foldenable
 " invisible symbol
 set list
 set listchars=tab:»·,nbsp:+,trail:·,extends:→,precedes:←
-let &showbreak='↳'
+set showbreak=↪
 
 " share clipboard
-set clipboard=unnamedplus
+set clipboard+=unnamed
+set clipboard+=unnamedplus
 
-"===
-"=== quick mapping
-"===
+" ===
+" === quick mapping
+" ===
 noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
 nnoremap <F2> :set relativenumber! number!<CR>
 nnoremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
 nnoremap <C-h> :set hlsearch!<CR>
 
-"===
-"=== window split
-"===
+" ===
+" === window split
+" ===
 set splitright
 set splitbelow
 
@@ -113,27 +141,36 @@ inoremap <C-A-down> <nop>
 inoremap <C-A-left> <nop>
 inoremap <C-A-right> <nop>
 
-"===
-"=== save the cursor line position
-"===
+" ===
+" === save the cursor line position
+" ===
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-"===
-"=== add and move line
-"===
-nnoremap [e  :<c-u>execute 'move -1-'. v:count1<cr>
-nnoremap ]e  :<c-u>execute 'move +'. v:count1<cr>
-nnoremap [<space> :<c-u>put! =repeat(nr2char(10), v:count1)<cr>'[
-nnoremap ]<space> :<c-u>put =repeat(nr2char(10), v:count1)<cr>
+" ===
+" === some useful remaps
+" ===
 
 " change indent and select in v-mode
 xnoremap <  <gv
 xnoremap >  >gv
 
-"===
-"=== search the chosen
-"===
-vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
+" add blank line
+nnoremap [e  :<c-u>execute 'move -1-'. v:count1<cr>
+nnoremap ]e  :<c-u>execute 'move +'. v:count1<cr>
+nnoremap [<space> :<c-u>put! =repeat(nr2char(10), v:count1)<cr>'[
+nnoremap ]<space> :<c-u>put =repeat(nr2char(10), v:count1)<cr>
+
+" add and move line
+nnoremap Y y$
+
+" move the chosen zone
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
+" place the cursor in the middle
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ'z
 
 "===
 "=== modify history
@@ -152,12 +189,81 @@ set backupdir=~/.config/nvim/tmp/backup
 set directory=~/.config/nvim/tmp/backup
 
 " ===
+" === ignore some file types
+" ===
+set wildignore+=*.o,*.obj,*.bin,*.dll,*.exe
+set wildignore+=*/.git/*,*/.svn/*,*/__pycache__/*,*/build/**
+set wildignore+=*.pyc
+set wildignore+=*.DS_Store
+set wildignore+=*.aux,*.bbl,*.blg,*.brf,*.fls,*.fdb_latexmk,*.synctex.gz,*.pdf
+
+" ===
+" === better file type
+" ===
+autocmd BufNewFile,BufRead *.launch set filetype=xml
+autocmd BufNewFile,BufRead *.Md set filetype=markdown
+autocmd BufNewFile,BufRead *.ejs set filetype=html
+
+" ===
+" === build-in netrw
+" ===
+let g:netrw_hide = 1
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
+let g:netrw_browse_split = 4
+let g:netrw_winsize = 24
+let g:netrw_altv = 1
+let g:netrw_chgwin = 2
+let g:netrw_list_hide = '.*\.swp$'
+let g:netrw_localrmdir = 'rm -rf'
+
+" ===
+" === auto setting command
+" ===
+
+if exists('##CmdLineEnter')
+    augroup dynamic_smartcase
+        autocmd!
+        autocmd CmdLineEnter : set nosmartcase
+        autocmd CmdLineLeave : set smartcase
+    augroup END
+endif
+
+" More accurate syntax highlighting? (see `:h syn-sync`)
+augroup accurate_syn_highlight
+    autocmd!
+    autocmd BufEnter * :syntax sync fromstart
+augroup END
+
+" Display a message when the current file is not in utf-8 format.
+" Note that we need to use `unsilent` command here because of this issue:
+" https://github.com/vim/vim/issues/4379. For older Vim (version 7.4), the
+" help file are in gzip format, do not warn this.
+augroup non_utf8_file_warn
+    autocmd!
+    autocmd BufRead * if &fileencoding != 'utf-8' && expand('%:e') != 'gz'
+                \ | unsilent echomsg 'File not in UTF-8 format!' | endif
+augroup END
+
+augroup number_toggle
+    autocmd!
+    autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &number | set relativenumber | endif
+    autocmd BufLeave,FocusLost,InsertEnter,WinLeave * if &number | set norelativenumber | endif
+augroup END
+
+" ===
 " === Terminal Behaviors
 " ===
-let g:neoterm_autoscroll = 1
-autocmd TermOpen term://* startinsert
 tnoremap <C-N> <C-\><C-N>
 tnoremap <C-O> <C-\><C-N><C-O>
+let g:neoterm_autoscroll = 1
+if exists('##TermOpen')
+    augroup term_settings
+        autocmd!
+        autocmd TermOpen * setlocal norelativenumber nonumber
+        autocmd TermOpen * startinsert
+    augroup END
+endif
 let g:terminal_color_0  = '#000000'
 let g:terminal_color_1  = '#FF5555'
 let g:terminal_color_2  = '#50FA7B'
@@ -173,32 +279,3 @@ let g:terminal_color_11 = '#F4F99D'
 let g:terminal_color_12 = '#CAA9FA'
 let g:terminal_color_13 = '#FF92D0'
 let g:terminal_color_14 = '#9AEDFE'
-
-"===
-"=== ignore some file types
-"===
-if has('win32')
-    set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
-elseif has('mac')
-    set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOS/Linux
-elseif has('unix')
-    set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOS/Linux
-endif
-
-"===
-"=== build-in netrw
-"===
-let g:netrw_hide = 1
-let g:netrw_liststyle = 1
-let g:netrw_banner = 0
-let g:netrw_browse_split = 4
-let g:netrw_winsize = 24
-let g:netrw_altv = 1
-let g:netrw_chgwin = 2
-let g:netrw_list_hide = '.*\.swp$'
-let g:netrw_localrmdir = 'rm -rf'
-
-"===
-"=== better file type
-"===
-au BufNewFile,BufRead *.launch set filetype=xml

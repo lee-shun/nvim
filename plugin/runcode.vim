@@ -12,6 +12,7 @@
 "                  \::/  /      |:|  |       \:\__\               ~~~~       \/__/       /:/  /
 "                   \/__/        \|__|        \/__/                                      \/__/
 "
+"
 "  Author : lee-shun
 "
 "  Email  : 2015097272@qq.com
@@ -19,43 +20,51 @@
 "**************************************************************************************************
 
 " ===
-" === for commet coverting
+" === 编译运行
 " ===
-nnoremap <buffer> <LEADER>c <Esc>k^/\/\/<CR>d2lv$hdA/* */<Esc>2hP$:set nohlsearch<CR>
-nnoremap <buffer> <LEADER>b <Esc>0f*ldt*<Esc>$p0f*2x$x
+noremap r :call CompileRunGcc()<CR>
+func! CompileRunGcc()
+    exec "w"
+    if &filetype == 'c'
+        exec "!g++ % -o %<"
+        exec "!time ./%<"
+    elseif &filetype == 'cpp'
+        set splitbelow
+        exec "!g++ -std=c++11 % -Wall -o %<"
+        :sp
+        :res -15
+        :term ./%<
+    elseif &filetype == 'java'
+        exec "!javac %"
+        exec "!time java %<"
+    elseif &filetype == 'sh'
+        :!time bash %
+    elseif &filetype == 'python'
+        set splitbelow
+        :sp
+        :term python3 %
+    elseif &filetype == 'html'
+        silent! exec "!".g:mkdp_browser." % &"
+    elseif &filetype == 'vimwiki'
+        exec "MarkdownPreview"
+    elseif &filetype == 'pandoc'
+        exec "MarkdownPreview"
+    elseif &filetype == 'markdown'
+        exec "MarkdownPreview"
+    elseif &filetype == 'tex'
+        silent! exec "VimtexStop"
+        silent! exec "VimtexCompile"
+    elseif &filetype == 'dart'
+        exec "CocCommand flutter.run -d ".g:flutter_default_device
+        silent! exec "CocCommand flutter.dev.openDevLog"
+    elseif &filetype == 'javascript'
+        set splitbelow
+        :sp
+        :term export DEBUG="INFO,ERROR,WARNING"; node --trace-warnings .
+    elseif &filetype == 'go'
+        set splitbelow
+        :sp
+        :term go run .
+    endif
+endfunc
 
-" ===
-" === for /**/
-" ===
-function! s:inComment()
-    call search('\/\*\*', 'bceW')
-    normal! jl
-    normal! vl
-    call search("\*\/", 'ceW')
-    normal! kg_
-endfunction
-
-function! s:aroundComment()
-    call search('\/\*\*', 'bceW')
-    normal! F/
-    normal! v$
-    call search("\*\/", 'ceW')
-    normal! $
-endfunction
-xnoremap <buffer> <silent> ic :<c-u>call <sid>inComment()<cr>
-onoremap <buffer> <silent> ic :<c-u>call <sid>inComment()<cr>
-xnoremap <buffer> <silent> ac :<c-u>call <sid>aroundComment()<cr>
-onoremap <buffer> <silent> ac :<c-u>call <sid>aroundComment()<cr>
-
-" ===
-" === for //
-" ===
-function! s:inComment2()
-    call search("\/\/")
-    normal! 3l
-    normal! vg_
-endfunction
-xnoremap <buffer> <silent> b/ :<c-u>call <sid>inComment2()<cr>
-onoremap <buffer> <silent> b/ :<c-u>call <sid>inComment2()<cr>
-
-setlocal foldmethod=syntax

@@ -18,4 +18,7 @@
 "
 "**************************************************************************************************
 
-setlocal spell
+let maplocalleader = ","
+
+inoremap <buffer> <localLeader>= " ===<Enter>=== <Enter>===<Esc>o<++><Esc>2kA
+
