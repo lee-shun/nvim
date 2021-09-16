@@ -26,6 +26,11 @@
 "let g:cpp_experimental_simple_template_highlight = 1
 "let g:cpp_concepts_highlight = 1
 
+" ===
+" === vim-lsp-cxx-highlight
+" ===
+let g:lsp_cxx_hl_use_nvim_text_props = 1
+
 "===
 "===vim-latex-live-preview
 "===

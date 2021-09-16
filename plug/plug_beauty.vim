@@ -85,3 +85,5 @@ Plug 'glepnir/dashboard-nvim'
 " Plug 'junegunn/goyo.vim'
 
 " Plug 'bpietravalle/vim-bolt'
+
+Plug 'Pocco81/TrueZen.nvim'

@@ -72,4 +72,7 @@ require('scope')
 -- require("lsp.lsp-lspkind")
 -- require('spellsitter').setup()
 
+-- true zen
+require('zenmode')
+
 EOF
