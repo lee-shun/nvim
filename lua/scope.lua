@@ -58,3 +58,4 @@ telescope.setup(
 vim.api.nvim_set_keymap("n", "<Leader>ff", "<Cmd> Telescope find_files<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<Leader>fb", "<Cmd> Telescope buffers<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<Leader>fm", "<Cmd> Telescope oldfiles<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<Leader>fw", "<Cmd> Telescope grep_string<CR>", {noremap = true, silent = true})

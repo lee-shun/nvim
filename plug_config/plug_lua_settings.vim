@@ -30,8 +30,8 @@ require('statusline.fulline')
 -- nvimtree
 -- require('nvimtree')
 
--- change rooter
--- require("lsp-rooter").setup{}
+-- dashboard
+require('dashboard')
 
 -- gitsign
 require('gitsigns').setup()
@@ -71,6 +71,9 @@ require('scope')
 -- require("lsp.lsp-compe")
 -- require("lsp.lsp-lspkind")
 -- require('spellsitter').setup()
+
+-- change rooter
+-- require("lsp-rooter").setup{}
 
 -- true zen
 require('zenmode')
