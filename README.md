@@ -1,4 +1,4 @@
-# 🚀🚀 Lee's Neovim Config
+# 🚀🚀 Lee's Neovim Configuration
 
 ## Inspired by 🌟🌟
 
@@ -6,7 +6,7 @@
 
 * Amix's  [Ultimate vimrc](https://github.com/amix/vimrc).
 
-## About This Config
+## About This Configuration
 
 * I began to use neovim about 1 year ago(2019), and now it's my **favorite**
 🥰 editor! I keep learning and tuning neovim in the past one year; </br>
@@ -40,7 +40,7 @@ skimming!</br>
 
 * **🆕 New Features:** The lua plugins supports.
 
-* **🆕 New Features:** Use the Neovim Buildin LSP (or coc.nvim)
+* **🆕 New Features:** Use the Neovim build-in LSP (or coc.nvim)
 
 * As **LESS remaps** as I can do to keep the original vim keybindings;
 
