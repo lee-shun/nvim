@@ -29,8 +29,8 @@ g.dashboard_custom_header={
 }
 
 g.dashboard_custom_section = {
-   a = { description = { "   Find File         " }, command = " Telescope find_files " },
-   b = { description = { "   Recents           " }, command = " Telescope oldfiles   " },
+   a = { description = { "   Recents           " }, command = " Telescope oldfiles   " },
+   b = { description = { "   Find File         " }, command = " Telescope find_files " },
    c = { description = { " 洛 New File          " }, command = " DashboardNewFile     " },
    d = { description = { "   Bookmarks         " }, command = " Telescope marks      " },
    e = { description = { "   Load Last Session " }, command = " SessionLoad          " },
