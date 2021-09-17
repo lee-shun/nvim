@@ -18,11 +18,10 @@
 "***********************************************************************************************************************
 
 
-"==
-"==coc.nvim
-"==
-"coc-plugins
-
+" ===
+" === coc.nvim
+" ===
+" coc-plugins
 let g:coc_global_extensions = [
             \ 'coc-cmake',
             \ 'coc-clangd',
@@ -60,23 +59,11 @@ let g:coc_global_extensions = [
 
 
 
-"==
-"==coc.nvim
-"==
-"coc-basic-settings
+" ===
+" === coc.nvim
+" ===
+" coc-basic-settings
 
-" TextEdit might fail if hidden is not set.
-" set hidden
-
-" 关闭备份，issue已经被关闭
-" set nobackup
-" set nowritebackup
-
-" Give more space for displaying messages.
-" set cmdheight=1
-
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
-" delays and poor user experience.
 set updatetime=100
 
 " Don't pass messages to |ins-completion-menu|.
@@ -155,18 +142,12 @@ augroup mygroup
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
-" Applying codeAction to the selected region.
-" Example: `<leader>aap` for current paragraph
-" xmap <leader>a  <Plug>(coc-codeaction-selected)
-" nmap <leader>a  <Plug>(coc-codeaction-selected)
-
 " " Remap for do codeAction of selected region
 function! s:cocActionsOpenFromSelected(type) abort
   execute 'CocCommand actions.open ' . a:type
 endfunction
 xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
 nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
-
 
 " Remap keys for applying codeAction to the current line.
 nmap <leader>ac  <Plug>(coc-codeaction)
@@ -223,31 +204,31 @@ nnoremap <silent> \lk  :<C-u>CocPrev<CR>
 nnoremap <silent> \lp  :<C-u>CocListResume<CR>
 
 
-"==
-"==coc.nvim
-"==
-"coc-yank
+" ===
+" === coc.nvim
+" ===
+" coc-yank
 nnoremap <silent> <space>ya  :<C-u>CocList -A --normal yank<cr>
 
 
-"==
-"==coc.nvim
-"==
-"coc-highlight
+" ===
+" === coc.nvim
+" ===
+" coc-highlight
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 
-"==
-"==coc.nvim
-"==
-"coc-explorer
+" ===
+" === coc.nvim
+" ===
+" coc-explorer
 nmap <leader>t :CocCommand explorer<CR>
 
 
-"==
-"==coc.nvim
-"==
-"coc-translator
+" ===
+" === coc.nvim
+" ===
+" coc-translator
 " popup
 nmap ts <Plug>(coc-translator-p)
 vmap ts <Plug>(coc-translator-pv)
@@ -258,9 +239,9 @@ vmap <Leader>e <Plug>(coc-translator-ev)
 nmap <Leader>rp <Plug>(coc-translator-r)
 vmap <Leader>rp <Plug>(coc-translator-rv)
 
-"==
-"==coc.nvim
-"==
+" ===
+" === coc.nvim
+" ===
 " coc-git
 " lightline
 " let g:lightline = {
@@ -285,33 +266,33 @@ vmap <Leader>rp <Plug>(coc-translator-rv)
 "   return winwidth(0) > 120 ? blame : ''
 " endfunction
 
-"==
-"==coc.nvim
-"==
-"coc-floatinput
+" ===
+" === coc.nvim
+" ===
+" coc-floatinput
 " autocmd ColorScheme *
 "       \ hi CocHelperNormalFloatBorder guifg=#dddddd guibg=#575B54
 "       \ | hi CocHelperNormalFloat guibg=#575B54
 
-"==
-"==coc.nvim
-"==
-"coc-split-term
+" ===
+" === coc.nvim
+" ===
+" coc-split-term
 " nmap <silent> <C-t> <Plug>(coc-split-term-show)
 " nmap <silent> <C-t> <Plug>(coc-split-term-hide)
 " nmap <silent> <C-t> <Plug>(coc-split-term-toggle)
 
-"==
-"==coc.nvim
-"==
-"coc-smartf
+" ===
+" === coc.nvim
+" ===
+" coc-smartf
 " press <esc> to cancel.
-nmap f <Plug>(coc-smartf-forward)
-nmap F <Plug>(coc-smartf-backward)
-nmap ; <Plug>(coc-smartf-repeat)
-nmap , <Plug>(coc-smartf-repeat-opposite)
- 
-augroup Smartf
-  autocmd User SmartfEnter :hi Conceal ctermfg=220 guifg=#6638F0
-  autocmd User SmartfLeave :hi Conceal ctermfg=239 guifg=#504945
-augroup end
+" nmap f <Plug>(coc-smartf-forward)
+" nmap F <Plug>(coc-smartf-backward)
+" nmap ; <Plug>(coc-smartf-repeat)
+" nmap , <Plug>(coc-smartf-repeat-opposite)
+"  
+" augroup Smartf
+"   autocmd User SmartfEnter :hi Conceal ctermfg=220 guifg=#6638F0
+"   autocmd User SmartfLeave :hi Conceal ctermfg=239 guifg=#504945
+" augroup end

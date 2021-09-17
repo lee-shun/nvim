@@ -17,22 +17,22 @@
 "
 "***********************************************************************************************************************
 
-"===
-"=== machine_specific.vim
-"===
-source ~/.config/nvim/_machine_specific.vim
+" ===
+" === machine_specific.vim
+" ===
+source ~/.config/nvim/machine_specific.vim
 
-"===
-"=== basic.vim
-"===
+" ===
+" === basic.vim
+" ===
 source ~/.config/nvim/basic.vim
 
-"===
-"=== plugs.vim
-"===
-source ~/.config/nvim/plug/plugs.vim
+" ===
+" === plugs.vim
+" ===
+source ~/.config/nvim/plug_list/plugs.vim
 
-"===
-"=== plugs_settings.vim
-"===
-source ~/.config/nvim/plug_config/plugs_settings.vim
+" ===
+" === plugs_settings.vim
+" ===
+source ~/.config/nvim/plug_settings/plugs_settings.vim

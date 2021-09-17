@@ -17,65 +17,22 @@
 "
 "***********************************************************************************************************************
 
-lua<<EOF
 
--- colorscheme
--- local base16 = require "base16"
--- base16(base16.themes["onedark"], true)
-require('highlights')
+call plug#begin('~/.config/nvim/plugged')
 
--- galaxyline
-require('statusline.fulline')
+"Plugs written in lua
+source ~/.config/nvim/plug_list/plug_lua.vim
 
--- nvimtree
--- require('nvimtree')
+"VIM外观美化
+source ~/.config/nvim/plug_list/plug_beauty.vim
 
--- dashboard
-require('dashboard')
+"基本输入提升
+source ~/.config/nvim/plug_list/plug_general_enhance.vim
 
--- gitsign
-require('gitsigns').setup()
+"自动补全
+source ~/.config/nvim/plug_list/plug_complete.vim
 
--- treesitter
-require'nvim-treesitter.configs'.setup {
-  highlight = {
-    enable = true,
-  },
-  rainbow = {
-    enable = true,
-  }
-}
+"各类语言支持
+source ~/.config/nvim/plug_list/plug_languages.vim
 
--- todo
-require('todo-comments').setup()
-
--- comment
-require('nvim_comment').setup()
-
--- autopairs
-require('nvim-autopairs').setup()
-
--- number color
-require("colorizer").setup()
-
--- shade
--- require("shade").setup()
-
--- telescope
-require('scope')
-
--- Neovim-lsp
--- require("lsp.lsp-lspconfig")
--- require("lsp.lsp-color")
--- -- require("lsp.lsp-completion")
--- require("lsp.lsp-compe")
--- require("lsp.lsp-lspkind")
--- require('spellsitter').setup()
-
--- change rooter
--- require("lsp-rooter").setup{}
-
--- true zen
-require('zenmode')
-
-EOF
+call plug#end()

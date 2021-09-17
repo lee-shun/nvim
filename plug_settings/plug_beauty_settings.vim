@@ -17,9 +17,9 @@
 "
 "***********************************************************************************************************************
 
-"===
-"===themes
-"===
+" ===
+" ===themes
+" ===
 set background=dark
 " let g:deus_termcolors=256
 " let g:SnazzyTransparent = 1
@@ -29,9 +29,9 @@ set background=dark
 " colorscheme snazzy
 colorscheme sonokai
 
-"===
-"===lightline
-"===
+" ===
+" ===lightline
+" ===
 " let g:lightline = {
 "       \ 'colorscheme': 'sonokai',
 "       \ 'active': {
@@ -43,22 +43,22 @@ colorscheme sonokai
 "       \ },
 "       \ }
 
-"===
-"===lightline-bufferline
-"===
+" ===
+" ===lightline-bufferline
+" ===
 " set showtabline=2
 " let g:lightline#bufferline#show_number = 1
 " let g:lightline#bufferline#enable_devicons = 1
 " let g:lightline#bufferline#enable_nerdfont = 1
 
-"===
-"=== eleline
-"===
+" ===
+" === eleline
+" ===
 " let g:eleline_powerline_fonts = 1
 
-"===
-"=== DashBoard use the lua
-"===
+" ===
+" === DashBoard use the lua
+" ===
 " Default value is clap
 " let g:dashboard_default_executive ='telescope'
 " let g:dashboard_custom_header=[
@@ -99,9 +99,9 @@ colorscheme sonokai
 " ===
 " nnoremap <backspace> :BufferPick<CR>
 
-"===
-"=== airline
-"===
+" ===
+" === airline
+" ===
 let g:airline_powerline_fonts = 1
 "let g:airline_theme='gruvbox'
 "let g:airline_theme='powerlineish'
@@ -115,15 +115,15 @@ let g:airline_theme='oceanicnext'
 let g:spaceline_seperate_style = 'none'
 
 
-"===
-"=== bufferline
-"===
+" ===
+" === bufferline
+" ===
 " let g:bufferline_echo = 0
 
 
-"===
-"=== goyo
-"===
+" ===
+" === goyo
+" ===
 let g:goyo_width=120
 let g:goyo_height=120
 "g:goyo_linenr

@@ -88,15 +88,15 @@
 "" nnoremap tt :Defx -split=vertical -winwidth=30 -toggle -new
 ""             \ -direction=topleft -columns=git:mark:icons:indent:filename:type<CR>
 
-"===
-"=== NERDTree
-"===
+" ===
+" === NERDTree
+" ===
 "noremap tt :NERDTreeToggle<CR>
 
 
-"===
-"=== NERDTree-git
-"===
+" ===
+" === NERDTree-git
+" ===
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
@@ -110,21 +110,21 @@ let g:NERDTreeIndicatorMapCustom = {
     \ }
 
 
-"===
-"===rainbow
-"===
+" ===
+" === rainbow
+" ===
 let g:rainbow_active = 1
 
 
-"===
-"===Far
-"===
+" ===
+" === Far
+" ===
 let g:far#enable_undo = 1
 
 
-"===
-"===leaderf
-"===
+" ===
+" === leaderf
+" ===
 
 
 ""===
@@ -149,25 +149,25 @@ let g:indentLine_setColors = 0
 let g:indentLine_enabled = 0
 
 
-"===
-"===indent_guides
-"===
+" ===
+" === indent_guides
+" ===
 let g:indent_guides_enable_on_vim_startup = 0
 "let g:indent_guides_auto_colors = 0
 "autocmd VimEnter,Colorscheme * hi IndentGuidesOdd  ctermbg=black
 "autocmd VimEnter,Colorscheme * hi IndentGuidesEven ctermbg=darkgrey
 
 
-"===
-"===Vista
-"===
+" ===
+" === Vista
+" ===
 let g:vista_default_executive = 'ctags' "可以是ctags，注意版本问题
 let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
 
 
-"===
-"===Bookmarks
-"===
+" ===
+" === Bookmarks
+" ===
 let g:bookmark_sign = '♥'
 "let g:bookmark_highlight_lines = 1
 
@@ -208,24 +208,24 @@ endfunc
 " let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.8 } }
 
 
-"===
-"=== vim-calendar
-"===
+" ===
+" === vim-calendar
+" ===
 noremap \c :Calendar -position=here<CR>
 noremap \\ :Calendar -view=clock -position=here<CR>
 " let g:calendar_google_calendar = 1
 " let g:calendar_google_task = 1
 
 
-"===
-"=== vim-context
-"===
+" ===
+" === vim-context
+" ===
 let g:context_add_mappings=0
 
 
-"===
-"=== vim-move
-"===
+" ===
+" === vim-move
+" ===
 let g:move_key_modifier = 'S-A'
 
 " ===

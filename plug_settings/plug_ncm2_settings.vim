@@ -17,17 +17,41 @@
 "
 "***********************************************************************************************************************
 
-"lua
-source ~/.config/nvim/plug_config/plug_lua_settings.vim
+" ===
+" === NCM2-basic
+" ===
 
-"外观设置
-source ~/.config/nvim/plug_config/plug_beauty_settings.vim
+autocmd BufEnter * call ncm2#enable_for_buffer()
 
-"普通输入提升设置
-source ~/.config/nvim/plug_config/plug_general_enhance_settings.vim
+" IMPORTANT: :help Ncm2PopupOpen for more information
+set completeopt=noinsert,menuone,noselect
 
-"自动补全设置
-source ~/.config/nvim/plug_config/plug_complete_settings.vim
+" suppress the annoying 'match x of y', 'The only match' and 'Pattern not
+" found' messages
+set shortmess+=c
 
-"语言支持设置
-source ~/.config/nvim/plug_config/plug_languages_settings.vim
+" CTRL-C doesn't trigger the InsertLeave autocmd . map to <ESC> instead.
+inoremap <c-c> <ESC>
+
+" When the <Enter> key is pressed while the popup menu is visible, it only
+" hides the menu. Use this mapping to close the menu and also start a new
+" line.
+inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
+
+" Use <TAB> to select the popup menu:
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+
+" ===
+" === NCM2-pyclang
+" ===
+
+" path to directory where libclang.so can be found
+let g:ncm2_pyclang#library_path = '/usr/lib/llvm-6.0/lib/libclang-6.0.so.1'
+
+" a list of relative paths for compile_commands.json
+let g:ncm2_pyclang#database_path = [
+            \ 'compile_commands.json',
+            \ 'build/compile_commands.json'
+            \ ]

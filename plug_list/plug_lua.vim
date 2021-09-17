@@ -17,22 +17,65 @@
 "
 "***********************************************************************************************************************
 
+" ===
+" === Basic lua
+" ===
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
 
-call plug#begin('~/.config/nvim/plugged')
+" ===
+" === UI
+" ===
+Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+" Plug 'siduck76/nvim-base16.lua'
 
-"Plugs written in lua
-source ~/.config/nvim/plug/plug_lua.vim
+" ===
+" === Gerneral Highlight
+" ===
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  
+Plug 'nvim-treesitter/playground'
+Plug 'norcalli/nvim-colorizer.lua'
+Plug 'p00f/nvim-ts-rainbow'
 
-"VIM外观美化
-source ~/.config/nvim/plug/plug_beauty.vim
+" ===
+" === Gerneral Enchancement
+" ===
+Plug 'windwp/nvim-autopairs'
+Plug 'terrortylor/nvim-comment'
+" Plug 'yamatsum/nvim-cursorline'
 
-"基本输入提升
-source ~/.config/nvim/plug/plug_general_enhance.vim
+" "===
+" "=== File Nagivation
+" "===
+" Plug 'kyazdani42/nvim-tree.lua'
+" Plug 'ahmedkhalf/lsp-rooter.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
-"自动补全
-source ~/.config/nvim/plug/plug_complete.vim
+" ===
+" === Git
+" ===
+Plug 'lewis6991/gitsigns.nvim'
 
-"各类语言支持
-source ~/.config/nvim/plug/plug_languages.vim
+" ===
+" === todo
+" ===
+Plug 'folke/todo-comments.nvim'
 
-call plug#end()
+" ===
+" === Snippest
+" ===
+" Plug 'rafamadriz/friendly-snippets'
+" Plug 'hrsh7th/vim-vsnip'
+
+" ===
+" === Neovim Lsp
+" ===
+" Plug 'neovim/nvim-lspconfig'
+" " Plug 'nvim-lua/completion-nvim'
+" Plug 'hrsh7th/nvim-compe'
+" Plug 'onsails/lspkind-nvim'
+" Plug 'glepnir/lspsaga.nvim'
+" Plug 'sbdchd/neoformat'
+" Plug 'folke/lsp-colors.nvim'
+" Plug 'folke/trouble.nvim'
+" Plug 'lewis6991/spellsitter.nvim'

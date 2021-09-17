@@ -17,9 +17,9 @@
 "
 "***********************************************************************************************************************
 
-"===
-"===vim-cpp-enhanced-highlight
-"===
+" ===
+" === vim-cpp-enhanced-highlight
+" ===
 "let g:cpp_class_scope_highlight = 1
 "let g:cpp_member_variable_highlight = 1
 "let g:cpp_class_decl_highlight = 1
@@ -31,9 +31,9 @@
 " ===
 let g:lsp_cxx_hl_use_nvim_text_props = 1
 
-"===
-"===vim-latex-live-preview
-"===
+" ===
+" === vim-latex-live-preview
+" ===
 let g:livepreview_previewer = 'zathura'
 let g:livepreview_engine = 'latexmk'.'-f'
 let g:livepreview_use_biber = 1
@@ -61,9 +61,9 @@ let g:vimtex_compiler_progname = 'nvr'
 let g:vimtex_format_enabled=1
 
 
-"===
-"===bullets
-"===
+" ===
+" === bullets
+" ===
 let g:bullets_set_mappings = 0
 
 
@@ -81,9 +81,9 @@ let g:closetag_html_style=1
 let vim_markdown_preview_github=1
 
 
-"===
-"===vimWiKi
-"===
+" ===
+" === vimWiKi
+" ===
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 

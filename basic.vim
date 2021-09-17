@@ -174,9 +174,9 @@ nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap J mzJ'z
 
-"===
-"=== modify history
-"===
+" ===
+" === modify history
+" ===
 if empty(glob("~/.config/nvim/tmp/"))
     echo "Making the tmp dir!"
     silent exec "!mkdir -p ~/.config/nvim/tmp/backup"
