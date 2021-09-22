@@ -25,6 +25,9 @@ require'nvim-treesitter.configs'.setup {
   }
 }
 
+-- indent_blankline
+require('indent')
+
 -- todo
 require('todo-comments').setup()
 

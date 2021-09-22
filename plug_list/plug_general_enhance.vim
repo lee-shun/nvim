@@ -64,8 +64,9 @@ Plug 'rlue/vim-barbaric' " slowing down vim-multiple-cursors
 " Plug 'ron89/thesaurus_query.vim'
 
 " 缩进显示
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'Yggdroot/indentLine'
+" Plug 'nathanaelkane/vim-indent-guides'
+" Plug 'Yggdroot/indentLine'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 " 光标所在单词下划线
 " Plug 'itchyny/vim-cursorword'
