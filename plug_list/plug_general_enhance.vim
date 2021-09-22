@@ -160,3 +160,8 @@ Plug 'matze/vim-move'
 
 " 自动保存
 Plug '907th/vim-auto-save'
+
+" text object
+Plug 'wellle/targets.vim'
+
+

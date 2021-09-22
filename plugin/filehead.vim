@@ -91,8 +91,8 @@ func SetTitle()
     else
         call SetComment()
         if expand("%:e") == 'hpp'
-            call append(line(".")+15, "#ifndef _".toupper(expand("%:t:r"))."_HPP")
-            call append(line(".")+16, "#define _".toupper(expand("%:t:r"))."_HPP")
+            call append(line(".")+15, "#ifndef __".toupper(expand("%:t:r"))."_HPP__")
+            call append(line(".")+16, "#define __".toupper(expand("%:t:r"))."_HPP__")
             call append(line(".")+17, "")
             call append(line(".")+18, "")
             call append(line(".")+19, "#include<iostream>")

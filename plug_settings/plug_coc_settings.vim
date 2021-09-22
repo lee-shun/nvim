@@ -27,6 +27,7 @@ let g:coc_global_extensions = [
             \ 'coc-clangd',
             \ 'coc-pyright',
             \ 'coc-texlab',
+            \ 'coc-vimtex',
             \ 'coc-sh',
             \ 'coc-markdownlint',
             \ 'coc-markmap',
@@ -44,19 +45,13 @@ let g:coc_global_extensions = [
             \ 'coc-syntax',
             \ 'coc-diagnostic',
             \ 'coc-actions',
+            \ 'coc-lightbulb',
             \ 'coc-calc',
             \ 'coc-emoji',
             \ 'coc-word',
             \ 'coc-yank',
             \ 'coc-tabnine',
-            \ 'coc-highlight',
             \]
-            " \ 'coc-gitignore',
-            " \ 'coc-git',
-            " \ 'coc-pairs',
-            " \ 'coc-highlight',
-
-
 
 
 " ===

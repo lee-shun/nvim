@@ -116,6 +116,17 @@ set clipboard+=unnamedplus
 au TextYankPost * silent! lua vim.highlight.on_yank()
 
 " ===
+" === built-in completion
+" ===
+set complete+=k
+set completeopt=menuone,noselect,noinsert
+set dictionary+=~/.config/nvim/20k
+
+inoremap <expr> <cr> ((pumvisible())?("\<C-y>"):("\<cr>"))
+inoremap <expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<TAB>"
+
+" ===
 " === quick mapping
 " ===
 noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
