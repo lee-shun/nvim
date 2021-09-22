@@ -24,7 +24,6 @@
 " coc-plugins
 let g:coc_global_extensions = [
             \ 'coc-cmake',
-            \ 'coc-clangd',
             \ 'coc-pyright',
             \ 'coc-texlab',
             \ 'coc-vimtex',

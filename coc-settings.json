@@ -98,5 +98,29 @@
     "clangd.semanticHighlighting": true,
     "python.analysis.logLevel": "Trace",
     "texlab.path": "/usr/local/bin/texlab",
-    "coc.source.word.shortcut": "W"
+    "coc.source.word.shortcut": "W",
+    "languageserver": {
+        "ccls": {
+            "command": "ccls",
+            "filetypes": [
+                "c",
+                "cc",
+                "cpp",
+                "c++",
+                "objc",
+                "objcpp"
+            ],
+            "rootPatterns": [
+                ".ccls",
+                "compile_commands.json",
+                ".git/",
+                ".hg/"
+            ],
+            "initializationOptions": {
+                "highlight": {
+                    "lsRanges": true
+                }
+            }
+        }
+    }
 }

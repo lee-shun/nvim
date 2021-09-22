@@ -29,7 +29,7 @@
 " ===
 " === vim-lsp-cxx-highlight
 " ===
-let g:lsp_cxx_hl_use_nvim_text_props = 1
+" let g:lsp_cxx_hl_use_nvim_text_props = 1
 
 " ===
 " === vim-latex-live-preview
