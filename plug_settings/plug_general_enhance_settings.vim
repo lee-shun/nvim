@@ -235,7 +235,8 @@ let g:auto_save = 0
 let g:auto_save_silent = 0
 let g:auto_save_events = ["InsertLeave", "TextChanged"]
 
-augroup ft_tex
+augroup ft_autosave
     autocmd!
     autocmd FileType tex let b:auto_save = 1
+    autocmd FileType cpp let b:auto_save = 1
 augroup END
