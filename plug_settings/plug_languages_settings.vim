@@ -30,6 +30,12 @@
 " === vim-lsp-cxx-highlight
 " ===
 " let g:lsp_cxx_hl_use_nvim_text_props = 1
+" Set EnumConstant to red
+hi LspCxxHlGroupEnumConstant ctermfg=Red guifg=Red cterm=none gui=none
+" Set Namespaces to bold blue
+hi LspCxxHlGroupNamespace ctermfg=Blue guifg=Blue cterm=bold gui=bold
+" Set member variables to green
+hi LspCxxHlGroupMemberVariable ctermfg=Green guifg=Green cterm=none gui=none
 
 " ===
 " === vim-latex-live-preview
