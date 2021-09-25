@@ -85,8 +85,8 @@ func SetTitle()
         call SetComment_sh()
 
     elseif expand("%:e") == 'py'
-        call setline(1,"# -*- coding: utf-8 -*- #")
-        call setline(2,"")
+        call setline(1,"#!/usr/bin/env python3")
+        call setline(2,"# -*- coding: utf-8 -*- #")
         call SetComment_sh()
     else
         call SetComment()
