@@ -24,6 +24,8 @@
 
 " Plug 'itchyny/lightline.vim'
 
+" Plug 'josa42/vim-lightline-coc'
+
 " Plug 'mengelbrecht/lightline-bufferline'
 
 " Plug 'mg979/vim-xtabline'
