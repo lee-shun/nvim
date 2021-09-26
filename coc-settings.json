@@ -95,7 +95,6 @@
         "xml",
         "json"
     ],
-    "clangd.semanticHighlighting": true,
     "python.analysis.logLevel": "Trace",
     "texlab.path": "/usr/local/bin/texlab",
     "coc.source.word.shortcut": "W",
@@ -120,6 +119,18 @@
                 "highlight": {
                     "lsRanges": true
                 }
+            }
+        },
+        "cmake": {
+            "command": "cmake-language-server",
+            "filetypes": [
+                "cmake"
+            ],
+            "rootPatterns": [
+                "build/"
+            ],
+            "initializationOptions": {
+                "buildDirectory": "build"
             }
         }
     }
