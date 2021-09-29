@@ -240,3 +240,8 @@ augroup ft_autosave
     autocmd FileType tex let b:auto_save = 1
     autocmd FileType cpp let b:auto_save = 1
 augroup END
+
+" ===
+" === illuminate
+" ===
+let g:Illuminate_ftblacklist = ['python', 'coc-explorer']
