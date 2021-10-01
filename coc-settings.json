@@ -96,6 +96,7 @@
         "json"
     ],
     "python.analysis.logLevel": "Trace",
+    "python.pythonPath": "python3",
     "texlab.path": "/usr/local/bin/texlab",
     "coc.source.word.shortcut": "W",
     "languageserver": {

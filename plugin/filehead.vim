@@ -11,7 +11,7 @@
 "     \:\__\    \:\__\        \:\__\        \::/  /                 /:/  /       ~~~~         \/__/         /:/  /
 "      \/__/     \/__/         \/__/         \/__/                  \/__/                                   \/__/
 "
-"Author : lee-shun
+"Author : Shun Li
 "
 "Email  : 2015097272@qq.com
 "
@@ -25,11 +25,11 @@ autocmd BufNewFile *.cxx,*.c,*.cc,*.hpp,*.h,*.cpp,Makefile,CMakeLists.txt,*.sh,*
 func SetComment()
     call setline(1,"/*******************************************************************************")
     call append(line(".")    , "*")
-    call append(line(".")+1  , "*   Copyright (C) ".strftime("%Y")." Lee Ltd. All rights reserved.")
+    call append(line(".")+1  , "*   Copyright (C) ".strftime("%Y")." Concordia NAVlab. All rights reserved.")
     call append(line(".")+2  , "*")
     call append(line(".")+3  , "*   @Filename: ".expand("%:t"))
     call append(line(".")+4  , "*")
-    call append(line(".")+5  , "*   @Author: lee-shun")
+    call append(line(".")+5  , "*   @Author: Shun Li")
     call append(line(".")+6  , "*")
     call append(line(".")+7  , "*   @Email: 2015097272@qq.com")
     call append(line(".")+8  , "*")
@@ -46,11 +46,11 @@ endfunc
 func SetComment_sh()
     call setline(3, "#------------------------------------------------------------------------------")
     call setline(4 , "#")
-    call setline(5  , "#   Copyright (C) ".strftime("%Y")." Lee Ltd. All rights reserved.")
+    call setline(5  , "#   Copyright (C) ".strftime("%Y")." Concordia NAVlab. All rights reserved.")
     call setline(6  , "#")
     call setline(7  , "#   @Filename: ".expand("%:t"))
     call setline(8  , "#")
-    call setline(9  , "#   @Author: lee-shun")
+    call setline(9  , "#   @Author: Shun Li")
     call setline(10  , "#")
     call setline(11 , "#   @Date: ".strftime("%Y-%m-%d"))
     call setline(12  , "#")
