@@ -103,6 +103,11 @@ let g:instant_markdown_autostart = 0
 let g:instant_markdown_autoscroll = 1
 let g:instant_markdown_browser = default_browser
 
+" ===
+" === mkdx
+" ===
+let g:mkdx#settings = { 'map': { 'enable': 0 } }
+
 
 " ===
 " === Python-syntax
