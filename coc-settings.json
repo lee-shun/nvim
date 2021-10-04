@@ -91,7 +91,6 @@
         "sobel"
     ],
     "coc.preferences.formatOnSaveFiletypes": [
-        "python",
         "xml",
         "json"
     ],
