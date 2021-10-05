@@ -72,9 +72,8 @@ let g:bullets_set_mappings = 0
 
 
 " ===
-" === markdown
+" === markdown(plasticboy)
 " ===
-" NOTE: use the plasticboy markdown sytanx file + SidOFc mxkd.vim functions.
 let g:vim_markdown_math=1
 let g:vim_markdown_conceal=1
 let g:closetag_html_style=1
@@ -83,6 +82,11 @@ let g:closetag_html_style=1
 " === markdown_preview
 " ===
 let vim_markdown_preview_github=1
+
+" ===
+" === markdown_preview.nvim
+" ===
+let g:mkdp_browser = 'chromium-browser'
 
 
 " ===
@@ -101,7 +105,7 @@ let g:instant_markdown_autostart = 0
 " let g:instant_markdown_allow_external_content = 0
 " let g:instant_markdown_mathjax = 1
 let g:instant_markdown_autoscroll = 1
-let g:instant_markdown_browser = default_browser
+let g:instant_markdown_browser = 'chromium-browser'
 
 " ===
 " === mkdx
