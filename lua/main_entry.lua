@@ -29,7 +29,7 @@ require'nvim-treesitter.configs'.setup {
 require('indent')
 
 -- todo
-require('todo-comments').setup()
+require('todo')
 
 -- comment
 require('nvim_comment').setup()
