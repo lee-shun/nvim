@@ -97,8 +97,6 @@
     "python.analysis.logLevel": "Trace",
     "python.pythonPath": "python3",
     "texlab.path": "/usr/local/bin/texlab",
-    "clangd.semanticHighlighting": true,
-    "coc.preferences.semanticTokensHighlights": false,
     "coc.source.word.shortcut": "W",
     "languageserver": {
         "cmake": {
@@ -114,5 +112,7 @@
             }
         }
     },
-    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd"
+    "clangd.path": "clangd",
+    "clangd.semanticHighlighting": true,
+    "coc.preferences.semanticTokensHighlights": false
 }
