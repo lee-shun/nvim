@@ -3,4 +3,10 @@ require("indent_blankline").setup {
     show_current_context = true,
     use_treesitter = true,
     enabled = false,
+    char = "┆",
+}
+
+vim.g.indent_blankline_context_patterns = {
+    "declaration", "expression", "pattern", "primary_expression",
+    "statement", "switch_body"
 }
