@@ -18,9 +18,6 @@
 "***********************************************************************************************************************
 
 
-" ===
-" === coc.nvim
-" ===
 " coc-plugins
 let g:coc_global_extensions = [
             \ 'coc-pyright',
@@ -49,12 +46,10 @@ let g:coc_global_extensions = [
             \ 'coc-word',
             \ 'coc-yank',
             \ 'coc-tabnine',
+            \ 'coc-clangd'
             \]
 
 
-" ===
-" === coc.nvim
-" ===
 " coc-basic-settings
 " Give more space for displaying messages.
 set cmdheight=2
@@ -65,15 +60,6 @@ set updatetime=100
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
-
-" Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved.
-if has("nvim-0.5.0") || has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
@@ -189,49 +175,21 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " provide custom statusline: lightline.vim, vim-airline.
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
-" Mappings for CoCList
-" Show all diagnostics.
-" nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
-" " Manage extensions.
-" nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
-" " Show commands.
-" nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
-" " Find symbol of current document.
-" nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
-" " Search workspace symbols.
-" nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
-" " Do default action for next item.
-" nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
-" " Do default action for previous item.
-" nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
-" " Resume latest coc list.
-" nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
-" 
+" coc-clangd
+nnoremap <leader>j :CocCommand clangd.switchSourceHeader<cr>
 
-" ===
-" === coc.nvim
-" ===
 " coc-yank
 nnoremap <silent> <space>ya  :<C-u>CocList -A --normal yank<cr>
 
 
-" ===
-" === coc.nvim
-" ===
 " coc-highlight
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 
-" ===
-" === coc.nvim
-" ===
 " coc-explorer
 nmap <leader>t :CocCommand explorer<CR>
 
 
-" ===
-" === coc.nvim
-" ===
 " coc-translator
 " popup
 nmap ts <Plug>(coc-translator-p)
@@ -243,9 +201,6 @@ vmap <Leader>e <Plug>(coc-translator-ev)
 nmap <Leader>rp <Plug>(coc-translator-r)
 vmap <Leader>rp <Plug>(coc-translator-rv)
 
-" ===
-" === coc.nvim
-" ===
 " coc-git
 " lightline
 " let g:lightline = {
@@ -270,25 +225,16 @@ vmap <Leader>rp <Plug>(coc-translator-rv)
 "   return winwidth(0) > 120 ? blame : ''
 " endfunction
 
-" ===
-" === coc.nvim
-" ===
 " coc-floatinput
 " autocmd ColorScheme *
 "       \ hi CocHelperNormalFloatBorder guifg=#dddddd guibg=#575B54
 "       \ | hi CocHelperNormalFloat guibg=#575B54
 
-" ===
-" === coc.nvim
-" ===
 " coc-split-term
 " nmap <silent> <C-t> <Plug>(coc-split-term-show)
 " nmap <silent> <C-t> <Plug>(coc-split-term-hide)
 " nmap <silent> <C-t> <Plug>(coc-split-term-toggle)
 
-" ===
-" === coc.nvim
-" ===
 " coc-smartf
 " press <esc> to cancel.
 " nmap f <Plug>(coc-smartf-forward)

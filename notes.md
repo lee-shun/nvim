@@ -19,20 +19,11 @@
                 ".hg/"
             ],
             "initializationOptions": {
-                "cache": {
-                    "directory": "/tmp/ccls"
-                },
                 "highlight": {
                     "lsRanges": true
-                },
-                "clang": {
-                    "extraArgs": [
-                        "-I",
-                        "/opt/ros/melodic/include/ /home/ls/catkin_ws/devel/include/dji_osdk_ros/"
-                    ]
                 }
             }
-        }
+        },
     }
 
 ```

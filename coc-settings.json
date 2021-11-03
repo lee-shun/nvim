@@ -97,30 +97,10 @@
     "python.analysis.logLevel": "Trace",
     "python.pythonPath": "python3",
     "texlab.path": "/usr/local/bin/texlab",
+    "clangd.semanticHighlighting": true,
+    "coc.preferences.semanticTokensHighlights": false,
     "coc.source.word.shortcut": "W",
     "languageserver": {
-        "ccls": {
-            "command": "ccls",
-            "filetypes": [
-                "c",
-                "cc",
-                "cpp",
-                "c++",
-                "objc",
-                "objcpp"
-            ],
-            "rootPatterns": [
-                ".ccls",
-                "compile_commands.json",
-                ".git/",
-                ".hg/"
-            ],
-            "initializationOptions": {
-                "highlight": {
-                    "lsRanges": true
-                }
-            }
-        },
         "cmake": {
             "command": "cmake-language-server",
             "filetypes": [
@@ -133,5 +113,6 @@
                 "buildDirectory": "build"
             }
         }
-    }
+    },
+    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd"
 }
