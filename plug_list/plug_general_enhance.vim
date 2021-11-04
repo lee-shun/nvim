@@ -39,6 +39,9 @@ Plug 'psliwka/vim-smoothie'
 " 包围改变
 Plug 'tpope/vim-surround' " type yskw' to wrap the word with '' or type cs'` to change 'word' to `word`
 
+" 重复操作
+Plug 'tpope/vim-repeat'
+
 " 包围选中
 " Plug 'gcmt/wildfire.vim'
 
@@ -131,8 +134,8 @@ Plug 'mbbill/undotree'
 " Plug 'pseewald/vim-anyfold'
 
 " 折叠加速
-" Plug 'Konfekt/FastFold'
-"
+Plug 'Konfekt/FastFold'
+
 " 改变折叠样式
 Plug 'lambdalisue/readablefold.vim'
 

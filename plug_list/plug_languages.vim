@@ -23,7 +23,8 @@
 "C++
 " Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
-" Plug 'LucHermitte/VimFold4C'
+Plug 'LucHermitte/lh-vim-lib', {'for':['cpp', 'hpp','cc', 'h']}
+Plug 'LucHermitte/VimFold4C', {'for':['cpp', 'hpp','cc', 'h']}
 
 "Cmake
 Plug 'pboettch/vim-cmake-syntax'
