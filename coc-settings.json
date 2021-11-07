@@ -98,6 +98,9 @@
     "python.pythonPath": "python3",
     "texlab.path": "/usr/local/bin/texlab",
     "coc.source.word.shortcut": "W",
+    "clangd.path": "clangd",
+    "clangd.semanticHighlighting": true,
+    "coc.preferences.semanticTokensHighlights": false,
     "languageserver": {
         "cmake": {
             "command": "cmake-language-server",
@@ -112,7 +115,7 @@
             }
         }
     },
-    "clangd.path": "clangd",
-    "clangd.semanticHighlighting": true,
-    "coc.preferences.semanticTokensHighlights": false
+    "diagnostic-languageserver.filetypes": {
+        "cpp": "cpplint"
+    }
 }
