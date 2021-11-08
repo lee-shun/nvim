@@ -134,7 +134,7 @@ Plug 'mbbill/undotree'
 " Plug 'pseewald/vim-anyfold'
 
 " 折叠加速
-Plug 'Konfekt/FastFold'
+" Plug 'Konfekt/FastFold'
 
 " 改变折叠样式
 Plug 'lambdalisue/readablefold.vim'
