@@ -145,7 +145,7 @@ Plug 'lambdalisue/readablefold.vim'
 " Plug 'theniceboy/argtextobj.vim'
 
 " f F命令
-Plug 'rhysd/clever-f.vim'
+" Plug 'rhysd/clever-f.vim'
 
 " 单独编辑
 " Plug 'chrisbra/NrrwRgn'

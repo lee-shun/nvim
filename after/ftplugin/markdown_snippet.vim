@@ -75,11 +75,13 @@ imap <localLeader>n [^<localLeader><F12>]<Esc>ya[Go<C-r>": <++><Esc><C-o>f]a
 " ===
 " === for equations
 " ===
-inoremap <buffer> <localLeader>eq $$<++><Esc>F$i
-imap <localLeader>q <ESC>o$$<Enter><Enter> \tag{<localLeader><F11>-<localLeader><F10>}$$<Enter><BS><++><Esc>2kA
+inoremap <buffer> $ $$<++><Esc>F$i
+inoremap <buffer> <LocalLeader>$ $$<Enter><Enter>$$<Enter><++><Esc>kcc
+inoremap <localLeader>q <ESC>o$$<Enter><Enter> \tag{<localLeader><F11>-<localLeader><F10>}$$<Enter><BS><++><Esc>2kA
 
 " for general environment ==> 'e' for environment
-inoremap <buffer> <LocalLeader>en \begin{}<Enter><++><Enter>\end{<++>}<Esc>2k0f{a
+" inoremap <buffer> <LocalLeader>en \begin{}<Enter><++><Enter>\end{<++>}<Esc>2kF{a
+inoremap <buffer> <LocalLeader>en \begin{ENV}<Enter><++><Enter>\end{ENV}<Esc>2kV3j:VMSearch ENV<CR>
 inoremap <buffer> <LocalLeader>ea \begin{aligned}<Enter><Enter>\end{aligned}<Esc>kcc
 inoremap <buffer> <LocalLeader>em \begin{matrix}<Enter><Enter>\end{matrix}<Esc>kcc
 
@@ -87,13 +89,13 @@ inoremap <buffer> <LocalLeader>em \begin{matrix}<Enter><Enter>\end{matrix}<Esc>k
 inoremap <buffer> \\ \\
 
 " for symbol
-inoremap <buffer> \fr \frac{}{<++>}<++><Esc>0f{a
-inoremap <buffer> \ha \hat{}<++><Esc>0f{a
-inoremap <buffer> \do \dot{}<++><Esc>0f{a
-inoremap <buffer> \dd \ddot{}<++><Esc>0f{a
-inoremap <buffer> \sq \sqrt{}<++><Esc>0f{a
-inoremap <buffer> \ve \vec{}<++><Esc>0f{a
-inoremap <buffer> \ol \overline{}<++><Esc>0f{a
-inoremap <buffer> \wt \widetilde{}<++><Esc>0f{a
+inoremap <buffer> \frac \frac{}{<++>}<++><Esc>F{;a
+inoremap <buffer> \hat \hat{}<++><Esc>F{a
+inoremap <buffer> \dot \dot{}<++><Esc>F{a
+inoremap <buffer> \ddot \ddot{}<++><Esc>F{a
+inoremap <buffer> \sqrt \sqrt{}<++><Esc>F{a
+inoremap <buffer> \vec \vec{}<++><Esc>F{a
+inoremap <buffer> \ol \overline{}<++><Esc>F{a
+inoremap <buffer> \wt \widetilde{}<++><Esc>F{a
 inoremap <buffer> \pr ^{\prime}
 inoremap <buffer> \ra \rightarrow
