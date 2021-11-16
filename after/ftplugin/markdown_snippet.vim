@@ -75,7 +75,7 @@ imap <localLeader>n [^<localLeader><F12>]<Esc>ya[Go<C-r>": <++><Esc><C-o>f]a
 " ===
 " === for equations
 " ===
-inoremap <buffer> $ $$<++><Esc>F$i
+inoremap <buffer> \$ $$<++><Esc>F$i
 inoremap <buffer> <LocalLeader>$ $$<Enter><Enter>$$<Enter><++><Esc>2kcc
 inoremap <localLeader>q <ESC>o$$<Enter><Enter> \tag{<localLeader><F11>-<localLeader><F10>}$$<Enter><BS><++><Esc>2kA
 
