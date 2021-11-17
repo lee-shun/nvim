@@ -76,14 +76,14 @@ imap <localLeader>n [^<localLeader><F12>]<Esc>ya[Go<C-r>": <++><Esc><C-o>f]a
 " === for equations
 " ===
 inoremap <buffer> \$ $$<++><Esc>F$i
-inoremap <buffer> <LocalLeader>$ $$<Enter><Enter>$$<Enter><++><Esc>2kcc
-inoremap <localLeader>q <ESC>o$$<Enter><Enter> \tag{<localLeader><F11>-<localLeader><F10>}$$<Enter><BS><++><Esc>2kA
+inoremap <buffer> <LocalLeader>$ $$<Enter><Enter>$$<Enter><++><Esc>2kA
+imap <localLeader>q <ESC>o$$<Enter><Enter> \tag{<localLeader><F11>-<localLeader><F10>}$$<Enter><BS><++><Esc>2kA
 
 " for general environment ==> 'e' for environment
 " inoremap <buffer> <LocalLeader>en \begin{}<Enter><++><Enter>\end{<++>}<Esc>2kF{a
 inoremap <buffer> <LocalLeader>en \begin{ENV}<Enter><++><Enter>\end{ENV}<Esc>2kV3j:VMSearch ENV<CR>
-inoremap <buffer> <LocalLeader>ea \begin{aligned}<Enter><Enter>\end{aligned}<Esc>kcc
-inoremap <buffer> <LocalLeader>em \begin{matrix}<Enter><Enter>\end{matrix}<Esc>kcc
+inoremap <buffer> <LocalLeader>ea \begin{aligned}<Enter><Enter>\end{aligned}<Esc>kA
+inoremap <buffer> <LocalLeader>em \begin{matrix}<Enter><Enter>\end{matrix}<Esc>kA
 
 " for speed up \
 inoremap <buffer> \\ \\
