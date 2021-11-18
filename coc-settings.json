@@ -97,6 +97,7 @@
     "python.analysis.logLevel": "Trace",
     "python.pythonPath": "python3",
     "texlab.path": "/usr/local/bin/texlab",
+    "ltex.enabled": true,
     "coc.source.word.shortcut": "W",
     "clangd.path": "clangd",
     "clangd.semanticHighlighting": true,

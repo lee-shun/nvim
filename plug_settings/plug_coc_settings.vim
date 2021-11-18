@@ -22,6 +22,7 @@
 let g:coc_global_extensions = [
             \ 'coc-pyright',
             \ 'coc-texlab',
+            \ 'coc-ltex',
             \ 'coc-vimtex',
             \ 'coc-sh',
             \ 'coc-markdownlint',
@@ -245,3 +246,6 @@ vmap <Leader>rp <Plug>(coc-translator-rv)
 "   autocmd User SmartfEnter :hi Conceal ctermfg=220 guifg=#6638F0
 "   autocmd User SmartfLeave :hi Conceal ctermfg=239 guifg=#504945
 " augroup end
+
+" coc-ltex
+" let g:coc_filetype_map = {'tex': 'latex'}

@@ -82,8 +82,8 @@ imap <localLeader>q <ESC>o$$<Enter><Enter> \tag{<localLeader><F11>-<localLeader>
 " for general environment ==> 'e' for environment
 " inoremap <buffer> <LocalLeader>en \begin{}<Enter><++><Enter>\end{<++>}<Esc>2kF{a
 inoremap <buffer> <LocalLeader>en \begin{ENV}<Enter><++><Enter>\end{ENV}<Esc>2kV3j:VMSearch ENV<CR>
-inoremap <buffer> <LocalLeader>ea \begin{aligned}<Enter><Enter>\end{aligned}<Esc>kA
-inoremap <buffer> <LocalLeader>em \begin{matrix}<Enter><Enter>\end{matrix}<Esc>kA
+inoremap <buffer> <LocalLeader>ea \left\{<Enter>\begin{aligned}<Enter><Enter>\end{aligned}<Enter>\right.<Esc>2kA
+inoremap <buffer> <LocalLeader>em \left[<Enter>\begin{matrix}<Enter><Enter>\end{matrix}<Enter>\right]<Esc>2kA
 
 " for speed up \
 inoremap <buffer> \\ \\
