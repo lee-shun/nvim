@@ -95,7 +95,8 @@ inoremap <buffer> \dot \dot{}<++><Esc>F{a
 inoremap <buffer> \ddot \ddot{}<++><Esc>F{a
 inoremap <buffer> \sqrt \sqrt{}<++><Esc>F{a
 inoremap <buffer> \vec \vec{}<++><Esc>F{a
-inoremap <buffer> \ol \overline{}<++><Esc>F{a
-inoremap <buffer> \wt \widetilde{}<++><Esc>F{a
-inoremap <buffer> \pr ^{\prime}
-inoremap <buffer> \ra \rightarrow
+inoremap <buffer> \ovl \overline{}<++><Esc>F{a
+inoremap <buffer> \wdt \widetilde{}<++><Esc>F{a
+inoremap <buffer> \prm ^{\prime}
+inoremap <buffer> \rta \rightarrow
+inoremap <buffer> \bds \boldsymbol{}<++><Esc>F{a
