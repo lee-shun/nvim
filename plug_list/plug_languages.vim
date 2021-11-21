@@ -17,24 +17,28 @@
 "
 "***********************************************************************************************************************
 
-"MATLAB
+" ROS
+Plug 'taketwo/vim-ros'
+Plug 'thibthib18/ros-nvim'
+
+" MATLAB
 " Plug 'yinflying/matlab.vim'
 
-"C++
+" C++
 " Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 " Plug 'LucHermitte/lh-vim-lib', {'for':['cpp', 'hpp','cc', 'h']}
 " Plug 'LucHermitte/VimFold4C', {'for':['cpp', 'hpp','cc', 'h']}
 
-"Cmake
+" Cmake
 Plug 'pboettch/vim-cmake-syntax'
 Plug 'vhdirk/vim-cmake'
 
-"LATEX
+" LATEX
 Plug 'lervag/vimtex'
 " Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
-"markdown
+" Markdown
 " Plug 'dkarter/bullets.vim'
 " Plug 'SidOfc/mkdx', {'for' :['markdown', 'vim-plug']} " too many remaps!
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install_sync()  }, 'for' :['markdown', 'vim-plug']  }
@@ -59,7 +63,7 @@ Plug 'lee-shun/vim-markdown-wiki'
 
 
 
-"Python
+" Python
 " Plug 'tmhedberg/SimpylFold', { 'for' :['python', 'vim-plug'] }
 " Plug 'Vimjas/vim-python-pep8-indent', { 'for' :['python', 'vim-plug'] }
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
@@ -72,10 +76,10 @@ Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
 "Plug 'nvie/vim-flake8'          "static check
 
 
-"i3-wm
+" i3-wm
 Plug 'mboughaba/i3config.vim'
 
-" format
+" Format
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 " Also add Glaive, which is used to configure codefmt's maktaba flags. See

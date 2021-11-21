@@ -53,3 +53,5 @@ require('zenmode')
 -- nvim lsp
 require('lsp.lsp_main')
 
+-- ros
+require('ros_nvim')
