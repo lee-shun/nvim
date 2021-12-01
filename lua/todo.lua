@@ -11,6 +11,6 @@
     WARN = { icon = " ", color = "warning", alt = { "WARNING", "XXX" } },
     PERF = { icon = " ", alt = { "OPTIM", "PERFORMANCE", "OPTIMIZE" } },
     NOTE = { icon = " ", color = "hint", alt = { "INFO" } },
-    STEP = { icon = " ", color = "hint", alt = { "Step" } },
+    STEP = { icon = "⚝ ", color = "#BB8FCE", alt = { "Step" } },
   },
   }
