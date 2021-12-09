@@ -95,6 +95,7 @@
         "json"
     ],
     "python.analysis.logLevel": "Trace",
+    "python.formatting.provider": "yapf",
     "python.pythonPath": "python3",
     "texlab.path": "/usr/local/bin/texlab",
     "ltex.enabled": true,

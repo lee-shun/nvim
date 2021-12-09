@@ -86,7 +86,7 @@ let vim_markdown_preview_github=1
 " ===
 " === markdown_preview.nvim
 " ===
-let g:mkdp_browser = 'chromium-browser'
+let g:mkdp_browser = 'microsoft-edge'
 
 
 " ===
@@ -105,7 +105,7 @@ let g:instant_markdown_autostart = 0
 " let g:instant_markdown_allow_external_content = 0
 " let g:instant_markdown_mathjax = 1
 let g:instant_markdown_autoscroll = 1
-let g:instant_markdown_browser = 'chromium-browser'
+let g:instant_markdown_browser = 'microsoft-edge'
 
 " ===
 " === mkdx
