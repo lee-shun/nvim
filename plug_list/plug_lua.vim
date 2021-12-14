@@ -62,6 +62,11 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'folke/todo-comments.nvim'
 
 " ===
+" === Markdown
+" ===
+Plug 'ekickx/clipboard-image.nvim'
+
+" ===
 " === Snippest
 " ===
 " Plug 'rafamadriz/friendly-snippets'

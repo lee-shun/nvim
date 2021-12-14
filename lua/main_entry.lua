@@ -55,3 +55,6 @@ require('lsp.lsp_main')
 
 -- ros
 require('ros_nvim')
+
+-- markdown
+require('mdimg')
