@@ -104,4 +104,4 @@ inoremap <buffer> \bds \boldsymbol{}<++><Esc>F{a
 " ===
 " === for paper arrangement
 " ===
-inoremap <buffer> <LocalLeader>- - <Enter><Tab>- **Keywords:** <++><Enter>- **Note:** <++><Enter><Enter>```bibtex<Enter><++><Enter>```<Esc>6kA
+inoremap <buffer> <LocalLeader>- - <Enter><Tab>- **Keywords:** <++><Enter>- **Abstract:** <++><Enter>- **Note:** <++><Enter><Enter>```bibtex<Enter><++><Enter>```<Esc>7kA
