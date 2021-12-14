@@ -100,3 +100,8 @@ inoremap <buffer> \wdt \widetilde{}<++><Esc>F{a
 inoremap <buffer> \prm ^{\prime}
 inoremap <buffer> \rta \rightarrow
 inoremap <buffer> \bds \boldsymbol{}<++><Esc>F{a
+
+" ===
+" === for paper arrangement
+" ===
+inoremap <buffer> <LocalLeader>- - []<Enter><Tab>- **Keywords:** <++><Enter>- **Note:** <++><Enter><Enter>```bibtex<Enter><++><Enter>```<Esc>6k0f[a

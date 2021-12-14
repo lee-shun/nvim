@@ -97,6 +97,10 @@
     "python.analysis.logLevel": "Trace",
     "python.formatting.provider": "yapf",
     "python.pythonPath": "python3",
+    "markdownlint.config": {
+        "default": true,
+        "line_length": false
+    },
     "texlab.path": "/usr/local/bin/texlab",
     "ltex.enabled": true,
     "coc.source.word.shortcut": "W",

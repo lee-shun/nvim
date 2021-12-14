@@ -28,7 +28,8 @@
 setlocal tabstop=2
 setlocal softtabstop=2
 setlocal shiftwidth=2
-setlocal spell
+setlocal textwidth=120
+" setlocal spell
 
 function! s:inCodeFence()
     " Search backwards for the opening of the code fence.
