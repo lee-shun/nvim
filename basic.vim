@@ -131,7 +131,8 @@ inoremap <expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<TAB>"
 " ===
 noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
 nnoremap <F2> :set relativenumber! number!<CR>
-nnoremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
+nnoremap <space><space> <Esc>/<++><CR>:nohlsearch<CR>c4l
+nnoremap <C-space> <Esc>/<++><CR>N:nohlsearch<CR>c4l
 nnoremap <C-h> :set hlsearch!<CR>
 
 " ===

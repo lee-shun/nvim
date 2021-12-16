@@ -29,7 +29,11 @@ require'clipboard-image'.setup {
       end
       return name
     end,
+  },
+    markdown = {
+    affix = "![image](%s)"
   }
+
 }
 
 

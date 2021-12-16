@@ -49,6 +49,7 @@ inoremap <buffer> <expr> <localLeader><F10> Count(' \\tag{\d\+-\d\+}',Findtitle(
 " === for greneral writting
 " ===
 inoremap <buffer> <localLeader>f <Esc>/<++><CR>:nohlsearch<CR>i<Del><Del><Del><Del>
+inoremap <buffer> <localLeader>F <Esc>/<++><CR>N:nohlsearch<CR>i<Del><Del><Del><Del>
 
 inoremap <buffer> <localLeader>c ```<Enter><++><Enter>```<Enter><Enter><++><Esc>4kA
 inoremap <buffer> <localLeader>m - [ ] 
@@ -70,6 +71,11 @@ inoremap <buffer> <localLeader>5 #####<Space><Enter><++><Esc>kA
 
 " foot notes
 imap <localLeader>n [^<localLeader><F12>]<Esc>ya[Go<C-r>": <++><Esc><C-o>f]a
+
+" ===
+" === for paper arrangement
+" ===
+inoremap <buffer> <LocalLeader>- - **<++>**<Enter><Tab><Enter>```bibtex<Enter><Enter>```<Enter><Enter>- **Keywords:** <++><Enter>- **Abstract:** <++><Enter>- **Note:** <++><Esc>5ka<Tab>
 
 
 " ===
@@ -101,7 +107,3 @@ inoremap <buffer> \prm ^{\prime}
 inoremap <buffer> \rta \rightarrow
 inoremap <buffer> \bds \boldsymbol{}<++><Esc>F{a
 
-" ===
-" === for paper arrangement
-" ===
-inoremap <buffer> <LocalLeader>- - <Enter><Tab>- **Keywords:** <++><Enter>- **Abstract:** <++><Enter>- **Note:** <++><Enter><Enter>```bibtex<Enter><++><Enter>```<Esc>7kA
