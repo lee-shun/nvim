@@ -75,7 +75,7 @@ imap <localLeader>n [^<localLeader><F12>]<Esc>ya[Go<C-r>": <++><Esc><C-o>f]a
 " ===
 " === for paper arrangement
 " ===
-inoremap <buffer> <LocalLeader>- - **<++>**<Enter><Tab><Enter>```bibtex<Enter><Enter>```<Enter><Enter>- **Keywords:** <++><Enter>- **Abstract:** <++><Enter>- **Note:** <++><Esc>5ka<Tab>
+inoremap <buffer> <LocalLeader>- - **[](.pdf)**<Enter><Tab><Enter>```bibtex<Enter><Enter>```<Enter><Enter>- **Keywords:** <++><Enter>- **Abstract:** <++><Enter>- **Note:** <++><Esc>5ka<Tab>
 
 
 " ===
