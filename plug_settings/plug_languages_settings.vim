@@ -64,6 +64,12 @@ let g:tex_conceal='abdmg'
 let g:vimtex_compiler_progname = 'nvr'
 let g:vimtex_format_enabled=1
 
+" ===
+" === pdf
+" ===
+let g:pdf_convert_on_edit = 1
+let g:pdf_convert_on_read = 1
+
 
 " ===
 " === bullets

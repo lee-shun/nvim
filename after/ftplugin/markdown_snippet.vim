@@ -107,3 +107,17 @@ inoremap <buffer> \prm ^{\prime}
 inoremap <buffer> \rta \rightarrow
 inoremap <buffer> \bds \boldsymbol{}<++><Esc>F{a
 
+" ===
+" === toggle todo
+" ===
+
+function! ToggleTODO()
+    let l:has_todo = match(getline('.'), 'TODO:')
+    if l:has_todo != -1
+        exec 'norm 0fTd2w'
+    else
+        exec 'norm 0f*iTODO: '
+    endif
+endfunction
+
+
