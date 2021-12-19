@@ -72,11 +72,6 @@ inoremap <buffer> <localLeader>5 #####<Space><Enter><++><Esc>kA
 " foot notes
 imap <localLeader>n [^<localLeader><F12>]<Esc>ya[Go<C-r>": <++><Esc><C-o>f]a
 
-" ===
-" === for paper arrangement
-" ===
-inoremap <buffer> <LocalLeader>- - **[](.pdf)**<Enter><Tab><Enter>```bibtex<Enter><Enter>```<Enter><Enter>- **Keywords:** <++><Enter>- **Abstract:** <++><Enter>- **Note:** <++><Esc>5ka<Tab>
-
 
 " ===
 " === for equations
@@ -120,4 +115,15 @@ function! ToggleTODO()
     endif
 endfunction
 
+" ===
+" === for paper arrangement
+" ===
+inoremap <buffer> <LocalLeader>- - **[](.pdf)**<Enter><Tab><Enter>```bibtex<Enter><Enter>```<Enter><Enter>- **Keywords:** <++><Enter>- **Abstract:** <++><Enter>- **Note:** <++><Esc>5ka<Tab>
 
+" ===
+" === add the paper name
+" ===
+function! AddPaperName()
+    exec "norm 0f{lyw"
+    exec "norm 3k0f[pf(p"
+endfunction
