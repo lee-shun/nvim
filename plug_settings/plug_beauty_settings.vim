@@ -127,3 +127,8 @@ let g:spaceline_seperate_style = 'none'
 let g:goyo_width=120
 let g:goyo_height=120
 "g:goyo_linenr
+
+" ===
+" === highlightyank
+" ===
+hi HighlightedyankRegion cterm=reverse gui=reverse
