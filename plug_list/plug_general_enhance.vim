@@ -114,7 +114,7 @@ Plug 'kevinhwang91/rnvimr'
 
 " git
 Plug 'rhysd/conflict-marker.vim'
-" Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 " Plug 'mhinz/vim-signify'
 " Plug 'gisphm/vim-gitignore'
 

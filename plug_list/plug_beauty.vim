@@ -22,7 +22,9 @@
 
 "Plug 'theniceboy/eleline.vim'
 
-" Plug 'itchyny/lightline.vim'
+Plug 'itchyny/lightline.vim'
+
+Plug 'josa42/vim-lightline-coc'
 
 " Plug 'josa42/vim-lightline-coc'
 
@@ -75,6 +77,8 @@ Plug 'sainnhe/everforest'
 " Plug 'eddyekofo94/gruvbox-flat.nvim'
 
 " Plug 'morhetz/gruvbox'
+
+Plug 'shaunsingh/nord.nvim'
 
 " Plug 'joshdick/onedark.vim'
 

@@ -4,7 +4,7 @@
 -- require('highlights')
 
 -- galaxyline
-require('statusline.fulline')
+-- require('statusline.fulline')
 
 -- nvimtree
 -- require('nvimtree')

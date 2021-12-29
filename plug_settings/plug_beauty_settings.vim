@@ -27,21 +27,24 @@ set background=dark
 " colorscheme gruvbox9_soft
 " colorscheme onedark
 " colorscheme snazzy
-colorscheme sonokai
+colorscheme nord
 
 " ===
 " ===lightline
 " ===
-" let g:lightline = {
-"       \ 'colorscheme': 'sonokai',
-"       \ 'active': {
-"       \   'left': [ [ 'mode', 'paste' ],
-"       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-"       \ },
-"       \ 'component_function': {
-"       \   'gitbranch': 'FugitiveHead'
-"       \ },
-"       \ }
+let g:lightline = {
+      \ 'colorscheme': 'nord',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ],
+      \  ['coc_info', 'coc_hints', 'coc_errors', 'coc_warnings', 'coc_ok' ], [ 'coc_status'  ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
+" register compoments:
+call lightline#coc#register()
 
 " ===
 " ===lightline-bufferline
