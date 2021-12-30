@@ -21,8 +21,6 @@
 " coc-plugins
 let g:coc_global_extensions = [
             \ 'coc-pyright',
-            \ 'coc-texlab',
-            \ 'coc-ltex',
             \ 'coc-vimtex',
             \ 'coc-sh',
             \ 'coc-markdownlint',
@@ -49,6 +47,9 @@ let g:coc_global_extensions = [
             \ 'coc-tabnine',
             \ 'coc-clangd'
             \]
+            " \ 'coc-texlab',
+            " \ 'coc-ltex',
+
 
 
 " coc-basic-settings
