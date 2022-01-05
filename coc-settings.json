@@ -101,7 +101,8 @@
         "default": true,
         "line_length": false
     },
-    "coc.source.vimtex.enable": true,
+    "coc.source.vimtex.enable": false,
+    "texlab.path": "/usr/local/bin/texlab",
     "coc.source.word.shortcut": "W",
     "clangd.path": "clangd",
     "clangd.semanticHighlighting": true,

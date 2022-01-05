@@ -168,4 +168,4 @@ Plug '907th/vim-auto-save'
 " text object
 Plug 'wellle/targets.vim'
 
-
+Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }

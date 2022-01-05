@@ -22,6 +22,7 @@
 let g:coc_global_extensions = [
             \ 'coc-pyright',
             \ 'coc-vimtex',
+            \ 'coc-texlab',
             \ 'coc-sh',
             \ 'coc-markdownlint',
             \ 'coc-markmap',
@@ -47,7 +48,6 @@ let g:coc_global_extensions = [
             \ 'coc-tabnine',
             \ 'coc-clangd'
             \]
-            " \ 'coc-texlab',
             " \ 'coc-ltex',
 
 
