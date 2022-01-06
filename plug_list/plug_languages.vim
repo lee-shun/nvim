@@ -39,7 +39,7 @@ Plug 'lervag/vimtex'
 " Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 "pdf
-Plug 'rhysd/open-pdf.vim'
+" Plug 'rhysd/open-pdf.vim'
 
 " Markdown
 " Plug 'dkarter/bullets.vim'
