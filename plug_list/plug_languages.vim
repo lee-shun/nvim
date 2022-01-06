@@ -40,6 +40,7 @@ Plug 'lervag/vimtex'
 
 "pdf
 " Plug 'rhysd/open-pdf.vim'
+Plug 'edersonferreira/open.vim'
 
 " Markdown
 " Plug 'dkarter/bullets.vim'

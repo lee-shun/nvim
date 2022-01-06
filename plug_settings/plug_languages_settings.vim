@@ -138,3 +138,11 @@ let g:jedi#documentation_command = "<C-d>"
 let g:jedi#usages_command = "<leader>n"
 let g:jedi#completions_command = "<Tab>"
 let g:jedi#rename_command = "<leader>r"
+
+" ===
+" === open
+" ===
+let g:open#image = 'feh'
+let g:open#pdf = 'microsoft-edge'
+let g:open#video = 'vlc'
+let g:open#audio = 'vlc'
