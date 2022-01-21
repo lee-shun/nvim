@@ -27,13 +27,13 @@ set background=dark
 " colorscheme gruvbox9_soft
 " colorscheme onedark
 " colorscheme snazzy
-colorscheme nord
+colorscheme sonokai
 
 " ===
 " ===lightline
 " ===
 let g:lightline = {
-      \ 'colorscheme': 'nord',
+      \ 'colorscheme': 'sonokai',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ],
