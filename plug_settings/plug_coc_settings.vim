@@ -46,7 +46,8 @@ let g:coc_global_extensions = [
             \ 'coc-word',
             \ 'coc-yank',
             \ 'coc-tabnine',
-            \ 'coc-clangd'
+            \ 'coc-clangd',
+            \ 'coc-floaterm'
             \]
             " \ 'coc-ltex',
 

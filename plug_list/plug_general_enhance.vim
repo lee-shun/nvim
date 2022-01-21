@@ -169,3 +169,5 @@ Plug '907th/vim-auto-save'
 Plug 'wellle/targets.vim'
 
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
+
+Plug 'voldikss/vim-floaterm'

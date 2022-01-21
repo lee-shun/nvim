@@ -245,3 +245,8 @@ augroup END
 " === illuminate
 " ===
 let g:Illuminate_ftblacklist = ['python', 'coc-explorer']
+
+" ===
+" === float term
+" ===
+let g:floaterm_keymap_toggle = '<F12>'
