@@ -113,28 +113,28 @@ func SetTitle()
     elseif expand("%:e") == 'c'
         call SetComment()
         call setline(17,"#include \"".expand("%:t:r").".h\"")
-        call setline(18, "int main(int argc, char** argv){")
+        call setline(18, "int main(int argc, char** argv) {")
         call setline(19, "return 0;")
         call setline(20, "}")
 
     elseif expand("%:e") == 'cpp'
         call SetComment()
         call setline(17,"#include \"".expand("%:t:r").".hpp\"")
-        call setline(18, "int main(int argc, char** argv){")
+        call setline(18, "int main(int argc, char** argv) {")
         call setline(19, "return 0;")
         call setline(20, "}")
 
     elseif expand("%:e") == 'cc'
         call SetComment()
         call setline(17,"#include \"".expand("%:t:r").".hpp\"")
-        call setline(18, "int main(int argc, char** argv){")
+        call setline(18, "int main(int argc, char** argv) {")
         call setline(19, "return 0;")
         call setline(20, "}")
 
     elseif expand("%:e") == 'cxx'
         call SetComment()
         call setline(17,"#include \"".expand("%:t:r").".hpp\"")
-        call setline(18, "int main(int argc, char** argv){")
+        call setline(18, "int main(int argc, char** argv) {")
         call setline(19, "return 0;")
         call setline(20, "}")
     endif
