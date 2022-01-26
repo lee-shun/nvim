@@ -88,12 +88,17 @@ let g:closetag_html_style=1
 " ===
 " === markdown_preview
 " ===
-let vim_markdown_preview_github=1
+let g:vim_markdown_preview_github=1
 
 " ===
 " === markdown_preview.nvim
 " ===
 let g:mkdp_browser = 'microsoft-edge'
+" microsoft-edge  --password-store=gnome
+function! g:Open_browser(url)
+  silent exec "!microsoft-edge --password-store=gnome --new-window " . a:url . " &"
+endfunction
+let g:mkdp_browserfunc = 'g:Open_browser'
 
 
 " ===

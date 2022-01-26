@@ -123,3 +123,7 @@ MobileNet
 Resnet50
 VGG16
 Eq
+#egmentated
+Labelme
+UNet
+Pytroch
