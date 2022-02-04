@@ -93,10 +93,10 @@ let g:vim_markdown_preview_github=1
 " ===
 " === markdown_preview.nvim
 " ===
-let g:mkdp_browser = 'microsoft-edge'
-" microsoft-edge  --password-store=gnome
+let g:mkdp_browser = 'google-chrome'
+" google-chrome  --password-store=gnome
 function! g:Open_browser(url)
-  silent exec "!microsoft-edge --password-store=gnome --new-window " . a:url . " &"
+  silent exec "!google-chrome --password-store=gnome --new-window " . a:url . " &"
 endfunction
 let g:mkdp_browserfunc = 'g:Open_browser'
 
@@ -117,7 +117,7 @@ let g:instant_markdown_autostart = 0
 " let g:instant_markdown_allow_external_content = 0
 " let g:instant_markdown_mathjax = 1
 let g:instant_markdown_autoscroll = 1
-let g:instant_markdown_browser = 'microsoft-edge'
+let g:instant_markdown_browser = 'google-chrome'
 
 " ===
 " === mkdx
@@ -148,6 +148,6 @@ let g:jedi#rename_command = "<leader>r"
 " === open
 " ===
 let g:open#image = 'feh'
-let g:open#pdf = 'microsoft-edge'
+let g:open#pdf = 'google-chrome'
 let g:open#video = 'vlc'
 let g:open#audio = 'vlc'
