@@ -28,8 +28,8 @@ Plug 'honza/vim-snippets'
 "===
 "=== Coc
 "===
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 
 "===
 "=== You Complete Me
