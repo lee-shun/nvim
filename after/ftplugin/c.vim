@@ -27,3 +27,5 @@ nnoremap <buffer> <LEADER>b <Esc>0f*ldt*<Esc>$p0f*2x$x
 setlocal tabstop=2
 setlocal softtabstop=2
 setlocal shiftwidth=2
+setlocal foldmethod=expr
+setlocal foldexpr=nvim_treesitter#foldexpr()

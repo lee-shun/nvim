@@ -2,7 +2,8 @@
 
 ## Inspired by 🌟🌟
 
-* Theniceboy's [Neovim video](https://space.bilibili.com/13081489?from=search&seid=9375318644841322836) and [config files](https://github.com/theniceboy/nvim).
+* Theniceboy's [Neovim video](https://space.bilibili.com/13081489?from=search&seid=9375318644841322836) and [config
+  files](https://github.com/theniceboy/nvim).
 
 * Amix's  [Ultimate vimrc](https://github.com/amix/vimrc).
 
@@ -56,7 +57,7 @@ skimming!</br>
 
 * the file or directory with * means it will be created automatically after installing.
 
-| Files or Directory     | Illustrations                                                                                   |
+| Files or Directory     | Illustrations                                                                                    |
 |------------------------|--------------------------------------------------------------------------------------------------|
 | init.vim               | The entrance file of the whole config.                                                           |
 | basic.vim              | The basic config of the (neo)vim, includes keybindings and other basic features without plugins. |
@@ -69,8 +70,8 @@ skimming!</br>
 | **plug_config/**       | The custom settings for the above installed plugins.                                             |
 | **Ultisnips/**         | The custom collection of the snippest for coc-snippest.                                          |
 | **lua/**               | The lua plugins configure.                                                                       |
-| **plugged/**          | The plugin installing directory.                                                                 |
-| **tmp/**              | The temporary file, like the undo and swap files, etc.                                           |
+| **plugged/**          | The plugin installing directory.                                                                  |
+| **tmp/**              | The temporary file, like the undo and swap files, etc.                                            |
 
 ## Usage
 
