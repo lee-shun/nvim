@@ -107,6 +107,7 @@
     "coc.source.word.shortcut": "W",
     "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd",
     "clangd.enabled": true,
+    "semanticTokens.filetypes": [],
     "languageserver": {
         "cmake": {
             "command": "cmake-language-server",

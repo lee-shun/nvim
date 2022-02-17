@@ -239,6 +239,7 @@ augroup ft_autosave
     autocmd!
     autocmd FileType tex let b:auto_save = 1
     autocmd FileType cpp let b:auto_save = 1
+    autocmd FileType cmake let b:auto_save = 1
 augroup END
 
 " ===
