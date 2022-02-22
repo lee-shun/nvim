@@ -46,7 +46,7 @@ Plug 'tpope/vim-repeat'
 " Plug 'gcmt/wildfire.vim'
 
 " 强化删除
-Plug 'junegunn/vim-after-object' " da= to delete what's after =
+" Plug 'junegunn/vim-after-object' " da= to delete what's after =
 
 " 自动注释
 " Plug 'tpope/vim-commentary'
