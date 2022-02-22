@@ -26,7 +26,7 @@ Plug 'thibthib18/ros-nvim'
 
 " C++
 " Plug 'octol/vim-cpp-enhanced-highlight'
-" Plug 'jackguo380/vim-lsp-cxx-highlight'
+Plug 'jackguo380/vim-lsp-cxx-highlight'
 " Plug 'LucHermitte/lh-vim-lib', {'for':['cpp', 'hpp','cc', 'h']}
 " Plug 'LucHermitte/VimFold4C', {'for':['cpp', 'hpp','cc', 'h']}
 
