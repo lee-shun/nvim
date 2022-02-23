@@ -115,7 +115,10 @@
                 "cmake"
             ],
             "rootPatterns": [
-                "build/"
+                ".ccls",
+                "compile_commands.json",
+                ".git/",
+                ".hg/"
             ],
             "initializationOptions": {
                 "buildDirectory": "build"
