@@ -33,8 +33,8 @@ Plug 'psliwka/vim-smoothie'
 " Plug 'jiangmiao/auto-pairs'
 " Plug 'Raimondi/delimitMate'
 
-" 剪切板历史
-" Plug 'junegunn/vim-peekaboo'
+" 寄存器
+Plug 'junegunn/vim-peekaboo'
 
 " 包围改变
 Plug 'tpope/vim-surround' " type yskw' to wrap the word with '' or type cs'` to change 'word' to `word`
@@ -171,3 +171,5 @@ Plug 'wellle/targets.vim'
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 
 Plug 'voldikss/vim-floaterm'
+
+Plug 'airblade/vim-rooter'
