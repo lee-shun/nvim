@@ -109,8 +109,7 @@ set listchars=tab:»·,nbsp:+,trail:·,extends:→,precedes:←
 set showbreak=↪
 
 " share clipboard
-set clipboard+=unnamed
-set clipboard+=unnamedplus
+set clipboard^=unnamed,unnamedplus
 " au TextYankPost * silent! lua vim.highlight.on_yank()
 
 " ===
