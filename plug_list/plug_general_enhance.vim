@@ -173,3 +173,7 @@ Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 Plug 'voldikss/vim-floaterm'
 
 Plug 'airblade/vim-rooter'
+
+Plug 'skywind3000/asyncrun.vim'
+
+Plug 'skywind3000/asynctasks.vim'

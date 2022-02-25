@@ -52,7 +52,6 @@ let g:coc_global_extensions = [
             " \ 'coc-ltex',
 
 
-
 " coc-basic-settings
 " Give more space for displaying messages.
 set cmdheight=1

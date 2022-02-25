@@ -1,5 +1,5 @@
 {
-    "hover.target": "preview",
+    "hover.target": "float",
     "coc.preferences.enableFloatHighlight": true,
     "coc.preferences.snippetStatusText": "Ⓢ ",
     "coc.preferences.extensionUpdateCheck": "daily",

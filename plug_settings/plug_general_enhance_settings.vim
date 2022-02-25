@@ -259,3 +259,8 @@ let g:floaterm_height = 0.7
 " ===
 let g:rooter_change_directory_for_non_project_files = 'current'
 let g:rooter_patterns = ['compile_commands.json', '.git', '=code', 'package.xml']
+
+" ===
+" === Async
+" ===
+let g:asyncrun_open = 6
