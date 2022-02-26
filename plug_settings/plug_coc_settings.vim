@@ -173,7 +173,7 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 
 " coc-clangd
-" nnoremap <leader>j :CocCommand clangd.switchSourceHeader<cr>
+nnoremap <leader>j :CocCommand clangd.switchSourceHeader<cr>
 
 " coc-yank
 nnoremap <silent> <space>ya  :<C-u>CocList -A --normal yank<cr>
@@ -189,6 +189,5 @@ nmap <leader>t :CocCommand explorer<CR>
 nmap ts <Plug>(coc-translator-p)
 vmap ts <Plug>(coc-translator-pv)
 
-" hightlight
-autocmd ColorScheme *
-      \ hi CocUnusedHighlight ctermbg=NONE guibg=NONE guifg=#808080
+" hightlight for member functions
+hi CocSemProperty ctermfg=LightRed guifg=LightRed  cterm=none gui=none
