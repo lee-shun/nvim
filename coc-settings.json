@@ -71,9 +71,32 @@
     "explorer.file.showHiddenFiles": true,
     "explorer.icon.enableNerdfont": true,
     "explorer.buffer.showHiddenBuffers": false,
+    "explorer.root.customRules": {
+        "vcs": {
+            "patterns": [
+                "compile_commands.json",
+                ".clang-format",
+                ".git",
+                ".hg",
+                ".projections.json"
+            ]
+        },
+        "vcs-r": {
+            "patterns": [
+                "compile_commands.json",
+                ".clang-format",
+                ".git",
+                ".hg",
+                ".projections.json"
+            ],
+            "bottomUp": true
+        }
+    },
     "explorer.root.strategies": [
         "cwd",
-        "workspace"
+        "workspace",
+        "custom:vcs",
+        "sourceBuffer"
     ],
     "codeLens.enable": true,
     "cSpell.enabled": false,
