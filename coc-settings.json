@@ -71,6 +71,10 @@
     "explorer.file.showHiddenFiles": true,
     "explorer.icon.enableNerdfont": true,
     "explorer.buffer.showHiddenBuffers": false,
+    "explorer.root.strategies": [
+        "cwd",
+        "workspace"
+    ],
     "codeLens.enable": true,
     "cSpell.enabled": false,
     "coc-actions.hideCursor": true,
