@@ -12,7 +12,7 @@
     "suggest.timeout": 5000,
     "suggest.enablePreview": true,
     "suggest.floatEnable": true,
-    "suggest.detailField": "preview",
+    "suggest.detailField": "abbr",
     "suggest.snippetIndicator": "",
     "suggest.triggerCompletionWait": 100,
     "suggest.echodocSupport": true,
@@ -106,7 +106,7 @@
     "texlab.path": "/usr/local/bin/texlab",
     "coc.source.word.shortcut": "W",
     "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd",
-    "clangd.enabled": false,
+    "clangd.enabled": true,
     "semanticTokens.filetypes": [],
     "languageserver": {
         "cmake": {
@@ -123,29 +123,6 @@
             ],
             "initializationOptions": {
                 "buildDirectory": "build"
-            }
-        },
-        "ccls": {
-            "command": "ccls",
-            "filetypes": [
-                "c",
-                "cc",
-                "cpp",
-                "c++",
-                "objc",
-                "objcpp"
-            ],
-            "rootPatterns": [
-                ".ccls-cache/",
-                ".clang-format",
-                "compile_commands.json",
-                ".git/",
-                ".hg/"
-            ],
-            "initializationOptions": {
-                "highlight": {
-                    "lsRanges": true
-                }
             }
         }
     },
