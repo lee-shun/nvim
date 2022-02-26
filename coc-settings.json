@@ -106,7 +106,7 @@
     "texlab.path": "/usr/local/bin/texlab",
     "coc.source.word.shortcut": "W",
     "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd",
-    "clangd.enabled": true,
+    "clangd.enabled": false,
     "semanticTokens.filetypes": [],
     "languageserver": {
         "cmake": {

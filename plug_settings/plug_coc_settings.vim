@@ -47,7 +47,8 @@ let g:coc_global_extensions = [
             \ 'coc-yank',
             \ 'coc-tabnine',
             \ 'coc-clangd',
-            \ 'coc-floaterm'
+            \ 'coc-floaterm',
+            \ 'coc-floatinput',
             \]
             " \ 'coc-ltex',
 
@@ -171,82 +172,19 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 
-" Add (Neo)Vim's native statusline support.
-" NOTE: Please see `:h coc-status` for integrations with external plugins that
-" provide custom statusline: lightline.vim, vim-airline.
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-
 " coc-clangd
-nnoremap <leader>j :CocCommand clangd.switchSourceHeader<cr>
+" nnoremap <leader>j :CocCommand clangd.switchSourceHeader<cr>
 
 " coc-yank
 nnoremap <silent> <space>ya  :<C-u>CocList -A --normal yank<cr>
 
-
 " coc-highlight
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-
 " coc-explorer
 nmap <leader>t :CocCommand explorer<CR>
-
 
 " coc-translator
 " popup
 nmap ts <Plug>(coc-translator-p)
 vmap ts <Plug>(coc-translator-pv)
-" echo
-nmap <Leader>e <Plug>(coc-translator-e)
-vmap <Leader>e <Plug>(coc-translator-ev)
-" replace
-nmap <Leader>rp <Plug>(coc-translator-r)
-vmap <Leader>rp <Plug>(coc-translator-rv)
-
-" coc-git
-" lightline
-" let g:lightline = {
-"   \ 'active': {
-"   \   'left': [
-"   \     [ 'mode', 'paste' ],
-"   \     [ 'ctrlpmark', 'git', 'diagnostic', 'cocstatus', 'filename', 'method' ]
-"   \   ],
-"   \   'right':[
-"   \     [ 'filetype', 'fileencoding', 'lineinfo', 'percent' ],
-"   \     [ 'blame' ]
-"   \   ],
-"   \ },
-"   \ 'component_function': {
-"   \   'blame': 'LightlineGitBlame',
-"   \ }
-" \ }
-
-" function! LightlineGitBlame() abort
-"   let blame = get(b:, 'coc_git_blame', '')
-"   " return blame
-"   return winwidth(0) > 120 ? blame : ''
-" endfunction
-
-" coc-floatinput
-" autocmd ColorScheme *
-"       \ hi CocHelperNormalFloatBorder guifg=#dddddd guibg=#575B54
-"       \ | hi CocHelperNormalFloat guibg=#575B54
-
-" coc-split-term
-" nmap <silent> <C-t> <Plug>(coc-split-term-show)
-" nmap <silent> <C-t> <Plug>(coc-split-term-hide)
-" nmap <silent> <C-t> <Plug>(coc-split-term-toggle)
-
-" coc-smartf
-" press <esc> to cancel.
-" nmap f <Plug>(coc-smartf-forward)
-" nmap F <Plug>(coc-smartf-backward)
-" nmap ; <Plug>(coc-smartf-repeat)
-" nmap , <Plug>(coc-smartf-repeat-opposite)
-"  
-" augroup Smartf
-"   autocmd User SmartfEnter :hi Conceal ctermfg=220 guifg=#6638F0
-"   autocmd User SmartfLeave :hi Conceal ctermfg=239 guifg=#504945
-" augroup end
-
-" coc-ltex
-" let g:coc_filetype_map = {'tex': 'latex'}

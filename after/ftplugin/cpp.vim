@@ -17,6 +17,13 @@
 "
 "***********************************************************************************************************************
 
+setlocal tabstop=2
+setlocal softtabstop=2
+setlocal shiftwidth=2
+
+setlocal foldmethod=expr
+setlocal foldexpr=nvim_treesitter#foldexpr()
+
 " ===
 " === for commet coverting
 " ===
@@ -24,7 +31,7 @@ nnoremap <buffer> <LEADER>c <Esc>k^/\/\/<CR>d2lv$hdA/* */<Esc>2hP$:set nohlsearc
 nnoremap <buffer> <LEADER>b <Esc>0f*ldt*<Esc>$p0f*2x$x
 
 " ===
-" === for /**/
+" === text obj for /**/
 " ===
 function! s:inComment()
     call search('\/\*\*', 'bceW')
@@ -47,7 +54,7 @@ xnoremap <buffer> <silent> ac :<c-u>call <sid>aroundComment()<cr>
 onoremap <buffer> <silent> ac :<c-u>call <sid>aroundComment()<cr>
 
 " ===
-" === for //
+" === text obj for //
 " ===
 function! s:inComment2()
     call search("\/\/")
@@ -56,10 +63,3 @@ function! s:inComment2()
 endfunction
 xnoremap <buffer> <silent> b/ :<c-u>call <sid>inComment2()<cr>
 onoremap <buffer> <silent> b/ :<c-u>call <sid>inComment2()<cr>
-
-setlocal tabstop=2
-setlocal softtabstop=2
-setlocal shiftwidth=2
-
-setlocal foldmethod=expr
-setlocal foldexpr=nvim_treesitter#foldexpr()
