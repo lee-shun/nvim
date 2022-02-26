@@ -115,7 +115,8 @@
                 "cmake"
             ],
             "rootPatterns": [
-                ".ccls",
+                ".ccls-cache/",
+                ".clang-format",
                 "compile_commands.json",
                 ".git/",
                 ".hg/"
@@ -135,7 +136,8 @@
                 "objcpp"
             ],
             "rootPatterns": [
-                ".ccls",
+                ".ccls-cache/",
+                ".clang-format",
                 "compile_commands.json",
                 ".git/",
                 ".hg/"
