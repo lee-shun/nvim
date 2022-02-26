@@ -188,3 +188,7 @@ nmap <leader>t :CocCommand explorer<CR>
 " popup
 nmap ts <Plug>(coc-translator-p)
 vmap ts <Plug>(coc-translator-pv)
+
+" hightlight
+autocmd ColorScheme *
+      \ hi CocUnusedHighlight ctermbg=NONE guibg=NONE guifg=#808080
