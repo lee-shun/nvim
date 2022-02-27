@@ -122,7 +122,11 @@ let g:instant_markdown_browser = 'google-chrome'
 " ===
 " === mkdx
 " ===
-let g:mkdx#settings = { 'map': { 'enable': 0 } }
+" m usuall for mark in vim, but I never use it!
+let g:mkdx#settings = {
+            \'highlight': { 'enable': 0 },
+            \'map': { 'prefix': 'm' }
+            \}
 
 
 " ===
