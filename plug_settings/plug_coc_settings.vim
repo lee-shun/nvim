@@ -47,6 +47,7 @@ let g:coc_global_extensions = [
             \ 'coc-yank',
             \ 'coc-tabnine',
             \ 'coc-clangd',
+            \ 'coc-java',
             \ 'coc-floaterm',
             \ 'coc-floatinput',
             \]
