@@ -89,7 +89,18 @@ func SetTitle()
         call setline(2,"# -*- coding: utf-8 -*- #")
         call SetCommentSh()
 
-    elseif expand("%:e") == 'hpp'
+    elseif &filetype == 'c' && expand("%:e") == 'h'
+        call SetComment()
+        call setline(17, "#pragma once")
+
+    elseif &filetype == 'c' && expand("%:e") == 'c'
+        call SetComment()
+        call setline(17,"#include \"".expand("%:t:r").".h\"")
+        call setline(18, "int main(int argc, char** argv) {")
+        call setline(19, "return 0;")
+        call setline(20, "}")
+
+    elseif &filetype == 'cpp' && (expand("%:e") == 'hpp' || expand("%:e") == 'h')
         call SetComment()
         call setline(17, "#ifndef ".toupper(substitute(expand("%:p:r"), "\/", "_", "g"))."_HPP_")
         call setline(18, "#define ".toupper(substitute(expand("%:p:r"), "\/", "_", "g"))."_HPP_")
@@ -104,39 +115,15 @@ func SetTitle()
         call setline(27, "}")
         call setline(28, "")
         call setline(29, "")
-        call setline(30, "#endif // ".toupper(substitute(expand("%:p:r"), "\/", "_", "g"))."_HPP_")
+        call setline(30, "#endif  // ".toupper(substitute(expand("%:p:r"), "\/", "_", "g"))."_HPP_")
 
-    elseif expand("%:e") == 'h'
-        call SetComment()
-        call setline(17, "#pragma once")
-
-    elseif expand("%:e") == 'c'
-        call SetComment()
-        call setline(17,"#include \"".expand("%:t:r").".h\"")
-        call setline(18, "int main(int argc, char** argv) {")
-        call setline(19, "return 0;")
-        call setline(20, "}")
-
-    elseif expand("%:e") == 'cpp'
+    elseif &filetype == 'cpp' && (expand("%:e") == 'cpp' || expand("%:e") == 'cc')
         call SetComment()
         call setline(17,"#include \"".expand("%:t:r").".hpp\"")
         call setline(18, "int main(int argc, char** argv) {")
         call setline(19, "return 0;")
         call setline(20, "}")
 
-    elseif expand("%:e") == 'cc'
-        call SetComment()
-        call setline(17,"#include \"".expand("%:t:r").".hpp\"")
-        call setline(18, "int main(int argc, char** argv) {")
-        call setline(19, "return 0;")
-        call setline(20, "}")
-
-    elseif expand("%:e") == 'cxx'
-        call SetComment()
-        call setline(17,"#include \"".expand("%:t:r").".hpp\"")
-        call setline(18, "int main(int argc, char** argv) {")
-        call setline(19, "return 0;")
-        call setline(20, "}")
     endif
 endfunc
 

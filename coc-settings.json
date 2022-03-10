@@ -74,6 +74,7 @@
     "explorer.root.customRules": {
         "vcs": {
             "patterns": [
+                ".vim_root",
                 "compile_commands.json",
                 ".clang-format",
                 ".git",
@@ -94,8 +95,8 @@
     },
     "explorer.root.strategies": [
         "cwd",
-        "workspace",
         "custom:vcs",
+        "workspace",
         "sourceBuffer"
     ],
     "codeLens.enable": true,
@@ -145,6 +146,7 @@
                 "cmake"
             ],
             "rootPatterns": [
+                ".vim_root",
                 ".ccls-cache/",
                 ".clang-format",
                 "compile_commands.json",
@@ -158,5 +160,36 @@
     },
     "diagnostic-languageserver.filetypes": {
         "cpp": "cpplint"
+    },
+    "diagnostic-languageserver.linters": {
+        "cpplint": {
+            "command": "cpplint",
+            "args": [
+                "--filter=-build/c++11",
+                "%file"
+            ],
+            "debounce": 100,
+            "isStderr": true,
+            "isStdout": false,
+            "sourceName": "cpplint",
+            "offsetLine": 0,
+            "offsetColumn": 0,
+            "formatPattern": [
+                "^[^:]+:(\\d+):(\\d+)?\\s+([^:]+?)\\s\\[(\\d)\\]$",
+                {
+                    "line": 1,
+                    "column": 2,
+                    "message": 3,
+                    "security": 4
+                }
+            ],
+            "securities": {
+                "1": "info",
+                "2": "warning",
+                "3": "warning",
+                "4": "error",
+                "5": "error"
+            }
+        }
     }
 }
