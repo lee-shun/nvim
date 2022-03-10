@@ -93,12 +93,6 @@
             "bottomUp": true
         }
     },
-    "explorer.root.strategies": [
-        "cwd",
-        "custom:vcs",
-        "workspace",
-        "sourceBuffer"
-    ],
     "codeLens.enable": true,
     "cSpell.enabled": false,
     "coc-actions.hideCursor": true,
