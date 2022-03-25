@@ -41,8 +41,9 @@ Plug 'p00f/nvim-ts-rainbow'
 " === Gerneral Enchancement
 " ===
 Plug 'windwp/nvim-autopairs'
-Plug 'terrortylor/nvim-comment'
+" Plug 'terrortylor/nvim-comment'
 " Plug 'yamatsum/nvim-cursorline'
+Plug 'numToStr/Comment.nvim'
 
 " "===
 " "=== File Nagivation

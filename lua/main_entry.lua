@@ -33,7 +33,10 @@ require('indent')
 require('todo')
 
 -- comment
-require('nvim_comment').setup()
+-- require('nvim_comment').setup()
+
+require('Comment').setup()
+
 
 -- autopairs
 require('nvim-autopairs').setup()
