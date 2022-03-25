@@ -18,7 +18,7 @@
 "***********************************************************************************************************************
 
 " ROS
-Plug 'taketwo/vim-ros'
+Plug 'taketwo/vim-ros', { 'for' : 'rosmsg', 'on': 'Roscd' }
 Plug 'thibthib18/ros-nvim'
 
 " MATLAB
