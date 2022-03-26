@@ -27,13 +27,14 @@ set background=dark
 " colorscheme gruvbox9_soft
 " colorscheme onedark
 " colorscheme snazzy
-colorscheme sonokai
+" colorscheme sonokai
+colorscheme nord
 
 " ===
 " ===lightline
 " ===
 let g:lightline = {
-            \ 'colorscheme': 'sonokai',
+            \ 'colorscheme': 'nord',
             \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
             \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" },
             \ 'active': {
