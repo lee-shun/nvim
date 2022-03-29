@@ -41,7 +41,7 @@ skimming!</br>
 
 * **🆕 New Features:** The lua plugins supports.
 
-* **🆕 New Features:** Use the Neovim build-in LSP (or coc.nvim)
+* **🆕 New Features:** Use the Neovim build-in LSP (or coc.nvim). In my own opinion, `coc.nvim` is gooood!
 
 * As **LESS remaps** as I can do to keep the original vim keybindings;
 
