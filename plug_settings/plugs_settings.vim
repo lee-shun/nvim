@@ -18,7 +18,7 @@
 "***********************************************************************************************************************
 
 lua<<EOF
-require('main_entry')
+require('plugins')
 EOF
 
 source ~/.config/nvim/plug_settings/plug_beauty_settings.vim

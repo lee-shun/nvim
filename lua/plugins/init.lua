@@ -1,16 +1,8 @@
--- colorscheme
--- local base16 = require "base16"
--- base16(base16.themes["onedark"], true)
--- require('highlights')
-
 -- galaxyline
--- require('statusline.fulline')
-
--- nvimtree
--- require('nvimtree')
+require('plugins.configs.statusline.cocline')
 
 -- dashboard
-require('dashboard')
+require('plugins.configs.dashboard')
 
 -- gitsign
 require('gitsigns').setup()
@@ -26,17 +18,13 @@ require'nvim-treesitter.configs'.setup {
 }
 
 -- indent_blankline
-require('indent')
--- require('rangeline')
+require('plugins.configs.indent')
 
 -- todo
-require('todo')
+require('plugins.configs.todo')
 
 -- comment
--- require('nvim_comment').setup()
-
 require('Comment').setup()
-
 
 -- autopairs
 require('nvim-autopairs').setup()
@@ -48,16 +36,16 @@ require("colorizer").setup()
 -- require("shade").setup()
 
 -- telescope
-require('scope')
+require('plugins.configs.scope')
 
 -- true zen
-require('zenmode')
-
--- nvim lsp
-require('lsp.lsp_main')
+require('plugins.configs.zenmode')
 
 -- ros
-require('ros_nvim')
+require('plugins.configs.ros_nvim')
 
 -- markdown
-require('mdimg')
+require('plugins.configs.mdimg')
+
+-- nvim lsp
+require('plugins.configs.lsp')

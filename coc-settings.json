@@ -150,6 +150,15 @@
             "initializationOptions": {
                 "buildDirectory": "build"
             }
+        },
+        "lua": {
+            "command": "lua-language-server",
+            "rootPatterns": [
+                ".git"
+            ],
+            "filetypes": [
+                "lua"
+            ]
         }
     },
     "diagnostic-languageserver.filetypes": {

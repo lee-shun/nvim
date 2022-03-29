@@ -26,7 +26,7 @@ Plug 'nvim-lua/plenary.nvim'
 " ===
 " === UI
 " ===
-" Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
 " Plug 'siduck76/nvim-base16.lua'
 
 " ===

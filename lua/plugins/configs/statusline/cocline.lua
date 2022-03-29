@@ -11,7 +11,8 @@ gl.short_line_list = {
     'nerdtree',
     'fugitive',
     'fugitiveblame',
-    'plug'
+    'plug',
+    "coc-explorer"
 }
 
 -- VistaPlugin = extension.vista_nearest

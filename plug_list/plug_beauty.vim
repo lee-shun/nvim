@@ -22,9 +22,9 @@
 
 "Plug 'theniceboy/eleline.vim'
 
-Plug 'itchyny/lightline.vim'
+" Plug 'itchyny/lightline.vim'
 
-Plug 'josa42/vim-lightline-coc'
+" Plug 'josa42/vim-lightline-coc'
 
 " Plug 'josa42/vim-lightline-coc'
 
