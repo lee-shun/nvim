@@ -77,11 +77,7 @@ Plug 'ekickx/clipboard-image.nvim'
 " === Neovim Lsp
 " ===
 " Plug 'neovim/nvim-lspconfig'
-" " Plug 'nvim-lua/completion-nvim'
-" Plug 'hrsh7th/nvim-compe'
 " Plug 'onsails/lspkind-nvim'
-" Plug 'glepnir/lspsaga.nvim'
-" Plug 'sbdchd/neoformat'
 " Plug 'folke/lsp-colors.nvim'
 " Plug 'folke/trouble.nvim'
 " Plug 'lewis6991/spellsitter.nvim'

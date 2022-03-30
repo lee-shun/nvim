@@ -18,14 +18,10 @@
 "***********************************************************************************************************************
 
 " ===
-" === machine_specific.vim
+" === basic
 " ===
-source ~/.config/nvim/machine_specific.vim
-
-" ===
-" === basic.vim
-" ===
-source ~/.config/nvim/basic.vim
+source ~/.config/nvim/basic/options.vim
+source ~/.config/nvim/basic/mappings.vim
 
 " ===
 " === plugs.vim

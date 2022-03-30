@@ -55,7 +55,6 @@
     "diagnostic.messageTarget": "float",
     "tabnine.limit": 3,
     "snippets.ultisnips.directories": [
-        "$HOME/.config/nvim/Ultisnips/",
         "$HOME/.config/nvim/plugged/vim-snippets/UltiSnips/"
     ],
     "explorer.sources": [
