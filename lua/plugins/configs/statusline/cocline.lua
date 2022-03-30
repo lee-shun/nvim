@@ -62,7 +62,7 @@ function get_diagnostic_info()
 end
 
 local function get_current_func()
-  local has_func, func_name = pcall(vim.fn.nvim_buf_get_var,0,'coc_current_function')
+  local has_func, func_name = pcall(vim.api.nvim_buf_get_var,0,'coc_current_function')
   if not has_func then return end
       return func_name
   end
@@ -116,32 +116,38 @@ gls.left[2] = {
           n = 'NORMAL',
           i = 'INSERT',
           c= 'COMMAND',
-          V= 'VISUAL',
-          [''] = 'VISUAL',
+          V= 'VISUAL-LINE',
+          [''] = 'VISUAL-BLOCK',
           v ='VISUAL',
-          c  = 'COMMAND-LINE',
           ['r?'] = ':CONFIRM',
           rm = '--MORE',
           R  = 'REPLACE',
           Rv = 'VIRTUAL',
           s  = 'SELECT',
           S  = 'SELECT',
-          ['r']  = 'HIT-ENTER',
+          r  = 'HIT-ENTER',
           [''] = 'SELECT',
           t  = 'TERMINAL',
           ['!']  = 'SHELL',
       }
       local mode_color = {
           n = colors.green,
-          i = colors.blue,v=colors.magenta,[''] = colors.blue,V=colors.blue,
-          c = colors.red,no = colors.magenta,s = colors.orange,S=colors.orange,
-          [''] = colors.orange,ic = colors.yellow,R = colors.purple,Rv = colors.purple,
-          cv = colors.red,ce=colors.red, r = colors.cyan,rm = colors.cyan, ['r?'] = colors.cyan,
+          i = colors.blue,
+          v=colors.magenta,
+          [''] = colors.magenta,
+          V=colors.magenta,
+          c = colors.red,
+          no = colors.magenta,
+          s = colors.orange,
+          S=colors.orange,
+          [''] = colors.orange,
+          ic = colors.yellow,
+          cv = colors.red,
+          ce=colors.red,
+          r = colors.cyan,
+          rm = colors.cyan,
+          ['r?'] = colors.cyan,
           ['!']  = colors.green,t = colors.green,
-          c  = colors.purple,
-          ['r?'] = colors.red,
-          ['r']  = colors.red,
-          rm = colors.red,
           R  = colors.yellow,
           Rv = colors.magenta,
       }
@@ -194,7 +200,7 @@ gls.left[7] = {
   DiffAdd = {
     provider = 'DiffAdd',
     condition = checkwidth,
-    icon = ' ',
+    icon = '  ',
     highlight = {colors.green,colors.line_bg},
   }
 }
@@ -251,7 +257,6 @@ gls.left[14] = {
   }
 }
 
-
 gls.left[15] = {
     CocStatus = {
      provider = CocStatus,
@@ -292,22 +297,6 @@ gls.right[5] = {
     highlight = {colors.cyan,colors.darkblue,'bold'},
   }
 }
-
--- gls.right[4] = {
---   ScrollBar = {
---     provider = 'ScrollBar',
---     highlight = {colors.blue,colors.purple},
---   }
--- }
---
--- gls.right[3] = {
---   Vista = {
---     provider = VistaPlugin,
---     separator = ' ',
---     separator_highlight = {colors.bg,colors.line_bg},
---     highlight = {colors.fg,colors.line_bg,'bold'},
---   }
--- }
 
 gls.short_line_left[1] = {
   BufferType = {

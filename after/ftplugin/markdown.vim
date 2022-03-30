@@ -82,10 +82,3 @@ function! ToggleComplete()
     " Please note that this last line is doing the desired job. There is
     " no need to return anything
 endfunction
-
-" ===
-" === use the mkdx instead
-" ===
-" nnoremap <buffer> <LEADER>c :call ToggleComplete()<CR>
-setlocal foldmethod=expr
-setlocal foldexpr=nvim_treesitter#foldexpr()

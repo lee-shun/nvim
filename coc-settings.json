@@ -4,6 +4,15 @@
     "coc.preferences.snippetStatusText": "Ⓢ ",
     "coc.preferences.extensionUpdateCheck": "daily",
     "coc.preferences.messageLevel": "error",
+    "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+    "coc.preferences.rootPatterns": [
+        ".vim_root",
+        "compile_commands.json",
+        ".clang-format",
+        ".git",
+        ".hg",
+        ".projections.json"
+    ],
     "yank.highlight.enable": false,
     "suggest.detailMaxLength": 60,
     "suggest.noselect": true,
@@ -70,28 +79,6 @@
     "explorer.file.showHiddenFiles": true,
     "explorer.icon.enableNerdfont": true,
     "explorer.buffer.showHiddenBuffers": false,
-    "explorer.root.customRules": {
-        "vcs": {
-            "patterns": [
-                ".vim_root",
-                "compile_commands.json",
-                ".clang-format",
-                ".git",
-                ".hg",
-                ".projections.json"
-            ]
-        },
-        "vcs-r": {
-            "patterns": [
-                "compile_commands.json",
-                ".clang-format",
-                ".git",
-                ".hg",
-                ".projections.json"
-            ],
-            "bottomUp": true
-        }
-    },
     "codeLens.enable": true,
     "cSpell.enabled": false,
     "coc-actions.hideCursor": true,

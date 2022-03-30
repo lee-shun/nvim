@@ -27,9 +27,9 @@ augroup END
 " ===
 augroup special_file_types
     autocmd BufNewFile,BufRead *.launch set filetype=xml
+    autocmd BufNewFile,BufRead *.msg set filetype=rosmsg
     autocmd BufNewFile,BufRead *.Md set filetype=markdown
     autocmd BufNewFile,BufRead *.ejs set filetype=html
-    " autocmd BufRead,BufNewFile *.h,*.c set filetype=c
 augroup END
 
 if exists('##CmdLineEnter')
