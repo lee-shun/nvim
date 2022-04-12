@@ -23,8 +23,7 @@
     "suggest.floatEnable": true,
     "suggest.detailField": "abbr",
     "suggest.snippetIndicator": "",
-    "suggest.triggerCompletionWait": 100,
-    "suggest.echodocSupport": true,
+    "suggest.triggerCompletionWait": 50,
     "suggest.completionItemKindLabels": {
         "class": "\uf0e8",
         "color": "\ue22b",
@@ -97,10 +96,6 @@
         "numpy",
         "osdk",
         "sobel"
-    ],
-    "coc.preferences.formatOnSaveFiletypes": [
-        "xml",
-        "json"
     ],
     "python.analysis.logLevel": "Trace",
     "python.formatting.provider": "yapf",
