@@ -88,6 +88,7 @@ exec "nohlsearch"
 set incsearch
 set ignorecase
 set smartcase
+set shortmess-=S
 
 " indent
 set smartindent
