@@ -263,9 +263,9 @@ let g:rooter_patterns = ['compile_commands.json','.clang-format','.git','=code',
 " ===
 " === Async
 " ===
-let g:asyncrun_open = 6
+" let g:asyncrun_open = 6
 
 " ===
 " === cool
 " ===
-let g:CoolTotalMatches = 1
+" let g:CoolTotalMatches = 1
