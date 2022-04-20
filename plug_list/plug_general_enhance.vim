@@ -156,6 +156,8 @@ Plug 'lambdalisue/readablefold.vim'
 " block moving with 'Shift+Ctrl--hjkl'
 Plug 'matze/vim-move'
 
+Plug 'AndrewRadev/sideways.vim'
+
 " 行号切换
 " Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
