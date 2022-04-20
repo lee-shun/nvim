@@ -181,3 +181,9 @@ Plug 'skywind3000/asyncrun.vim'
 Plug 'skywind3000/asynctasks.vim'
 
 Plug 'romainl/vim-cool'
+
+
+" ===
+" === games....
+" ===
+Plug 'seandewar/killersheep.nvim'
