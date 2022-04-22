@@ -89,7 +89,7 @@ let g:vim_markdown_preview_github=1
 let g:mkdp_browser = 'google-chrome'
 " google-chrome  --password-store=gnome
 function! g:Open_browser(url)
-  silent exec "!google-chrome --password-store=gnome --new-window " . a:url . " &"
+    silent exec "!google-chrome --password-store=gnome --new-window " . a:url . " &"
 endfunction
 let g:mkdp_browserfunc = 'g:Open_browser'
 
@@ -98,7 +98,7 @@ let g:mkdp_browserfunc = 'g:Open_browser'
 " === vimWiKi
 " ===
 let g:vimwiki_list = [{'path': '~/vimwiki/',
-                      \ 'syntax': 'markdown', 'ext': '.md'}]
+            \ 'syntax': 'markdown', 'ext': '.md'}]
 
 " ===
 " === vim-instant-markdown
@@ -118,8 +118,13 @@ let g:instant_markdown_browser = 'google-chrome'
 " m usuall for mark in vim, but I never use it!
 let g:mkdx#settings = {
             \'highlight': { 'enable': 0 },
-            \'map': { 'prefix': '=' }
+            \'map': { 'prefix': '=' },
             \}
+
+" ===
+" === table mode
+" ===
+let g:table_mode_map_prefix = ',t'
 
 
 " ===
