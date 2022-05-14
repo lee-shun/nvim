@@ -18,6 +18,18 @@
 "***********************************************************************************************************************
 
 " ===
+" === wilder.nvim
+" ===
+" Default keys
+call wilder#setup({
+      \ 'modes': [':', '/', '?'],
+      \ 'next_key': '<Tab>',
+      \ 'previous_key': '<S-Tab>',
+      \ 'accept_key': '<C-y>',
+      \ 'reject_key': '<Up>',
+      \ })
+
+" ===
 " === coc.nvim
 " ===
 source ~/.config/nvim/plug_settings/plug_coc_settings.vim

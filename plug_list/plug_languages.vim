@@ -70,7 +70,7 @@ Plug 'lee-shun/vim-markdown-wiki'
 " Python
 " Plug 'tmhedberg/SimpylFold', { 'for' :['python', 'vim-plug'] }
 " Plug 'Vimjas/vim-python-pep8-indent', { 'for' :['python', 'vim-plug'] }
-Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
+Plug 'numirias/semshi', { 'do': function('UpdateRemotePlugins') }
 " Plug 'vim-scripts/indentpython.vim', { 'for' :['python', 'vim-plug'] }
 " Plug 'plytophogy/vim-virtualenv', { 'for' :['python', 'vim-plug'] }
 " Plug 'tweekmonster/braceless.vim', { 'for' :['python', 'vim-plug'] }

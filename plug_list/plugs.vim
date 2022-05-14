@@ -17,6 +17,15 @@
 "
 "***********************************************************************************************************************
 
+" ===
+" === plug update remote
+" ===
+function! UpdateRemotePlugins(...)
+    " Needed to refresh runtime files
+    let &rtp=&rtp
+    UpdateRemotePlugins
+endfunction
+
 
 call plug#begin('~/.config/nvim/plugged')
 

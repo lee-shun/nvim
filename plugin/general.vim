@@ -74,3 +74,4 @@ if exists('##TermOpen')
         autocmd TermOpen * startinsert
     augroup END
 endif
+
