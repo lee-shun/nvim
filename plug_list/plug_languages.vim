@@ -29,6 +29,8 @@ Plug 'thibthib18/ros-nvim'
 " Plug 'jackguo380/vim-lsp-cxx-highlight'
 " Plug 'LucHermitte/lh-vim-lib', {'for':['cpp', 'hpp','cc', 'h']}
 " Plug 'LucHermitte/VimFold4C', {'for':['cpp', 'hpp','cc', 'h']}
+" Plug 'sven-strothoff/vim-clang_doxygen'
+Plug 'babaybus/DoxygenToolkit.vim'
 
 " Cmake
 Plug 'pboettch/vim-cmake-syntax'
@@ -45,7 +47,7 @@ Plug 'edersonferreira/open.vim'
 " Markdown
 " Plug 'dkarter/bullets.vim'
 Plug 'SidOfc/mkdx', {'for' :['markdown', 'vim-plug']} " too many remaps!
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install_sync()  }, 'for' :['markdown', 'vim-plug']  }
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install()  }, 'for' :['markdown', 'vim-plug']  }
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle'  }
 Plug 'lee-shun/vim-markdown-wiki'
 " Plug 'docunext/closetag.vim', {'for':['markdown', 'html', 'vim-plug']}
