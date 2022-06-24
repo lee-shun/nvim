@@ -187,3 +187,5 @@ Plug 'romainl/vim-cool'
 " === games....
 " ===
 Plug 'seandewar/killersheep.nvim'
+
+Plug 'stsewd/gx-extended.vim'
