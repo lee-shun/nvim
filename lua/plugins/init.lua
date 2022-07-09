@@ -11,6 +11,7 @@ require('gitsigns').setup()
 require'nvim-treesitter.configs'.setup {
   highlight = {
     enable = true,
+     disable = { "markdown" },
   },
   rainbow = {
     enable = true,
