@@ -154,9 +154,9 @@ Plug 'lambdalisue/readablefold.vim'
 " Plug 'AndrewRadev/splitjoin.vim'
 
 " block moving with 'Shift+Ctrl--hjkl'
-Plug 'matze/vim-move'
+" Plug 'matze/vim-move'
 
-Plug 'AndrewRadev/sideways.vim'
+" Plug 'AndrewRadev/sideways.vim'
 
 " 行号切换
 " Plug 'jeffkreeftmeijer/vim-numbertoggle'
@@ -170,15 +170,15 @@ Plug '907th/vim-auto-save'
 " text object
 Plug 'wellle/targets.vim'
 
-Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
+" Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 
 Plug 'voldikss/vim-floaterm'
 
 Plug 'airblade/vim-rooter'
 
-Plug 'skywind3000/asyncrun.vim'
-
-Plug 'skywind3000/asynctasks.vim'
+" Plug 'skywind3000/asyncrun.vim'
+"
+" Plug 'skywind3000/asynctasks.vim'
 
 Plug 'romainl/vim-cool'
 
@@ -186,6 +186,6 @@ Plug 'romainl/vim-cool'
 " ===
 " === games....
 " ===
-Plug 'seandewar/killersheep.nvim'
+" Plug 'seandewar/killersheep.nvim'
 
 Plug 'stsewd/gx-extended.vim'

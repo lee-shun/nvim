@@ -43,7 +43,7 @@ require("colorizer").setup()
 require('plugins.configs.scope')
 
 -- true zen
-require('plugins.configs.zenmode')
+-- require('plugins.configs.zenmode')
 
 -- ros
 require('plugins.configs.ros_nvim')

@@ -68,7 +68,7 @@ Plug 'sainnhe/sonokai'
 
 " Plug 'sainnhe/gruvbox-material'
 
-Plug 'sainnhe/everforest'
+" Plug 'sainnhe/everforest'
 
 " Plug 'sainnhe/edge'
 
@@ -78,7 +78,7 @@ Plug 'sainnhe/everforest'
 
 " Plug 'morhetz/gruvbox'
 
-Plug 'shaunsingh/nord.nvim'
+" Plug 'shaunsingh/nord.nvim'
 
 " Plug 'joshdick/onedark.vim'
 
@@ -92,6 +92,6 @@ Plug 'glepnir/dashboard-nvim'
 
 " Plug 'bpietravalle/vim-bolt'
 
-Plug 'Pocco81/TrueZen.nvim'
+" Plug 'Pocco81/TrueZen.nvim'
 
 Plug 'machakann/vim-highlightedyank'
