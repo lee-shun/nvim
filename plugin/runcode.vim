@@ -24,14 +24,14 @@ noremap r :call CompileRunGcc()<CR>
 func! CompileRunGcc()
     exec "w"
     if &filetype == 'c'
-        exec "!g++ % -o %<"
+        exec "!g++ % -o %<.out"
         exec "!time ./%<"
     elseif &filetype == 'cpp'
         set splitbelow
-        exec "!g++ -std=c++11 % -Wall -o %<"
+        exec "!g++ -std=c++11 % -Wall -o %<.out"
         :sp
         :res -15
-        :term ./%<
+        :term ./%<.out
     elseif &filetype == 'java'
         exec "!javac %"
         exec "!time java %<"

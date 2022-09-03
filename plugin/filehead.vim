@@ -23,26 +23,28 @@
 
 func SetComment()
     call setline(1,"/*******************************************************************************")
-    call setline(2  , "*")
-    call setline(2  , "*   Copyright (C) ".strftime("%Y")." Concordia NAVlab. All rights reserved.")
-    call setline(3  , "*")
-    call setline(4  , "*   @Filename: ".expand("%:t"))
-    call setline(5  , "*")
-    call setline(6  , "*   @Author: Shun Li")
-    call setline(7  , "*")
-    call setline(8  , "*   @Email: 2015097272@qq.com")
-    call setline(9  , "*")
-    call setline(10  , "*   @Date: ".strftime("%Y-%m-%d"))
-    call setline(11  , "*")
-    call setline(12  , "*   @Description: ")
-    call setline(13  , "*")
-    call setline(14 , "*******************************************************************************/")
+    call setline(2  , " *")
+    call setline(2  , " *   Copyright (C) ".strftime("%Y")." Concordia NAVlab. All rights reserved.")
+    call setline(3  , " *")
+    call setline(4  , " *   @Filename: ".expand("%:t"))
+    call setline(5  , " *")
+    call setline(6  , " *   @Author: Shun Li")
+    call setline(7  , " *")
+    call setline(8  , " *   @Email: 2015097272@qq.com")
+    call setline(9  , " *")
+    call setline(10  , " *   @Date: ".strftime("%Y-%m-%d"))
+    call setline(11  , " *")
+    call setline(12  , " *   @Description: ")
+    call setline(13  , " *")
+    call setline(14 , " *******************************************************************************/")
     call setline(15 , "")
     call setline(16 , "")
 endfunc
 
 " for shell-like file
 func SetCommentSh()
+    call setline(1,"")
+    call setline(2,"")
     call setline(3,"")
     call setline(4, "# ------------------------------------------------------------------------------")
     call setline(5 , "#")
@@ -65,29 +67,29 @@ endfunc
 
 func SetTitle()
     if expand("%:e") == 'make'
+        call SetCommentSh()
         call setline(1,"")
         call setline(2,"")
-        call SetCommentSh()
 
     elseif expand("%:e") == 'txt'
+        call SetCommentSh()
         call setline(1,"")
         call setline(2,"")
-        call SetCommentSh()
 
     elseif expand("%:e") == 'sh'
+        call SetCommentSh()
         call setline(1,"#!/system/bin/sh")
         call setline(2,"")
-        call SetCommentSh()
 
     elseif expand("%:e") == 'zsh'
+        call SetCommentSh()
         call setline(1,"#!/system/bin/zsh")
         call setline(2,"")
-        call SetCommentSh()
 
     elseif expand("%:e") == 'py'
+        call SetCommentSh()
         call setline(1,"#!/usr/bin/env python3")
         call setline(2,"# -*- coding: utf-8 -*- #")
-        call SetCommentSh()
 
     elseif &filetype == 'c' && expand("%:e") == 'h'
         call SetComment()
