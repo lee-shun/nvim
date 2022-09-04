@@ -1,6 +1,5 @@
 {
     "hover.target": "float",
-    "coc.preferences.enableFloatHighlight": true,
     "coc.preferences.snippetStatusText": "Ⓢ ",
     "coc.preferences.extensionUpdateCheck": "daily",
     "coc.preferences.messageLevel": "error",
@@ -19,8 +18,6 @@
     "suggest.enablePreselect": false,
     "suggest.triggerAfterInsertEnter": false,
     "suggest.timeout": 5000,
-    "suggest.enablePreview": true,
-    "suggest.floatEnable": true,
     "suggest.detailField": "abbr",
     "suggest.snippetIndicator": "",
     "suggest.triggerCompletionWait": 50,
