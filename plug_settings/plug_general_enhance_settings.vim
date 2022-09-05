@@ -161,7 +161,7 @@ let g:indent_guides_enable_on_vim_startup = 0
 " ===
 " === Vista
 " ===
-let g:vista_default_executive = 'ctags' "可以是ctags，注意版本问题
+let g:vista_default_executive = 'coc' "可以是ctags，注意版本问题
 let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
 
 
@@ -253,6 +253,7 @@ let g:Illuminate_ftblacklist = ['python', 'coc-explorer']
 let g:floaterm_keymap_toggle = '<F12>'
 let g:floaterm_width = 0.8
 let g:floaterm_height = 0.7
+nnoremap <leader>ra :FloatermNew --height=0.7 --width=0.8 --wintype=float ranger<CR>
 
 " ===
 " === rooter.vim

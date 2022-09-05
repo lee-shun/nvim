@@ -64,7 +64,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 
 " Plug 'glepnir/oceanic-material'
 
-Plug 'sainnhe/sonokai'
+" Plug 'sainnhe/sonokai'
 
 " Plug 'sainnhe/gruvbox-material'
 
@@ -78,7 +78,7 @@ Plug 'sainnhe/sonokai'
 
 " Plug 'morhetz/gruvbox'
 
-" Plug 'shaunsingh/nord.nvim'
+Plug 'shaunsingh/nord.nvim'
 
 " Plug 'joshdick/onedark.vim'
 

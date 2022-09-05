@@ -27,8 +27,8 @@ set background=dark
 " colorscheme gruvbox9_soft
 " colorscheme onedark
 " colorscheme snazzy
-colorscheme sonokai
-" colorscheme nord
+" colorscheme sonokai
+colorscheme nord
 
 " ===
 " ===lightline
