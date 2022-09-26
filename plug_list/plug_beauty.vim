@@ -80,6 +80,8 @@ Plug 'kyazdani42/nvim-web-devicons'
 
 Plug 'shaunsingh/nord.nvim'
 
+Plug 'marko-cerovac/material.nvim'
+
 " Plug 'joshdick/onedark.vim'
 
 " Plug 'mhartington/oceanic-next'

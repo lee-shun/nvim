@@ -30,6 +30,9 @@ set background=dark
 " colorscheme sonokai
 colorscheme nord
 
+" let g:material_style = "oceanic"
+" colorscheme material
+
 " ===
 " ===lightline
 " ===
